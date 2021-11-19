@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Ball.gd" type="Script" id=1]
-[ext_resource path="res://background_blue.png" type="Texture" id=2]
+[ext_resource path="res://assets/kenney_prototype_textures/orange/texture_01.png" type="Texture" id=2]
 
 [sub_resource type="PhysicsMaterial" id=3]
 friction = 4.0
@@ -11,7 +11,11 @@ bounce = 0.5
 [sub_resource type="SphereMesh" id=1]
 
 [sub_resource type="SpatialMaterial" id=4]
+flags_world_triplanar = true
 albedo_texture = ExtResource( 2 )
+roughness = 0.0
+roughness_texture_channel = 1
+uv1_triplanar = true
 
 [sub_resource type="SphereShape" id=2]
 
