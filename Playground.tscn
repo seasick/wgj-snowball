@@ -26,3 +26,229 @@ transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance"]
 transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
 shape = SubResource( 3 )
+
+[node name="bodies" type="Node" parent="."]
+
+[node name="RigidBody" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.323032, 0, -32.6292 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody2" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19212, 0, -28.454 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody2"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody2"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody3" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.74199, 0, -32.6292 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody3"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody3"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody4" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2571, 0, -28.454 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody4"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody4"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody5" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.91413, 0, -32.6292 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody5"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody5"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody6" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4293, 0, -28.454 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody6"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody6"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody7" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9792, 0, -32.6292 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody7"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody7"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody8" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4943, 0, -28.454 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody8"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody8"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody9" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.323032, 0, -24.4422 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody9"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody9"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody10" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19212, 0, -20.2669 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody10"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody10"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody11" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.74199, 0, -24.4422 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody11"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody11"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody12" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2571, 0, -20.2669 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody12"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody12"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody13" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.91413, 0, -24.4422 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody13"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody13"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody14" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4293, 0, -20.2669 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody14"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody14"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody15" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9792, 0, -24.4422 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody15"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody15"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="RigidBody16" type="RigidBody" parent="bodies" groups=["pickable"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4943, 0, -20.2669 )
+mass = 1.39
+physics_material_override = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/RigidBody16"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="bodies/RigidBody16"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1, 0 )
+mesh = SubResource( 6 )
+material/0 = null
