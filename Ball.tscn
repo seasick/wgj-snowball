@@ -4,9 +4,9 @@
 [ext_resource path="res://background_blue.png" type="Texture" id=2]
 
 [sub_resource type="PhysicsMaterial" id=3]
-friction = 4.0
+friction = 10.0
 rough = true
-bounce = 0.5
+bounce = 0.05
 
 [sub_resource type="SphereMesh" id=1]
 
@@ -16,6 +16,7 @@ albedo_texture = ExtResource( 2 )
 [sub_resource type="SphereShape" id=2]
 
 [node name="Ball" type="RigidBody"]
+mass = 34.95
 physics_material_override = SubResource( 3 )
 contacts_reported = 153
 contact_monitor = true
