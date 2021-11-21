@@ -29,7 +29,7 @@ func _on_StickToMe_body_entered(body):
 		body.set_global_transform(temp)
 
 		# Add sticking script to collider, so other things will stick to it
-		body.set_script(load("res://StickToMe.gd"))
+		body.set_script(load("res://scripts/StickToMe.gd"))
 		body._ready()
 		
 		EventBus.publish("sticked", body)

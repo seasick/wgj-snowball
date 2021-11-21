@@ -11,12 +11,16 @@ config_version=4
 [application]
 
 config/name="GamejamSnowball"
-run/main_scene="res://Playground.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://scenes/Playground.tscn"
+config/icon="res://assets/icon.png"
 
 [autoload]
 
-EventBus="*res://EventBus.gd"
+EventBus="*res://autoload/EventBus.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray(  )
 
 [gdnative]
 

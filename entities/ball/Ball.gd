@@ -1,4 +1,4 @@
-extends "res://StickToMe.gd"
+extends "res://scripts/StickToMe.gd"
 
 var rolling_force = 20
 var min_velocity = -5
