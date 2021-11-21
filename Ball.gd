@@ -1,4 +1,4 @@
-extends RigidBody
+extends "res://StickToMe.gd"
 
 var rolling_force = 20
 
@@ -44,23 +44,3 @@ func _physics_process(delta):
 			angular_velocity.z += rolling_force*delta
 		elif Input.is_action_pressed("right"):
 			angular_velocity.z -= rolling_force*delta
-
-
-func _on_Ball_body_entered(body):
-	if body.is_in_group("pickable"):
-		# TODO Check if the object is small enough to be picked up
-
-		# Remove the group so it cannot be picked up again, because it is already sticking, duh.
-		body.remove_from_group("pickable")
-
-		# Move the child from where ever it belongs to be a child of the ball
-		body.get_parent().remove_child(body)
-		add_child(body)
-
-		# Set the location of the body
-		body.global_transform.origin = global_transform.origin
-
-		# TODO Stick the colliding body at the same place where it collided
-		# Currently using same orientation as ball to mimic some kind of "is sticking to the same
-		# place where it collided".
-		body.rotation = rotation
