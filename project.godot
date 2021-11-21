@@ -14,6 +14,10 @@ config/name="GamejamSnowball"
 run/main_scene="res://Playground.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+EventBus="*res://EventBus.gd"
+
 [gdnative]
 
 singletons=[  ]
