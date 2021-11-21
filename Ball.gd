@@ -1,6 +1,8 @@
 extends "res://StickToMe.gd"
 
 var rolling_force = 20
+var min_velocity = -5
+var max_velocity = 5
 
 func _ready():
 	# Camera is parented to the Ball, but we don't want it to rotate
@@ -33,13 +35,13 @@ func _physics_process(delta):
 		# The rest is handled by the physics engine, when the ball spins - it rolls.
 
 		if Input.is_action_pressed("forward"):
-			angular_velocity.x -= rolling_force*delta
+			angular_velocity.x = clamp(angular_velocity.x - rolling_force*delta, min_velocity, max_velocity)
 		elif Input.is_action_pressed("back"):
-			angular_velocity.x += rolling_force*delta
+			angular_velocity.x = clamp(angular_velocity.x + rolling_force * delta, min_velocity, max_velocity)
 		if Input.is_action_pressed("left"):
-			angular_velocity.z += rolling_force*delta
+			angular_velocity.z = clamp(angular_velocity.z + rolling_force * delta, min_velocity, max_velocity)
 		elif Input.is_action_pressed("right"):
-			angular_velocity.z -= rolling_force*delta
+			angular_velocity.z = clamp(angular_velocity.z - rolling_force * delta, min_velocity, max_velocity)
 
 func _on_EventBus_sticked(_value):
 	# Increase the scale of the "PickableDecider"
