@@ -27,6 +27,9 @@ func _on_StickToMe_body_entered(body):
 		body.get_parent().remove_child(body)
 		add_child(body)
 		body.set_global_transform(temp)
+		
+		# set mass of rigidbody to nearly zero, to avoid physics fuzzing and jiggling around
+		body.mass = 0.01
 
 		# Add sticking script to collider, so other things will stick to it
 		body.set_script(load("res://scripts/StickToMe.gd"))
