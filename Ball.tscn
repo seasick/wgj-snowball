@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Ball.gd" type="Script" id=1]
 [ext_resource path="res://background_blue.png" type="Texture" id=2]
+[ext_resource path="res://SetPickable.gd" type="Script" id=3]
 
 [sub_resource type="PhysicsMaterial" id=3]
 friction = 10.0
@@ -14,6 +15,14 @@ bounce = 0.05
 albedo_texture = ExtResource( 2 )
 
 [sub_resource type="SphereShape" id=2]
+
+[sub_resource type="SphereShape" id=5]
+
+[sub_resource type="SphereMesh" id=6]
+
+[sub_resource type="SpatialMaterial" id=7]
+flags_transparent = true
+albedo_color = Color( 1, 1, 1, 0.501961 )
 
 [node name="Ball" type="RigidBody"]
 mass = 34.95
@@ -40,4 +49,15 @@ far = 2296.9
 enabled = true
 cast_to = Vector3( 0, -1.5, 0 )
 
-[connection signal="body_entered" from="." to="." method="_on_Ball_body_entered"]
+[node name="PickableDecider" type="Area" parent="."]
+script = ExtResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="PickableDecider"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 5 )
+
+[node name="MeshInstanceForDebugging" type="MeshInstance" parent="PickableDecider"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+visible = false
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )

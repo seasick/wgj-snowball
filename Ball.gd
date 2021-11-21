@@ -12,11 +12,7 @@ func _ready():
 	# so that it doesn't rotate as the ball rolls
 	$GroundCheck.set_as_toplevel(true)
 
-	# Enable collision monitoring
-	set_contact_monitor(true)
-	set_max_contacts_reported(40000)
-	# TODO Without a large value for `set_max_contacts_reported` above , things will stop sticking
-	# to the  ball. There has to be a better way.
+	EventBus.subscribe("sticked", self, "_on_EventBus_sticked")
 
 
 func _physics_process(delta):
@@ -44,3 +40,8 @@ func _physics_process(delta):
 			angular_velocity.z += rolling_force*delta
 		elif Input.is_action_pressed("right"):
 			angular_velocity.z -= rolling_force*delta
+
+func _on_EventBus_sticked(_value):
+	# Increase the scale of the "PickableDecider"
+	$PickableDecider.get_child(0).scale *= 1.025
+	$PickableDecider.get_child(1).scale *= 1.025 # and its debbugging view

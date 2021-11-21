@@ -8,7 +8,7 @@ absorbent = true
 
 [sub_resource type="CylinderMesh" id=3]
 
-[node name="PlaygroundObject" type="RigidBody" groups=["pickable"]]
+[node name="PlaygroundObject" type="RigidBody" groups=["pickable_candidate"]]
 mass = 1.39
 physics_material_override = SubResource( 1 )
 
