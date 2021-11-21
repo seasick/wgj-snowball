@@ -1,8 +1,8 @@
 extends "res://scripts/StickToMe.gd"
 
-var rolling_force = 20
-var min_velocity = -5
-var max_velocity = 5
+export var rolling_force = 20
+export var min_velocity = -5
+export var max_velocity = 5
 
 func _ready():
 	# Camera is parented to the Ball, but we don't want it to rotate
