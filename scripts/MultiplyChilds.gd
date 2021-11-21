@@ -1,13 +1,11 @@
 extends Node
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 export var count = 500
 export var min_scale = 0.2
-export var max_scale = 2
+export var max_scale = 4
 export (PackedScene) var node
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,8 +23,3 @@ func _ready():
 			2, 
 			rng.randf_range(30.0, -30.0)
 		)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

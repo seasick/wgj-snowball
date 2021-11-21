@@ -3,6 +3,7 @@ extends Node
 
 export(int) var events_at_once = 1
 
+
 enum PROCESSING_MODE {IDLE, PHYSICS}
 export (int, "Idle", "Physics") var processing_mode = 0
 
@@ -10,6 +11,7 @@ var events_lock = Mutex.new()
 var receivers_lock = Mutex.new()
 const receivers = {}
 const events = []
+
 
 class Event:
 	var receiver = null
