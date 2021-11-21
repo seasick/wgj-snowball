@@ -5,6 +5,8 @@ extends Node
 # var a = 2
 # var b = "text"
 export var count = 500
+export var min_scale = 0.2
+export var max_scale = 2
 export (PackedScene) var node
 
 # Called when the node enters the scene tree for the first time.
@@ -15,6 +17,8 @@ func _ready():
 		var inst = node.instance()
 		
 		add_child(inst)
+		
+		inst.scale *= rng.randf_range(min_scale, max_scale)
 		
 		inst.global_transform.origin = Vector3(
 			rng.randf_range(30.0, -30.0), 
