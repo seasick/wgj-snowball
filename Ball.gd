@@ -43,5 +43,5 @@ func _physics_process(delta):
 
 func _on_EventBus_sticked(_value):
 	# Increase the scale of the "PickableDecider"
-	$PickableDecider.get_child(0).scale *= 1.025
-	$PickableDecider.get_child(1).scale *= 1.025 # and its debbugging view
+	$PickableDecider.get_child(0).scale *= 1.005
+	$PickableDecider.get_child(1).scale *= 1.005 # and its debbugging view
