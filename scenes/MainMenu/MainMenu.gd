@@ -7,9 +7,9 @@ func _ready():
 	var err = export_config.load("res://export_presets.cfg")
 	var version = "dev"
 	
-	var newGameLabel = $VBoxContainer/VBoxContainer/NewGameLabel
-	var optionsLabel = $VBoxContainer/VBoxContainer/OptionsLabel
-	var versionLabel = $VBoxContainer/VersionLabel
+	var newGameLabel = $MarginContainer/VBoxContainer/VBoxContainer/NewGameLabel
+	var optionsLabel = $MarginContainer/VBoxContainer/VBoxContainer/OptionsLabel
+	var versionLabel = $MarginContainer/VBoxContainer/VersionLabel
 	
 	# Display version number (found in first preset of export config)
 	if err == OK:

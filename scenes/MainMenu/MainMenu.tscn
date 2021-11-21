@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
+[ext_resource path="res://scenes/MainMenu/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/menu_background_pattern.png" type="Texture" id=2]
 [ext_resource path="res://assets/fonts/Roboto-Bold.ttf" type="DynamicFontData" id=3]
 
@@ -28,6 +29,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
