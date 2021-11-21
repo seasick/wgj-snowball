@@ -17,6 +17,7 @@ config/icon="res://assets/icon.png"
 [autoload]
 
 EventBus="*res://autoload/EventBus.gd"
+GameData="*res://autoload/GameData.gd"
 
 [editor_plugins]
 

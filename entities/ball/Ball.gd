@@ -17,7 +17,8 @@ func _ready():
 	$GroundCheck.set_as_toplevel(true)
 
 	EventBus.subscribe("sticked", self, "_on_EventBus_sticked")
-	
+
+	GameData.data.max_stickee_volume = 2
 
 func _physics_process(delta):
 	# Move the camera along with the ball
@@ -55,7 +56,11 @@ func _on_EventBus_sticked(stickee):
 		# use longest axis to aproximate how much was added to the ball.
 		# TODO: Even better would be to calculate the volume of the body which was added to the ball
 		increase = 1 + longest_axis / 140
-		
+
+		# XXX abusing the scale as a threshold for the maximum volume a possible stickee will stick
+		# to the ball
+		GameData.data.max_stickee_volume = $PickableDecider.get_child(0).scale.x
+
 	# Increase the scale of the "PickableDecider"
 	$PickableDecider.get_child(0).scale *= increase
 	$PickableDecider.get_child(1).scale *= increase # and its debbugging view

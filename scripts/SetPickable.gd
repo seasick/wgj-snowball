@@ -11,7 +11,14 @@ func _ready():
 
 func _on_Area_body_entered(body):
 	if body.is_in_group("pickable_candidate"):
-		body.add_to_group("pickable")
+		# TODO Check if it is big enough
+		
+		if body.has_node("MeshInstance"):
+			var aabb = body.get_node("MeshInstance").get_transformed_aabb()
+			var longest_axis = aabb.get_longest_axis_size()
+			
+			if longest_axis <= GameData.data.max_stickee_volume:
+				body.add_to_group("pickable")
 	
 func _on_Area_body_exited(body):
 	if body.is_in_group("pickable_candidate"):
