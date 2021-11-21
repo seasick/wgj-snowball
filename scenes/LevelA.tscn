@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://materials/Water_shadermaterial.tres" type="Material" id=1]
 [ext_resource path="res://assets/background_blue.png" type="Texture" id=2]
@@ -8,6 +8,10 @@
 [ext_resource path="res://assets/imported/skyscraperB.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scripts/SetPickable.gd" type="Script" id=7]
 [ext_resource path="res://entities/ball/Ball.gd" type="Script" id=8]
+[ext_resource path="res://assets/imported/skyscraperC.tscn" type="PackedScene" id=9]
+[ext_resource path="res://imports/city_kit/skyscraperE.glb" type="PackedScene" id=10]
+[ext_resource path="res://imports/city_kit/skyscraperF.glb" type="PackedScene" id=11]
+[ext_resource path="res://imports/city_kit/skyscraperD.glb" type="PackedScene" id=12]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 150, 150 )
@@ -69,12 +73,28 @@ environment = SubResource( 4 )
 [node name="island_big2" parent="." instance=ExtResource( 4 )]
 
 [node name="City" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.691, 0 )
 
 [node name="skyscraperA" parent="City" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.556, 0.7, 17.081 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 21 )
 
 [node name="skyscraperB" parent="City" instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.7, 17 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 17 )
+
+[node name="skyscraperC" parent="City" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 19 )
+
+[node name="skyscraperC2" parent="City" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17 )
+
+[node name="skyscraperD" parent="City" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 17 )
+
+[node name="skyscraperE" parent="City" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19 )
+
+[node name="skyscraperF" parent="City" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 19 )
 
 [node name="island_small" parent="." instance=ExtResource( 3 )]
 transform = Transform( 2.90365, 0, -0.754181, 0, 3, 0, 0.754181, 0, 2.90365, 9.942, 0.0478096, -3.17419 )
