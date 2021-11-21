@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="GamejamSnowball"
-run/main_scene="res://scenes/Playground.tscn"
+run/main_scene="res://scenes/MainMenu/MainMenu.tscn"
 config/icon="res://assets/icon.png"
 
 [autoload]
