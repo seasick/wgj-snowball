@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://materials/Water_shadermaterial.tres" type="Material" id=1]
-[ext_resource path="res://Ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://entities/ball/Ball.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/island_big2.tscn" type="PackedScene" id=4]
 
 [sub_resource type="PlaneMesh" id=1]
@@ -31,7 +31,6 @@ environment = SubResource( 4 )
 
 [node name="Ball" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.01523, 13.6314 )
-rolling_force = 5
 
 [node name="island_big2" parent="." instance=ExtResource( 4 )]
 
