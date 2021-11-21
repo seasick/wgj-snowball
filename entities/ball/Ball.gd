@@ -1,8 +1,10 @@
 extends "res://scripts/StickToMe.gd"
 
+
 export var rolling_force = 20
 export var min_velocity = -5
 export var max_velocity = 5
+
 
 func _ready():
 	# Camera is parented to the Ball, but we don't want it to rotate
@@ -15,7 +17,7 @@ func _ready():
 	$GroundCheck.set_as_toplevel(true)
 
 	EventBus.subscribe("sticked", self, "_on_EventBus_sticked")
-
+	
 
 func _physics_process(delta):
 	# Move the camera along with the ball
@@ -43,7 +45,18 @@ func _physics_process(delta):
 		elif Input.is_action_pressed("right"):
 			angular_velocity.z = clamp(angular_velocity.z - rolling_force * delta, min_velocity, max_velocity)
 
-func _on_EventBus_sticked(_value):
+func _on_EventBus_sticked(stickee):
+	var increase = 1.005
+
+	if stickee.has_node("MeshInstance"):
+		var aabb = stickee.get_node("MeshInstance").get_transformed_aabb()
+		var longest_axis = aabb.get_longest_axis_size()
+
+		# use longest axis to aproximate how much was added to the ball.
+		# TODO: Even better would be to calculate the volume of the body which was added to the ball
+		increase = 1 + longest_axis / 140
+		
 	# Increase the scale of the "PickableDecider"
-	$PickableDecider.get_child(0).scale *= 1.005
-	$PickableDecider.get_child(1).scale *= 1.005 # and its debbugging view
+	$PickableDecider.get_child(0).scale *= increase
+	$PickableDecider.get_child(1).scale *= increase # and its debbugging view
+
