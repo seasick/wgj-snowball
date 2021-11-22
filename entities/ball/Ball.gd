@@ -1,4 +1,4 @@
-extends "res://scripts/StickToMe.gd"
+extends "res://entities/ball/StickToMe.gd"
 
 
 export var rolling_force = 20

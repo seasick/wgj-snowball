@@ -32,7 +32,7 @@ func _on_StickToMe_body_entered(body):
 		body.mass = 0.01
 
 		# Add sticking script to collider, so other things will stick to it
-		body.set_script(load("res://scripts/StickToMe.gd"))
+		body.set_script(load("res://entities/ball/StickToMe.gd"))
 		body._ready()
 		
 		EventBus.publish("sticked", body)
