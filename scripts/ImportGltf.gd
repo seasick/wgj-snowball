@@ -16,6 +16,8 @@ func post_import(scene):
 func iterate(node: Node):
 	if node is MeshInstance:
 		(node as MeshInstance).create_trimesh_collision()
+		(node as MeshInstance).translation = Vector3.ZERO
+		(node as MeshInstance).use_in_baked_light = true
 	else:
 		if node.get_child_count() > 0:
 			iterate(node.get_child(0))

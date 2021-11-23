@@ -101,6 +101,7 @@ data = PoolVector3Array( 0.6, 4.0165, 0.3685, 0.6, 4.0165, -0.3685, 0.6, 3.9835,
 [node name="tmpParent" type="Spatial" parent="."]
 
 [node name="skyscraperB" type="MeshInstance" parent="tmpParent"]
+use_in_baked_light = true
 mesh = SubResource( 6 )
 material/0 = null
 material/1 = null

@@ -47,6 +47,7 @@ data = PoolVector3Array( -0.5, 1.1, -0.25, -0.5, 0.85, -0.25, 0.5, 0.85, -0.25, 
 [node name="tmpParent" type="Spatial" parent="."]
 
 [node name="low_wideA" type="MeshInstance" parent="tmpParent"]
+use_in_baked_light = true
 mesh = SubResource( 3 )
 material/0 = null
 material/1 = null

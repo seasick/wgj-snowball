@@ -65,6 +65,7 @@ data = PoolVector3Array( -0.025, 0.384, 0.1957, -0.025, 0.3681, 0.2, -0.025, 0.0
 [node name="tmpParent" type="Spatial" parent="."]
 
 [node name="sign_hospital" type="MeshInstance" parent="tmpParent"]
+use_in_baked_light = true
 mesh = SubResource( 4 )
 material/0 = null
 material/1 = null
