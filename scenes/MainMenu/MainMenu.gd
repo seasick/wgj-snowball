@@ -25,7 +25,7 @@ func _ready():
 		print("Error connecting to options label")
 
 func _on_NewGameLabel_button_down():
-	get_tree().change_scene("res://scenes/Playground.tscn")
+	get_tree().change_scene("res://scenes/LevelA.tscn")
 
 func _on_OptionsLabel_button_down():
 	# TODO
