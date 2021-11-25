@@ -1,9 +1,9 @@
 extends "res://entities/ball/StickToMe.gd"
 
 
-export var rolling_force = 20
-export var min_velocity = -5
-export var max_velocity = 5
+export (int) var rolling_force = 20
+export (int) var min_velocity = -5
+export (int) var max_velocity = 5
 
 
 func _ready():
