@@ -32,34 +32,30 @@ func _physics_process(delta):
 
 	# Only apply forces when the ball is touching ground
 	if $GroundCheck.is_colliding():
-		# Move the ball in response to player pressing the buttons.
-		# When the button is pressed, we increase the angular velocity
-		# of the RigidBody in the corresponding dierction, making the ball spin.
-		# The rest is handled by the physics engine, when the ball spins - it rolls.
-
 		if Input.is_action_pressed("forward"):
-			angular_velocity.x = clamp(angular_velocity.x - rolling_force*delta, min_velocity, max_velocity)
+			_move_in_direction(delta, 1)
 		elif Input.is_action_pressed("back"):
-			angular_velocity.x = clamp(angular_velocity.x + rolling_force * delta, min_velocity, max_velocity)
-		if Input.is_action_pressed("left"):
-			angular_velocity.z = clamp(angular_velocity.z + rolling_force * delta, min_velocity, max_velocity)
-		elif Input.is_action_pressed("right"):
-			angular_velocity.z = clamp(angular_velocity.z - rolling_force * delta, min_velocity, max_velocity)
+			_move_in_direction(delta, -1)
+
+func _move_in_direction(delta, forward):
+	var force = rolling_force * delta#	
+	var impulse_strength = 0.05
+	var angle = $CameraRig.rotation.y
+		
+	apply_central_impulse(Vector3(sin(angle), 0, cos(angle)) * -impulse_strength * forward)
+
+func _input(event):         
+	if event is InputEventMouseMotion:
+		var sensitivity = 0.5
+		var delta = deg2rad(-event.relative.x * sensitivity)
+
+		$CameraRig.rotate_y(delta)
+
 
 func _on_EventBus_sticked(stickee):
-	var increase = 1.005
+	var increase = 1.05
 
-	if stickee.has_node("MeshInstance"):
-		var aabb = stickee.get_node("MeshInstance").get_transformed_aabb()
-		var longest_axis = aabb.get_longest_axis_size()
-
-		# use longest axis to aproximate how much was added to the ball.
-		# TODO: Even better would be to calculate the volume of the body which was added to the ball
-		increase = 1 + longest_axis / 140
-
-		# XXX abusing the scale as a threshold for the maximum volume a possible stickee will stick
-		# to the ball
-		GameData.data.max_stickee_volume = $PickableDecider.get_child(0).scale.x
+	# TODO use stickee weight to determine increase
 
 	# Increase the scale of the "PickableDecider"
 	$PickableDecider.get_child(0).scale *= increase
