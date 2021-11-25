@@ -52,7 +52,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="low_buildingH_col" type="StaticBody" parent="tmpParent/low_buildingH"]
+[node name="low_buildingH_col" type="StaticBody" parent="tmpParent/low_buildingH" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/low_buildingH/low_buildingH_col"]
 shape = SubResource( 4 )

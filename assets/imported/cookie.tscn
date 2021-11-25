@@ -52,7 +52,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="cookie_col" type="StaticBody" parent="tmpParent/cookie"]
+[node name="cookie_col" type="StaticBody" parent="tmpParent/cookie" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/cookie/cookie_col"]
 shape = SubResource( 4 )

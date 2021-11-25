@@ -51,7 +51,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="potLid_col" type="StaticBody" parent="tmpParent/potLid"]
+[node name="potLid_col" type="StaticBody" parent="tmpParent/potLid" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/potLid/potLid_col"]
 shape = SubResource( 4 )

@@ -112,7 +112,7 @@ material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="slice0_col" type="StaticBody" parent="tmpParent/pizza/slice0"]
+[node name="slice0_col" type="StaticBody" parent="tmpParent/pizza/slice0" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/pizza/slice0/slice0_col"]
 shape = SubResource( 7 )

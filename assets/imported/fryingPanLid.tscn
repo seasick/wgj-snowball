@@ -76,7 +76,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="fryingPanLid_col" type="StaticBody" parent="tmpParent/fryingPanLid"]
+[node name="fryingPanLid_col" type="StaticBody" parent="tmpParent/fryingPanLid" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/fryingPanLid/fryingPanLid_col"]
 shape = SubResource( 5 )

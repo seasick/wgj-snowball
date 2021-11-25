@@ -112,7 +112,7 @@ material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="road_slantFlatCurve_col" type="StaticBody" parent="tmpParent/road_slantFlatCurve"]
+[node name="road_slantFlatCurve_col" type="StaticBody" parent="tmpParent/road_slantFlatCurve" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/road_slantFlatCurve/road_slantFlatCurve_col"]
 shape = SubResource( 7 )

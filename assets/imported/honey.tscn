@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="honey_col" type="StaticBody" parent="tmpParent/honey"]
+[node name="honey_col" type="StaticBody" parent="tmpParent/honey" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/honey/honey_col"]
 shape = SubResource( 5 )

@@ -151,7 +151,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="wedge_col" type="StaticBody" parent="tmpParent/cheese/wedge"]
+[node name="wedge_col" type="StaticBody" parent="tmpParent/cheese/wedge" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/cheese/wedge/wedge_col"]
 shape = SubResource( 5 )

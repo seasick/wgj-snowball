@@ -109,7 +109,7 @@ material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="small_buildingE_col" type="StaticBody" parent="tmpParent/small_buildingE"]
+[node name="small_buildingE_col" type="StaticBody" parent="tmpParent/small_buildingE" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/small_buildingE/small_buildingE_col"]
 shape = SubResource( 7 )

@@ -245,7 +245,7 @@ material/5 = null
 material/6 = null
 material/7 = null
 
-[node name="body_col" type="StaticBody" parent="tmpParent/police/body"]
+[node name="body_col" type="StaticBody" parent="tmpParent/police/body" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/police/body/body_col"]
 shape = SubResource( 10 )

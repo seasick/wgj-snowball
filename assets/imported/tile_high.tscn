@@ -33,7 +33,7 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="tile_high_col" type="StaticBody" parent="tmpParent/tile_high"]
+[node name="tile_high_col" type="StaticBody" parent="tmpParent/tile_high" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/tile_high/tile_high_col"]
 shape = SubResource( 3 )

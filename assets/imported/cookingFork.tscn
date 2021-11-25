@@ -52,7 +52,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="cookingFork_col" type="StaticBody" parent="tmpParent/cookingFork"]
+[node name="cookingFork_col" type="StaticBody" parent="tmpParent/cookingFork" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/cookingFork/cookingFork_col"]
 shape = SubResource( 4 )

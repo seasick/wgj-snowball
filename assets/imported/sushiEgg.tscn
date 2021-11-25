@@ -85,7 +85,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="egg" type="MeshInstance" parent="tmpParent/sushiEgg"]
+[node name="egg" type="MeshInstance" parent="tmpParent/sushiEgg" groups=["pickable_candidate"]]
 transform = Transform( 1, 0, 0, 0, 1.69492, 0, 0, 0, 1, 1.80478e-16, 0.0664, -0.000147036 )
 mesh = SubResource( 5 )
 material/0 = null

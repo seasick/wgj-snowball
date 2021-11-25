@@ -103,7 +103,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="label" type="MeshInstance" parent="tmpParent/cupThea"]
+[node name="label" type="MeshInstance" parent="tmpParent/cupThea" groups=["pickable_candidate"]]
 transform = Transform( 0.866025, 0.0635323, 0.495947, 3.72529e-09, 0.991894, -0.127065, -0.5, 0.110041, 0.859006, -0.0797979, 0.100722, -0.068614 )
 mesh = SubResource( 6 )
 material/0 = null

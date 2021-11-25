@@ -57,7 +57,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="glassWine_col" type="StaticBody" parent="tmpParent/glassWine"]
+[node name="glassWine_col" type="StaticBody" parent="tmpParent/glassWine" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/glassWine/glassWine_col"]
 shape = SubResource( 4 )

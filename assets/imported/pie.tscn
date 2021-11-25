@@ -90,7 +90,7 @@ material/1 = null
 material/2 = null
 material/3 = null
 
-[node name="pie_col" type="StaticBody" parent="tmpParent/pie"]
+[node name="pie_col" type="StaticBody" parent="tmpParent/pie" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/pie/pie_col"]
 shape = SubResource( 6 )

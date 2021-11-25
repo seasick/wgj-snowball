@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="treePineSnow_col" type="StaticBody" parent="tmpParent/treePineSnow"]
+[node name="treePineSnow_col" type="StaticBody" parent="tmpParent/treePineSnow" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/treePineSnow/treePineSnow_col"]
 shape = SubResource( 5 )

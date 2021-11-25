@@ -89,7 +89,7 @@ material/1 = null
 material/2 = null
 material/3 = null
 
-[node name="trainLocomotive_col" type="StaticBody" parent="tmpParent/trainLocomotive"]
+[node name="trainLocomotive_col" type="StaticBody" parent="tmpParent/trainLocomotive" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/trainLocomotive/trainLocomotive_col"]
 shape = SubResource( 6 )

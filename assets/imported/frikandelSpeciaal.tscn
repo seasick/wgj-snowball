@@ -111,7 +111,7 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="frikandel" type="MeshInstance" parent="tmpParent/frikandelSpeciaal"]
+[node name="frikandel" type="MeshInstance" parent="tmpParent/frikandelSpeciaal" groups=["pickable_candidate"]]
 transform = Transform( 0, -0.715907, -4.21286e-08, 8.44399e-08, 0, -0.7068, 1.41667, 4.26714e-08, 0, 0.149544, 0.0493752, -5.87455e-14 )
 mesh = SubResource( 4 )
 material/0 = null

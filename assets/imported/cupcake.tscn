@@ -130,7 +130,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="cake" type="MeshInstance" parent="tmpParent/cupcake"]
+[node name="cake" type="MeshInstance" parent="tmpParent/cupcake" groups=["pickable_candidate"]]
 transform = Transform( 1.06383, 0, 0, 0, 1.06383, 0, 0, 0, 1.06383, 3.60956e-16, 0.19, -2.05294e-15 )
 mesh = SubResource( 6 )
 material/0 = null

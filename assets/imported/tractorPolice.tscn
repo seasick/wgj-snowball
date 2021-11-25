@@ -372,7 +372,7 @@ material/5 = null
 material/6 = null
 material/7 = null
 
-[node name="body_col" type="StaticBody" parent="tmpParent/tractorPolice/body"]
+[node name="body_col" type="StaticBody" parent="tmpParent/tractorPolice/body" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/tractorPolice/body/body_col"]
 shape = SubResource( 10 )

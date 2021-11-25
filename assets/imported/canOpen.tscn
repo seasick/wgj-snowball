@@ -90,7 +90,7 @@ material/1 = null
 material/2 = null
 material/3 = null
 
-[node name="canOpen_col" type="StaticBody" parent="tmpParent/canOpen"]
+[node name="canOpen_col" type="StaticBody" parent="tmpParent/canOpen" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/canOpen/canOpen_col"]
 shape = SubResource( 6 )

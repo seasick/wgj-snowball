@@ -70,7 +70,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="hanukkahDreidel_col" type="StaticBody" parent="tmpParent/hanukkahDreidel"]
+[node name="hanukkahDreidel_col" type="StaticBody" parent="tmpParent/hanukkahDreidel" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/hanukkahDreidel/hanukkahDreidel_col"]
 shape = SubResource( 5 )

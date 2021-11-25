@@ -89,7 +89,7 @@ material/1 = null
 material/2 = null
 material/3 = null
 
-[node name="tajineLid_col" type="StaticBody" parent="tmpParent/tajineLid"]
+[node name="tajineLid_col" type="StaticBody" parent="tmpParent/tajineLid" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/tajineLid/tajineLid_col"]
 shape = SubResource( 6 )

@@ -70,7 +70,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="pudding_col" type="StaticBody" parent="tmpParent/pudding"]
+[node name="pudding_col" type="StaticBody" parent="tmpParent/pudding" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/pudding/pudding_col"]
 shape = SubResource( 5 )

@@ -152,7 +152,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="log" type="MeshInstance" parent="tmpParent/trainWagonFlat"]
+[node name="log" type="MeshInstance" parent="tmpParent/trainWagonFlat" groups=["pickable_candidate"]]
 transform = Transform( 0, -0.134921, -2.68489e-09, 2.68489e-09, 0, -0.045045, 0.045045, 8.04192e-09, 0, -9.75e-07, 0.110495, 0.0162157 )
 mesh = SubResource( 6 )
 material/0 = null

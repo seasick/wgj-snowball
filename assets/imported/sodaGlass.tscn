@@ -111,7 +111,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="lemon" type="MeshInstance" parent="tmpParent/sodaGlass"]
+[node name="lemon" type="MeshInstance" parent="tmpParent/sodaGlass" groups=["pickable_candidate"]]
 transform = Transform( 5.96046e-08, -1, 0, 1, 5.96046e-08, 0, 0, 0, 1, 1.10091e-14, 0.34, 0.103363 )
 mesh = SubResource( 6 )
 material/0 = null

@@ -127,7 +127,7 @@ material/3 = null
 material/4 = null
 material/5 = null
 
-[node name="potStew_col" type="StaticBody" parent="tmpParent/potStew"]
+[node name="potStew_col" type="StaticBody" parent="tmpParent/potStew" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/potStew/potStew_col"]
 shape = SubResource( 8 )

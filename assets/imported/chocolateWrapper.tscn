@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="chocolateWrapper_col" type="StaticBody" parent="tmpParent/chocolateWrapper"]
+[node name="chocolateWrapper_col" type="StaticBody" parent="tmpParent/chocolateWrapper" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/chocolateWrapper/chocolateWrapper_col"]
 shape = SubResource( 5 )

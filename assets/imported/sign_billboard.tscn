@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="sign_billboard_col" type="StaticBody" parent="tmpParent/sign_billboard"]
+[node name="sign_billboard_col" type="StaticBody" parent="tmpParent/sign_billboard" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/sign_billboard/sign_billboard_col"]
 shape = SubResource( 5 )

@@ -109,7 +109,7 @@ material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="kwanzaaKinara_col" type="StaticBody" parent="tmpParent/kwanzaaKinara"]
+[node name="kwanzaaKinara_col" type="StaticBody" parent="tmpParent/kwanzaaKinara" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/kwanzaaKinara/kwanzaaKinara_col"]
 shape = SubResource( 7 )

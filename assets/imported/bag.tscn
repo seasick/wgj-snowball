@@ -34,7 +34,7 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="bag_col" type="StaticBody" parent="tmpParent/bag"]
+[node name="bag_col" type="StaticBody" parent="tmpParent/bag" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/bag/bag_col"]
 shape = SubResource( 3 )

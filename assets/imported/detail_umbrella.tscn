@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="detail_umbrella_col" type="StaticBody" parent="tmpParent/detail_umbrella"]
+[node name="detail_umbrella_col" type="StaticBody" parent="tmpParent/detail_umbrella" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/detail_umbrella/detail_umbrella_col"]
 shape = SubResource( 5 )

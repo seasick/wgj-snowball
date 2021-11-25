@@ -130,7 +130,7 @@ material/3 = null
 material/4 = null
 material/5 = null
 
-[node name="slice_col" type="StaticBody" parent="tmpParent/cake/slice"]
+[node name="slice_col" type="StaticBody" parent="tmpParent/cake/slice" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/cake/slice/slice_col"]
 shape = SubResource( 8 )

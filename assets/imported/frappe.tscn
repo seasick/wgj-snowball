@@ -91,7 +91,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="straw" type="MeshInstance" parent="tmpParent/frappe"]
+[node name="straw" type="MeshInstance" parent="tmpParent/frappe" groups=["pickable_candidate"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.41434e-16, 0.399299, 5.41434e-16 )
 mesh = SubResource( 6 )
 material/0 = null

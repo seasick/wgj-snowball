@@ -251,7 +251,7 @@ material/5 = null
 material/6 = null
 material/7 = null
 
-[node name="grill" type="MeshInstance" parent="tmpParent/firetruck/body"]
+[node name="grill" type="MeshInstance" parent="tmpParent/firetruck/body" groups=["pickable_candidate"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.79664e-14, 0.0742279, -1.65 )
 mesh = SubResource( 10 )
 material/0 = null

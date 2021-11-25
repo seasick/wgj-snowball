@@ -70,7 +70,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="lollypop_col" type="StaticBody" parent="tmpParent/lollypop"]
+[node name="lollypop_col" type="StaticBody" parent="tmpParent/lollypop" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/lollypop/lollypop_col"]
 shape = SubResource( 5 )

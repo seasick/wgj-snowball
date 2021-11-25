@@ -52,7 +52,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="rockFormationSmall_col" type="StaticBody" parent="tmpParent/rockFormationSmall"]
+[node name="rockFormationSmall_col" type="StaticBody" parent="tmpParent/rockFormationSmall" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/rockFormationSmall/rockFormationSmall_col"]
 shape = SubResource( 4 )

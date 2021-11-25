@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="cherries_col" type="StaticBody" parent="tmpParent/cherries"]
+[node name="cherries_col" type="StaticBody" parent="tmpParent/cherries" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/cherries/cherries_col"]
 shape = SubResource( 5 )

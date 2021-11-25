@@ -85,7 +85,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="sausage" type="MeshInstance" parent="tmpParent/plateSauerkraut"]
+[node name="sausage" type="MeshInstance" parent="tmpParent/plateSauerkraut" groups=["pickable_candidate"]]
 transform = Transform( 1.08184, 0.289877, 0, -0.289877, 1.08184, 0, 0, 0, 1.12, -0.242174, 0.0806503, -1.55211e-14 )
 mesh = SubResource( 5 )
 material/0 = null

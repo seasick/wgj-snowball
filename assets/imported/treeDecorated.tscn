@@ -105,7 +105,7 @@ material/1 = null
 material/2 = null
 material/3 = null
 
-[node name="star" type="MeshInstance" parent="tmpParent/treeDecorated"]
+[node name="star" type="MeshInstance" parent="tmpParent/treeDecorated" groups=["pickable_candidate"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.012215, 1.53841, -0.007662 )
 mesh = SubResource( 6 )
 material/0 = null

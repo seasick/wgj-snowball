@@ -70,7 +70,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="shakerPepper_col" type="StaticBody" parent="tmpParent/shakerPepper"]
+[node name="shakerPepper_col" type="StaticBody" parent="tmpParent/shakerPepper" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/shakerPepper/shakerPepper_col"]
 shape = SubResource( 5 )

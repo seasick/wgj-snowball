@@ -52,7 +52,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="cheeseSlicer_col" type="StaticBody" parent="tmpParent/cheeseSlicer"]
+[node name="cheeseSlicer_col" type="StaticBody" parent="tmpParent/cheeseSlicer" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/cheeseSlicer/cheeseSlicer_col"]
 shape = SubResource( 4 )

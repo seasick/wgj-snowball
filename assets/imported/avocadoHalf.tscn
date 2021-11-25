@@ -87,7 +87,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="pit" type="MeshInstance" parent="tmpParent/avocadoHalf"]
+[node name="pit" type="MeshInstance" parent="tmpParent/avocadoHalf" groups=["pickable_candidate"]]
 transform = Transform( 0.38, 0, 0, 0, 0.38, 0, 0, 0, 0.38, 9.02389e-16, 0.160287, -3.60956e-15 )
 mesh = SubResource( 5 )
 material/0 = null

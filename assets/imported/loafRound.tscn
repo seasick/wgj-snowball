@@ -52,7 +52,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="loafRound_col" type="StaticBody" parent="tmpParent/loafRound"]
+[node name="loafRound_col" type="StaticBody" parent="tmpParent/loafRound" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/loafRound/loafRound_col"]
 shape = SubResource( 4 )

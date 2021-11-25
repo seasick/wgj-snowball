@@ -90,7 +90,7 @@ material/1 = null
 material/2 = null
 material/3 = null
 
-[node name="meatCooked_col" type="StaticBody" parent="tmpParent/meatCooked"]
+[node name="meatCooked_col" type="StaticBody" parent="tmpParent/meatCooked" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/meatCooked/meatCooked_col"]
 shape = SubResource( 6 )

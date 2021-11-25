@@ -103,7 +103,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="door" type="MeshInstance" parent="tmpParent/cabinDoor"]
+[node name="door" type="MeshInstance" parent="tmpParent/cabinDoor" groups=["pickable_candidate"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.34, 0.164317, 0, 0 )
 mesh = SubResource( 6 )
 material/0 = null

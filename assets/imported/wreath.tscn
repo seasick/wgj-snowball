@@ -84,7 +84,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="bow" type="MeshInstance" parent="tmpParent/wreath"]
+[node name="bow" type="MeshInstance" parent="tmpParent/wreath" groups=["pickable_candidate"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.522022, 0 )
 mesh = SubResource( 5 )
 material/0 = null

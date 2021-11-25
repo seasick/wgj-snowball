@@ -128,7 +128,7 @@ material/3 = null
 material/4 = null
 material/5 = null
 
-[node name="skyscraperC_col" type="StaticBody" parent="tmpParent/skyscraperC"]
+[node name="skyscraperC_col" type="StaticBody" parent="tmpParent/skyscraperC" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/skyscraperC/skyscraperC_col"]
 shape = SubResource( 8 )

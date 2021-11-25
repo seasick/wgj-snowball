@@ -72,7 +72,7 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="frame" type="MeshInstance" parent="tmpParent/cabinWindow"]
+[node name="frame" type="MeshInstance" parent="tmpParent/cabinWindow" groups=["pickable_candidate"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44382e-15, 0.24318, 0 )
 mesh = SubResource( 5 )
 material/0 = null

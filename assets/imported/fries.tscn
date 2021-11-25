@@ -54,7 +54,7 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="fries 2" type="MeshInstance" parent="tmpParent/fries"]
+[node name="fries 2" type="MeshInstance" parent="tmpParent/fries" groups=["pickable_candidate"]]
 transform = Transform( 1.18, 0, 0, 0, 1.5222, 0, 0, 0, 1.18, -0.000919615, 0.163419, 0.000856223 )
 mesh = SubResource( 4 )
 material/0 = null

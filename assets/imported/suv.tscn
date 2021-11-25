@@ -162,7 +162,7 @@ material/3 = null
 material/4 = null
 material/5 = null
 
-[node name="wheel_back" type="MeshInstance" parent="tmpParent/suv/body"]
+[node name="wheel_back" type="MeshInstance" parent="tmpParent/suv/body" groups=["pickable_candidate"]]
 transform = Transform( -5.96046e-08, 0, 1, 0, 1, 0, 1, 0, 5.96046e-08, 0, 0.5, 1.15 )
 mesh = SubResource( 9 )
 material/0 = null

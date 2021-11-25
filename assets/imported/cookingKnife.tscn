@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="cookingKnife_col" type="StaticBody" parent="tmpParent/cookingKnife"]
+[node name="cookingKnife_col" type="StaticBody" parent="tmpParent/cookingKnife" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/cookingKnife/cookingKnife_col"]
 shape = SubResource( 5 )

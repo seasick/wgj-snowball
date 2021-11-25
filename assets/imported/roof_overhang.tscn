@@ -52,7 +52,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="roof_overhang_col" type="StaticBody" parent="tmpParent/roof_overhang"]
+[node name="roof_overhang_col" type="StaticBody" parent="tmpParent/roof_overhang" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/roof_overhang/roof_overhang_col"]
 shape = SubResource( 4 )

@@ -123,7 +123,7 @@ material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="lid" type="MeshInstance" parent="tmpParent/styrofoamDinner"]
+[node name="lid" type="MeshInstance" parent="tmpParent/styrofoamDinner" groups=["pickable_candidate"]]
 transform = Transform( 0.6336, -1.09743, 0, 1.09743, 0.6336, 0, 0, 0, 1.2672, 0.379463, 0.164736, 0 )
 mesh = SubResource( 7 )
 material/0 = null

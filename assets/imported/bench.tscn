@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="bench_col" type="StaticBody" parent="tmpParent/bench"]
+[node name="bench_col" type="StaticBody" parent="tmpParent/bench" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/bench/bench_col"]
 shape = SubResource( 5 )

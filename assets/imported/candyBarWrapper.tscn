@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="candyBarWrapper_col" type="StaticBody" parent="tmpParent/candyBarWrapper"]
+[node name="candyBarWrapper_col" type="StaticBody" parent="tmpParent/candyBarWrapper" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/candyBarWrapper/candyBarWrapper_col"]
 shape = SubResource( 5 )

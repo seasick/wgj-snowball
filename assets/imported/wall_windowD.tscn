@@ -71,7 +71,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="wall_windowD_col" type="StaticBody" parent="tmpParent/wall_windowD"]
+[node name="wall_windowD_col" type="StaticBody" parent="tmpParent/wall_windowD" groups=["pickable_candidate"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/wall_windowD/wall_windowD_col"]
 shape = SubResource( 5 )
