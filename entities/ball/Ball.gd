@@ -1,9 +1,7 @@
 extends "res://entities/ball/StickToMe.gd"
 
 
-export (int) var rolling_force = 20
-export (int) var min_velocity = -5
-export (int) var max_velocity = 5
+export (int) var rolling_force = 50
 
 
 func _ready():
@@ -38,15 +36,14 @@ func _physics_process(delta):
 			_move_in_direction(delta, -1)
 
 func _move_in_direction(delta, forward):
-	var force = rolling_force * delta#	
-	var impulse_strength = 0.05
+	var force = rolling_force * delta
 	var angle = $CameraRig.rotation.y
 		
-	apply_central_impulse(Vector3(sin(angle), 0, cos(angle)) * -impulse_strength * forward)
+	apply_central_impulse(Vector3(sin(angle), 0, cos(angle)) * -force * forward)
 
 func _input(event):         
 	if event is InputEventMouseMotion:
-		var sensitivity = 0.5
+		var sensitivity = 0.7
 		var delta = deg2rad(-event.relative.x * sensitivity)
 
 		$CameraRig.rotate_y(delta)
