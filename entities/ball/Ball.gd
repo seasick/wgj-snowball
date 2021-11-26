@@ -67,7 +67,7 @@ func _on_EventBus_sticked(stickee):
 	var increase = 1 
 	
 	superficial_weight += stickee.pickable_weight
-	increase += stickee.pickable_weight / superficial_weight
+	increase += stickee.pickable_weight / superficial_weight / 20
 	
 	GameData.data.max_stickee_volume = superficial_weight * max_percentage_of_weight
 
