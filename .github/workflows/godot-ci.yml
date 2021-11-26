@@ -32,7 +32,7 @@ jobs:
       - name: Butler Upload
         uses: josephbmanley/butler-publish-itchio-action@v1.0.2
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: windows
           ITCH_GAME: ${{ secrets.ITCHIO_GAME }}
           ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
@@ -64,7 +64,7 @@ jobs:
       - name: Butler Upload
         uses: josephbmanley/butler-publish-itchio-action@v1.0.2
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: linux
           ITCH_GAME: ${{ secrets.ITCHIO_GAME }}
           ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
@@ -106,7 +106,7 @@ jobs:
       - name: Butler Upload
         uses: josephbmanley/butler-publish-itchio-action@v1.0.2
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: web
           ITCH_GAME: ${{ secrets.ITCHIO_GAME }}
           ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
@@ -138,7 +138,7 @@ jobs:
       - name: Butler Upload
         uses: josephbmanley/butler-publish-itchio-action@v1.0.2
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: mac
           ITCH_GAME: ${{ secrets.ITCHIO_GAME }}
           ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
