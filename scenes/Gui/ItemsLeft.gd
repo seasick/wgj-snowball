@@ -2,7 +2,7 @@ extends Label
 
 
 var labels = {
-	# adding list because i'm yet too lazy to sort by count or weight 
+	# adding list because i'm yet too lazy to sort by count or weight
 	"bacon": 0,
 	"burgerCheeseDouble": 0,
 	"cocktail": 0,
@@ -51,5 +51,8 @@ func _render_text():
 	for key in labels.keys():
 		if labels[key] > 0:
 			_text = str(_text, "\n", key, ": ", labels[key])
+
+	if _text == "":
+		get_node("../GameOver").visible = true
 
 	text = _text
