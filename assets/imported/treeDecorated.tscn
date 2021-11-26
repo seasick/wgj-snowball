@@ -115,7 +115,7 @@ material/0 = null
 [node name="treeDecorated_col" type="StaticBody" parent="tmpParent/treeDecorated" groups=["pickable_candidate"]]
 script = ExtResource( 1 )
 pickable_weight = 50
-label_group = "treeDecorated"
+label_group = "tree"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/treeDecorated/treeDecorated_col"]
 shape = SubResource( 7 )

@@ -76,7 +76,7 @@ material/2 = null
 [node name="treePineSnow_col" type="StaticBody" parent="tmpParent/treePineSnow" groups=["pickable_candidate"]]
 script = ExtResource( 1 )
 pickable_weight = 50
-label_group = "treePineSnow"
+label_group = "tree"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/treePineSnow/treePineSnow_col"]
 shape = SubResource( 5 )

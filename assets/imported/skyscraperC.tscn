@@ -133,7 +133,7 @@ material/5 = null
 [node name="skyscraperC_col" type="StaticBody" parent="tmpParent/skyscraperC" groups=["pickable_candidate"]]
 script = ExtResource( 1 )
 pickable_weight = 250
-label_group = "skyscraperC"
+label_group = "skyscraper"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/skyscraperC/skyscraperC_col"]
 shape = SubResource( 8 )

@@ -114,7 +114,7 @@ material/4 = null
 [node name="house_type15_col" type="StaticBody" parent="tmpParent/house_type15" groups=["pickable_candidate"]]
 script = ExtResource( 1 )
 pickable_weight = 100
-label_group = "house_type15"
+label_group = "house_type"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/house_type15/house_type15_col"]
 shape = SubResource( 7 )
