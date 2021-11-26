@@ -60,7 +60,7 @@
 [ext_resource path="res://assets/imported/bacon.tscn" type="PackedScene" id=58]
 [ext_resource path="res://assets/imported/burgerCheeseDouble.tscn" type="PackedScene" id=59]
 [ext_resource path="res://assets/imported/cocktail.tscn" type="PackedScene" id=60]
-[ext_resource path="res://assets/when-the-mood-is-sad-amp-lofi-ukulele-10814.mp3" type="AudioStream" id=61]
+[ext_resource path="res://assets/music/when-the-mood-is-sad-amp-lofi-ukulele-10814.mp3" type="AudioStream" id=61]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 300, 300 )

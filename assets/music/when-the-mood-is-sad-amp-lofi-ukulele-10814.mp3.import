@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/when-the-mood-is-sad-amp-lofi-ukulele-10814.mp3-d3d48cb13d60d4d847129e49120228d6.mp3str"
+
+[deps]
+
+source_file="res://assets/music/when-the-mood-is-sad-amp-lofi-ukulele-10814.mp3"
+dest_files=[ "res://.import/when-the-mood-is-sad-amp-lofi-ukulele-10814.mp3-d3d48cb13d60d4d847129e49120228d6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
