@@ -30,7 +30,42 @@ func iterate(node: Node, filename: String):
 
 		# Set group of static body
 		if do_not_group.find(filename) == -1:
-			node.get_child(0).add_to_group("pickable_candidate", true)
+			
+			
+			var static_body = _get_first_static_body(node)
+			
+			static_body.script = load("res://scripts/PickableItem.gd")
+			static_body.add_to_group("pickable_candidate", true)
+			static_body.label_group = filename
+			static_body.pickable_weight = 1
+			
+			if filename.begins_with("skyscraper"):
+				static_body.pickable_weight = 250
+			elif filename.begins_with("tree"):
+				static_body.pickable_weight = 50
+			elif filename.begins_with("bench"):
+				static_body.pickable_weight = 25
+			elif filename.begins_with("house_type"):
+				static_body.pickable_weight = 100
+			elif filename.begins_with("present"):
+				static_body.pickable_weight = 1
+			elif filename.begins_with("trainWagon"):
+				static_body.pickable_weight = 2
+			elif filename.begins_with("snowman"):
+				static_body.pickable_weight = 10
+			elif filename.begins_with("cannon"):
+				static_body.pickable_weight = 10
+			elif filename.begins_with("bacon"):
+				static_body.pickable_weight = 1
+			elif filename.begins_with("burger"):
+				static_body.pickable_weight = 1
+			elif filename.begins_with("cocktail"):
+				static_body.pickable_weight = 1
 	else:
 		if node.get_child_count() > 0:
 			iterate(node.get_child(0), filename)
+
+func _get_first_static_body(node):
+	for i in node.get_child_count():
+		if node.get_child(i) is StaticBody:
+			return node.get_child(i)

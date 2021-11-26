@@ -1,4 +1,6 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "brownLight"
@@ -93,7 +95,7 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="sauce" type="MeshInstance" parent="tmpParent/hotDog" groups=["pickable_candidate"]]
+[node name="sauce" type="MeshInstance" parent="tmpParent/hotDog"]
 transform = Transform( -1, 1.64328e-20, 8.74228e-08, -1.64326e-20, 1, -3.75936e-13, -8.74228e-08, -3.75936e-13, -1, -5.90379e-12, 0.139949, -4.01901e-09 )
 mesh = SubResource( 5 )
 material/0 = null
@@ -104,7 +106,9 @@ transform = Transform( 0, 0.93, 5.54323e-08, -5.54323e-08, 0, -0.93, -0.93, 5.54
 mesh = SubResource( 7 )
 material/0 = null
 
-[node name="hotDog_col" type="StaticBody" parent="tmpParent/hotDog"]
+[node name="hotDog_col" type="StaticBody" parent="tmpParent/hotDog" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "hotDog"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/hotDog/hotDog_col"]
 shape = SubResource( 8 )

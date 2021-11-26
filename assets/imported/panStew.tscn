@@ -1,4 +1,6 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "greyDark"
@@ -128,6 +130,8 @@ material/4 = null
 material/5 = null
 
 [node name="panStew_col" type="StaticBody" parent="tmpParent/panStew" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "panStew"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/panStew/panStew_col"]
 shape = SubResource( 8 )

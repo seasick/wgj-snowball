@@ -3,6 +3,9 @@ extends "res://entities/ball/StickToMe.gd"
 
 export (int) var rolling_force = 50
 
+var superficial_weight = 5
+var max_percentage_of_weight = 0.5
+
 
 func _ready():
 	# Camera is parented to the Ball, but we don't want it to rotate
@@ -61,7 +64,12 @@ func _input(event):
 
 
 func _on_EventBus_sticked(stickee):
-	var increase = 1.05
+	var increase = 1 
+	
+	superficial_weight += stickee.pickable_weight
+	increase += stickee.pickable_weight / superficial_weight
+	
+	GameData.data.max_stickee_volume = superficial_weight * max_percentage_of_weight
 
 	# TODO use stickee weight to determine increase
 

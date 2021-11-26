@@ -1,4 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "wood"
@@ -101,7 +103,7 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="frame" type="MeshInstance" parent="tmpParent/cabinWindowLarge" groups=["pickable_candidate"]]
+[node name="frame" type="MeshInstance" parent="tmpParent/cabinWindowLarge"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0, -0.26093 )
 mesh = SubResource( 6 )
 material/0 = null
@@ -109,7 +111,9 @@ material/1 = null
 material/2 = null
 material/3 = null
 
-[node name="cabinWindowLarge_col" type="StaticBody" parent="tmpParent/cabinWindowLarge"]
+[node name="cabinWindowLarge_col" type="StaticBody" parent="tmpParent/cabinWindowLarge" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "cabinWindowLarge"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/cabinWindowLarge/cabinWindowLarge_col"]
 shape = SubResource( 7 )

@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "_defaultMat"
@@ -58,6 +60,8 @@ material/0 = null
 material/1 = null
 
 [node name="glassWine_col" type="StaticBody" parent="tmpParent/glassWine" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "glassWine"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/glassWine/glassWine_col"]
 shape = SubResource( 4 )

@@ -1,4 +1,6 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "brown"
@@ -109,7 +111,7 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="cookingKnife" type="MeshInstance" parent="tmpParent/knifeBlock" groups=["pickable_candidate"]]
+[node name="cookingKnife" type="MeshInstance" parent="tmpParent/knifeBlock"]
 transform = Transform( 0.633399, 5.96046e-08, 0.773825, -0.773825, 5.96046e-08, 0.633399, -5.96046e-08, -1, 5.96046e-08, -0.0912954, 0.325822, 0.0531167 )
 mesh = SubResource( 7 )
 material/0 = null
@@ -130,7 +132,9 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="knifeBlock_col" type="StaticBody" parent="tmpParent/knifeBlock"]
+[node name="knifeBlock_col" type="StaticBody" parent="tmpParent/knifeBlock" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "knifeBlock"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/knifeBlock/knifeBlock_col"]
 shape = SubResource( 8 )

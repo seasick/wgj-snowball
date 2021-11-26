@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "leaves"
@@ -80,13 +82,15 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="lid" type="MeshInstance" parent="tmpParent/presentGreenRound" groups=["pickable_candidate"]]
+[node name="lid" type="MeshInstance" parent="tmpParent/presentGreenRound"]
 transform = Transform( 1.09, 0, 0, 0, 0.209, 0, 0, 0, 1.09, 0, 0.148869, 0 )
 mesh = SubResource( 4 )
 material/0 = null
 material/1 = null
 
-[node name="presentGreenRound_col" type="StaticBody" parent="tmpParent/presentGreenRound"]
+[node name="presentGreenRound_col" type="StaticBody" parent="tmpParent/presentGreenRound" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "presentGreenRound"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/presentGreenRound/presentGreenRound_col"]
 shape = SubResource( 5 )

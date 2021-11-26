@@ -1,4 +1,6 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "plastic"
@@ -189,13 +191,15 @@ material/3 = null
 material/4 = null
 material/5 = null
 
-[node name="spoiler" type="MeshInstance" parent="tmpParent/sedanSports/body" groups=["pickable_candidate"]]
+[node name="spoiler" type="MeshInstance" parent="tmpParent/sedanSports/body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.05338e-15, 0.4, 1.06869 )
 mesh = SubResource( 9 )
 material/0 = null
 material/1 = null
 
-[node name="body_col" type="StaticBody" parent="tmpParent/sedanSports/body"]
+[node name="body_col" type="StaticBody" parent="tmpParent/sedanSports/body" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "sedanSports"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/sedanSports/body/body_col"]
 shape = SubResource( 10 )

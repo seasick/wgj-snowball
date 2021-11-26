@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "roof"
@@ -72,6 +74,8 @@ material/1 = null
 material/2 = null
 
 [node name="detail_umbrella_col" type="StaticBody" parent="tmpParent/detail_umbrella" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "detail_umbrella"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/detail_umbrella/detail_umbrella_col"]
 shape = SubResource( 5 )

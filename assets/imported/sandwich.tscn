@@ -1,4 +1,6 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "brown"
@@ -108,7 +110,7 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="lettuce" type="MeshInstance" parent="tmpParent/sandwich" groups=["pickable_candidate"]]
+[node name="lettuce" type="MeshInstance" parent="tmpParent/sandwich"]
 transform = Transform( 1.12, 0, 0, 0, 1, 0, 0, 0, 1.12, 0.01, 0.068, -0.01 )
 mesh = SubResource( 6 )
 material/0 = null
@@ -118,7 +120,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.21912e-16, 0.0801758, -2.52
 mesh = SubResource( 7 )
 material/0 = null
 
-[node name="sandwich_col" type="StaticBody" parent="tmpParent/sandwich"]
+[node name="sandwich_col" type="StaticBody" parent="tmpParent/sandwich" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "sandwich"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/sandwich/sandwich_col"]
 shape = SubResource( 8 )

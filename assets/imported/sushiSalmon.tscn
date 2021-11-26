@@ -1,4 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "_defaultMat"
@@ -72,13 +74,15 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="salmon" type="MeshInstance" parent="tmpParent/sushiSalmon" groups=["pickable_candidate"]]
+[node name="salmon" type="MeshInstance" parent="tmpParent/sushiSalmon"]
 transform = Transform( 0.85, 0, 0, 0, 1.69492, 0, 0, 0, 1.15, 5.41434e-16, 0.0664, 0 )
 mesh = SubResource( 5 )
 material/0 = null
 material/1 = null
 
-[node name="sushiSalmon_col" type="StaticBody" parent="tmpParent/sushiSalmon"]
+[node name="sushiSalmon_col" type="StaticBody" parent="tmpParent/sushiSalmon" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "sushiSalmon"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/sushiSalmon/sushiSalmon_col"]
 shape = SubResource( 6 )

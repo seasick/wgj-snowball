@@ -1,4 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "_defaultMat"
@@ -85,13 +87,15 @@ mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 
-[node name="egg" type="MeshInstance" parent="tmpParent/sushiEgg" groups=["pickable_candidate"]]
+[node name="egg" type="MeshInstance" parent="tmpParent/sushiEgg"]
 transform = Transform( 1, 0, 0, 0, 1.69492, 0, 0, 0, 1, 1.80478e-16, 0.0664, -0.000147036 )
 mesh = SubResource( 5 )
 material/0 = null
 material/1 = null
 
-[node name="sushiEgg_col" type="StaticBody" parent="tmpParent/sushiEgg"]
+[node name="sushiEgg_col" type="StaticBody" parent="tmpParent/sushiEgg" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "sushiEgg"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/sushiEgg/sushiEgg_col"]
 shape = SubResource( 6 )

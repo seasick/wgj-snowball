@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "wood"
@@ -59,6 +61,8 @@ mesh = SubResource( 2 )
 material/0 = null
 
 [node name="Group 23_col" type="StaticBody" parent="palm_short/Group 23" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "palm_short"
 
 [node name="CollisionShape" type="CollisionShape" parent="palm_short/Group 23/Group 23_col"]
 shape = SubResource( 3 )

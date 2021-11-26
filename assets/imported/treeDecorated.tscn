@@ -1,4 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "wood"
@@ -105,12 +107,15 @@ material/1 = null
 material/2 = null
 material/3 = null
 
-[node name="star" type="MeshInstance" parent="tmpParent/treeDecorated" groups=["pickable_candidate"]]
+[node name="star" type="MeshInstance" parent="tmpParent/treeDecorated"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.012215, 1.53841, -0.007662 )
 mesh = SubResource( 6 )
 material/0 = null
 
-[node name="treeDecorated_col" type="StaticBody" parent="tmpParent/treeDecorated"]
+[node name="treeDecorated_col" type="StaticBody" parent="tmpParent/treeDecorated" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+pickable_weight = 50
+label_group = "treeDecorated"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/treeDecorated/treeDecorated_col"]
 shape = SubResource( 7 )

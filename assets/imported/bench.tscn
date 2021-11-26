@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "stone"
@@ -72,6 +74,9 @@ material/1 = null
 material/2 = null
 
 [node name="bench_col" type="StaticBody" parent="tmpParent/bench" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+pickable_weight = 25
+label_group = "bench"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/bench/bench_col"]
 shape = SubResource( 5 )

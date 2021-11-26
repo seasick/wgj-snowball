@@ -1,4 +1,6 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "paintGreen"
@@ -216,6 +218,8 @@ material/0 = null
 material/1 = null
 
 [node name="arm_col" type="StaticBody" parent="tmpParent/garbageTruck/arm" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "garbageTruck"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/garbageTruck/arm/arm_col"]
 shape = SubResource( 4 )

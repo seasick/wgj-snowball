@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "brownDarkest"
@@ -54,6 +56,8 @@ material/0 = null
 material/1 = null
 
 [node name="musselOpen_col" type="StaticBody" parent="tmpParent/musselOpen" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "musselOpen"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/musselOpen/musselOpen_col"]
 shape = SubResource( 4 )

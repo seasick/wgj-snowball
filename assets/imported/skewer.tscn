@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "brownLight"
@@ -54,7 +56,7 @@ use_in_baked_light = true
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="meat" type="MeshInstance" parent="tmpParent/skewer" groups=["pickable_candidate"]]
+[node name="meat" type="MeshInstance" parent="tmpParent/skewer"]
 transform = Transform( 7.70211e-08, 0, -1.65402, 0, 1.2922, 0, 1.2922, 0, 9.8587e-08, 0.082634, 0, 0 )
 mesh = SubResource( 4 )
 material/0 = null
@@ -69,7 +71,9 @@ transform = Transform( 7.70211e-08, 0, -1.65402, 0, 1.2922, 0, 1.2922, 0, 9.8587
 mesh = SubResource( 4 )
 material/0 = null
 
-[node name="skewer_col" type="StaticBody" parent="tmpParent/skewer"]
+[node name="skewer_col" type="StaticBody" parent="tmpParent/skewer" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "skewer"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/skewer/skewer_col"]
 shape = SubResource( 5 )

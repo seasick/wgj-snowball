@@ -1,4 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "_defaultMat"
@@ -142,7 +144,7 @@ material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="Group" type="MeshInstance" parent="tmpParent/bowlBroth" groups=["pickable_candidate"]]
+[node name="Group" type="MeshInstance" parent="tmpParent/bowlBroth"]
 transform = Transform( 0.537634, 0, 0.93121, 0, 1.07527, 0, -0.93121, 0, 0.537634, 0.14374, 0.16434, -0.104828 )
 mesh = SubResource( 8 )
 material/0 = null
@@ -154,7 +156,9 @@ mesh = SubResource( 8 )
 material/0 = null
 material/1 = null
 
-[node name="bowlBroth_col" type="StaticBody" parent="tmpParent/bowlBroth"]
+[node name="bowlBroth_col" type="StaticBody" parent="tmpParent/bowlBroth" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "bowlBroth"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/bowlBroth/bowlBroth_col"]
 shape = SubResource( 9 )

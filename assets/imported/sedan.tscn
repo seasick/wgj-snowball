@@ -1,4 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "plastic"
@@ -163,6 +165,8 @@ material/4 = null
 material/5 = null
 
 [node name="body_col" type="StaticBody" parent="tmpParent/sedan/body" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "sedan"
 
 [node name="CollisionShape" type="CollisionShape" parent="tmpParent/sedan/body/body_col"]
 shape = SubResource( 8 )

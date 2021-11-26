@@ -1,4 +1,6 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "wood"
@@ -314,7 +316,7 @@ material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="cannon_front" type="MeshInstance" parent="ship_dark_8angles" groups=["pickable_candidate"]]
+[node name="cannon_front" type="MeshInstance" parent="ship_dark_8angles"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.66294e-15, 1.43707, -3.61593 )
 mesh = SubResource( 7 )
 material/0 = null
@@ -419,7 +421,9 @@ mesh = SubResource( 14 )
 material/0 = null
 material/1 = null
 
-[node name="ship_dark_8angles_col" type="StaticBody" parent="ship_dark_8angles"]
+[node name="ship_dark_8angles_col" type="StaticBody" parent="ship_dark_8angles" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "ship_dark"
 
 [node name="CollisionShape" type="CollisionShape" parent="ship_dark_8angles/ship_dark_8angles_col"]
 shape = SubResource( 15 )

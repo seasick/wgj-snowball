@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "iron"
@@ -33,6 +35,9 @@ mesh = SubResource( 2 )
 material/0 = null
 
 [node name="cannonBall_col" type="StaticBody" parent="cannonBall" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+pickable_weight = 10
+label_group = "cannonBall"
 
 [node name="CollisionShape" type="CollisionShape" parent="cannonBall/cannonBall_col"]
 shape = SubResource( 3 )

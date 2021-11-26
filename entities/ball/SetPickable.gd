@@ -10,10 +10,16 @@ func _ready():
 
 
 func _on_Area_body_entered(body):
-	
+
 	if body.is_in_group("pickable_candidate"):
-		# TODO Check if we allow that this object can be picked up (GameData.data.max_stickee_volume)
-		body.add_to_group("pickable")
+		if !body.get("pickable_weight"):
+			print("no pickable_weight, but is candidate: ", body)
+		# Check if we allow that this object can be picked up (GameData.data.max_stickee_volume)
+		elif GameData.data.max_stickee_volume > body.pickable_weight:
+			print("add to pickables", body)
+			body.add_to_group("pickable")
+		else:
+			print("too heavey: ", body)
 
 func _on_Area_body_exited(body):
 	if body.is_in_group("pickable_candidate") and body.is_in_group("pickable"):

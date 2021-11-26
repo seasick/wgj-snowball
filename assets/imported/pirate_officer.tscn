@@ -1,4 +1,6 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://scripts/PickableItem.gd" type="Script" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "textileBlue"
@@ -288,6 +290,8 @@ material/1 = null
 material/2 = null
 
 [node name="armLeft 2_col" type="StaticBody" parent="pirate_officer_8angles/armLeft 2" groups=["pickable_candidate"]]
+script = ExtResource( 1 )
+label_group = "pirate_officer"
 
 [node name="CollisionShape" type="CollisionShape" parent="pirate_officer_8angles/armLeft 2/armLeft 2_col"]
 shape = SubResource( 5 )

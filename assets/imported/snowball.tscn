@@ -1,10 +1,4 @@
-[gd_scene load_steps=9 format=2]
-
-[ext_resource path="res://textures/Snow_002_SD/Snow_002_NORM.jpg" type="Texture" id=1]
-[ext_resource path="res://textures/Snow_002_SD/Snow_002_COLOR.jpg" type="Texture" id=2]
-[ext_resource path="res://textures/Snow_002_SD/Snow_002_OCC.jpg" type="Texture" id=3]
-[ext_resource path="res://textures/Snow_002_SD/Snow_002_ROUGH.jpg" type="Texture" id=4]
-[ext_resource path="res://textures/Snow_002_SD/Snow_002_DISP.png" type="Texture" id=5]
+[gd_scene load_steps=3 format=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "Material.001"
@@ -28,25 +22,6 @@ surfaces/0 = {
 "vertex_count": 3840
 }
 
-[sub_resource type="SpatialMaterial" id=3]
-albedo_texture = ExtResource( 2 )
-roughness = 0.5
-roughness_texture = ExtResource( 4 )
-normal_enabled = true
-normal_scale = 1.0
-normal_texture = ExtResource( 1 )
-ao_enabled = true
-ao_light_affect = 0.0
-ao_texture = ExtResource( 3 )
-ao_on_uv2 = false
-ao_texture_channel = 0
-depth_enabled = true
-depth_scale = 0.05
-depth_deep_parallax = false
-depth_flip_tangent = false
-depth_flip_binormal = false
-depth_texture = ExtResource( 5 )
-
 [node name="snowball" type="Spatial"]
 
 [node name="Light" type="Spatial" parent="."]
@@ -57,4 +32,4 @@ transform = Transform( 0.685921, 0.651558, 0.324014, 0, 0.445271, -0.895396, -0.
 
 [node name="Icosphere" type="MeshInstance" parent="."]
 mesh = SubResource( 2 )
-material/0 = SubResource( 3 )
+material/0 = null
