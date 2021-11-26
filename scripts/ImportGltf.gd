@@ -3,7 +3,8 @@ extends EditorScenePostImport
 
 var do_not_group = [
 	"road_straight", "road_bend", "road_crossroad", "road_intersection", "road_endRound",
-	"road_roundabout", "snowPatch", "island_big", "island_small"
+	"road_roundabout", "snowPatch", "island_big", "island_small", "tower", "ship_light",
+	"ship_light2", "ship_dark", "ship_wreck"
 ]
 
 # Called right after the scene is imported and gets the root node
