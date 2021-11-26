@@ -2,7 +2,7 @@ tool # Needed so it runs in editor
 extends EditorScenePostImport
 
 var do_not_group = [
-	"road_straight", "road_bend", "road_crossroad", "road_intersection", "road_endRound", 
+	"road_straight", "road_bend", "road_crossroad", "road_intersection", "road_endRound",
 	"road_roundabout", "snowPatch", "island_big", "island_small"
 ]
 
@@ -16,19 +16,19 @@ func post_import(scene):
 
 	packed_scene.pack(scene)
 	ResourceSaver.save("res://assets/imported/" + filename + ".tscn", packed_scene)
-	
+
 	return scene # Remember to return the imported scene
 
 
 func iterate(node: Node, filename: String):
-	
+
 	if node is MeshInstance:
-				
+
 		(node as MeshInstance).create_trimesh_collision()
 		(node as MeshInstance).translation = Vector3.ZERO
 		(node as MeshInstance).use_in_baked_light = true
-		
-		# Set group of static body 
+
+		# Set group of static body
 		if do_not_group.find(filename) == -1:
 			node.get_child(0).add_to_group("pickable_candidate", true)
 	else:
