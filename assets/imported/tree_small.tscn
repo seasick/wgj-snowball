@@ -46,7 +46,7 @@ data = PoolVector3Array( -0.1299, 0.28, -0.075, -0.0866, 0.1557, -0.05, 0, 0.155
 
 [node name="tmpParent" type="Spatial" parent="."]
 
-[node name="tree_small" type="MeshInstance" parent="tmpParent"]
+[node name="tree_small" type="MeshInstance" parent="tmpParent" groups=["pickable_candidate"]]
 transform = Transform( 0.81, 0, 0, 0, 0.81, 0, 0, 0, 0.81, 0, 0, 0 )
 use_in_baked_light = true
 mesh = SubResource( 3 )
