@@ -24,6 +24,9 @@ var labels = {
 	"skyscraper": 0
 }
 
+# dictonary of sample weight of all groups
+var weights = {}
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -36,6 +39,7 @@ func _ready():
 			labels[key] = 0
 
 		labels[key] += 1
+		weights[key] = candidate.pickable_weight
 
 	EventBus.subscribe("sticked", self, "_on_EventBus_sticked")
 	_render_text()
@@ -49,7 +53,7 @@ func _render_text():
 	var _text = ""
 
 	for key in labels.keys():
-		if labels[key] > 0:
+		if labels[key] > 0 and weights[key] < GameData.data.max_stickee_volume:
 			_text = str(_text, "\n", key, ": ", labels[key])
 
 	if _text == "":
