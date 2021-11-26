@@ -9,5 +9,4 @@ panorama = ExtResource( 1 )
 background_mode = 3
 background_sky = SubResource( 1 )
 background_color = Color( 0.635294, 0.635294, 0.635294, 1 )
-background_energy = 0.21
 ssao_intensity2 = 0.0

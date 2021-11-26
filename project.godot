@@ -21,7 +21,7 @@ GameData="*res://autoload/GameData.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray(  )
+enabled=PoolStringArray( "res://addons/scatter/plugin.cfg" )
 
 [gdnative]
 
