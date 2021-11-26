@@ -63,7 +63,7 @@
 [ext_resource path="res://assets/when-the-mood-is-sad-amp-lofi-ukulele-10814.mp3" type="AudioStream" id=61]
 
 [sub_resource type="PlaneMesh" id=1]
-size = Vector2( 150, 150 )
+size = Vector2( 300, 300 )
 subdivide_width = 16
 subdivide_depth = 16
 
