@@ -30,7 +30,7 @@ jobs:
           name: windows
           path: build/windows
       - name: Butler Upload
-        run: butler push ./build/windows $ITCHIO_USERNAME/$ITCHIO_GAME:windows
+        run: BUTLER_API_KEY=$BUTLER_API_KEY butler push ./build/windows $ITCHIO_USERNAME/$ITCHIO_GAME:windows
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
@@ -60,7 +60,7 @@ jobs:
           name: linux
           path: build/linux
       - name: Butler Upload
-        run: butler push ./build/linux $ITCHIO_USERNAME/$ITCHIO_GAME:linux
+        run: BUTLER_API_KEY=$BUTLER_API_KEY butler push ./build/linux $ITCHIO_USERNAME/$ITCHIO_GAME:linux
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
@@ -100,7 +100,7 @@ jobs:
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build/web # The folder the action should deploy.
       - name: Butler Upload
-        run: butler push ./build/web $ITCHIO_USERNAME/$ITCHIO_GAME:web
+        run: BUTLER_API_KEY=$BUTLER_API_KEY butler push ./build/web $ITCHIO_USERNAME/$ITCHIO_GAME:web
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
@@ -130,7 +130,7 @@ jobs:
           name: mac
           path: build/mac
       - name: Butler Upload
-        run: butler push ./build/mac $ITCHIO_USERNAME/$ITCHIO_GAME:mac
+        run: BUTLER_API_KEY=$BUTLER_API_KEY butler push ./build/mac $ITCHIO_USERNAME/$ITCHIO_GAME:mac
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
