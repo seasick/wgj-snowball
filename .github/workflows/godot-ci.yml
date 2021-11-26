@@ -31,6 +31,8 @@ jobs:
           path: build/windows
       - name: Butler Upload
         run: |
+          echo "env.BUTLER_API_KEY is set: ${{ env.BUTLER_API_KEY != '' }}"
+          echo "BUTLER_API_KEY is set: ${{ BUTLER_API_KEY != '' }}"
           echo "Now publishing windows build to $ITCHIO_USERNAME/$ITCHIO_GAME"
           butler push ./build/windows $ITCHIO_USERNAME/$ITCHIO_GAME:windows
         env:
@@ -63,6 +65,8 @@ jobs:
           path: build/linux
       - name: Butler Upload
         run: |
+          echo "env.BUTLER_API_KEY is set: ${{ env.BUTLER_API_KEY != '' }}"
+          echo "BUTLER_API_KEY is set: ${{ BUTLER_API_KEY != '' }}"
           echo "Now publishing linux build to $ITCHIO_USERNAME/$ITCHIO_GAME"
           butler push ./build/linux $ITCHIO_USERNAME/$ITCHIO_GAME:linux
         env:
@@ -105,6 +109,8 @@ jobs:
           FOLDER: build/web # The folder the action should deploy.
       - name: Butler Upload
         run: |
+          echo "env.BUTLER_API_KEY is set: ${{ env.BUTLER_API_KEY != '' }}"
+          echo "BUTLER_API_KEY is set: ${{ BUTLER_API_KEY != '' }}"
           echo "Now publishing web build to $ITCHIO_USERNAME/$ITCHIO_GAME"
           butler push ./build/web $ITCHIO_USERNAME/$ITCHIO_GAME:web
         env:
@@ -137,6 +143,8 @@ jobs:
           path: build/mac
       - name: Butler Upload
         run: |
+          echo "env.BUTLER_API_KEY is set: ${{ env.BUTLER_API_KEY != '' }}"
+          echo "BUTLER_API_KEY is set: ${{ BUTLER_API_KEY != '' }}"
           echo "Now publishing mac build to $ITCHIO_USERNAME/$ITCHIO_GAME"
           butler push ./build/mac $ITCHIO_USERNAME/$ITCHIO_GAME:mac
         env:
