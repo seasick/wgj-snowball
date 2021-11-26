@@ -7,6 +7,7 @@ env:
 
 jobs:
   export-windows:
+    environment: main
     name: Windows Export
     runs-on: ubuntu-latest
     container:
@@ -40,6 +41,7 @@ jobs:
           ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
 
   export-linux:
+    environment: main
     name: Linux Export
     runs-on: ubuntu-latest
     container:
@@ -73,6 +75,7 @@ jobs:
           ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
 
   export-web:
+    environment: main
     name: Web Export
     runs-on: ubuntu-latest
     container:
@@ -116,6 +119,7 @@ jobs:
           ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
 
   export-mac:
+    environment: main
     name: Mac Export
     runs-on: ubuntu-latest
     container:
