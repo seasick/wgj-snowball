@@ -30,13 +30,11 @@ jobs:
           name: windows
           path: build/windows
       - name: Butler Upload
-        uses: josephbmanley/butler-publish-itchio-action@v1.0.2
+        run: butler push ./build/windows $ITCHIO_USERNAME/$ITCHIO_GAME:windows
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: windows
-          ITCH_GAME: ${{ secrets.ITCHIO_GAME }}
-          ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
-          PACKAGE: build/windows
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
+          ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
 
   export-linux:
     name: Linux Export
@@ -62,13 +60,11 @@ jobs:
           name: linux
           path: build/linux
       - name: Butler Upload
-        uses: josephbmanley/butler-publish-itchio-action@v1.0.2
+        run: butler push ./build/linux $ITCHIO_USERNAME/$ITCHIO_GAME:linux
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: linux
-          ITCH_GAME: ${{ secrets.ITCHIO_GAME }}
-          ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
-          PACKAGE: build/linux
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
+          ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
 
   export-web:
     name: Web Export
@@ -104,13 +100,11 @@ jobs:
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build/web # The folder the action should deploy.
       - name: Butler Upload
-        uses: josephbmanley/butler-publish-itchio-action@v1.0.2
+        run: butler push ./build/web $ITCHIO_USERNAME/$ITCHIO_GAME:web
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: web
-          ITCH_GAME: ${{ secrets.ITCHIO_GAME }}
-          ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
-          PACKAGE: build/web
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
+          ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
 
   export-mac:
     name: Mac Export
@@ -136,10 +130,8 @@ jobs:
           name: mac
           path: build/mac
       - name: Butler Upload
-        uses: josephbmanley/butler-publish-itchio-action@v1.0.2
+        run: butler push ./build/mac $ITCHIO_USERNAME/$ITCHIO_GAME:mac
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: mac
-          ITCH_GAME: ${{ secrets.ITCHIO_GAME }}
-          ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
-          PACKAGE: build/mac
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
+          ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
