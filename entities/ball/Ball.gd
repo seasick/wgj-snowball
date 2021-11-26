@@ -9,6 +9,8 @@ func _ready():
 	# along with the Ball. This line of code tells Godot to ignore the Ball's
 	# transformations, it will be as if the CameraRig is parented to Level01
 	$CameraRig.set_as_toplevel(true)
+	# Capture Mouse Pointer
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 	# Make sure FloorCheck raycast doesn't inherit Balls transforms,
 	# so that it doesn't rotate as the ball rolls
@@ -47,6 +49,15 @@ func _input(event):
 		var delta = deg2rad(-event.relative.x * sensitivity)
 
 		$CameraRig.rotate_y(delta)
+		
+	# set mouse cursor visible again
+	if event.is_action_pressed("ui_cancel"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		
+	# caputre mouse again on click
+	if event.is_action_pressed("click"):
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 
 func _on_EventBus_sticked(stickee):
