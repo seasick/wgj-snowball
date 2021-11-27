@@ -21,6 +21,7 @@ flags_transparent = true
 albedo_color = Color( 1, 1, 1, 0.501961 )
 
 [node name="Ball" type="RigidBody"]
+collision_layer = 0
 mass = 34.95
 physics_material_override = SubResource( 3 )
 contacts_reported = 153
@@ -48,6 +49,7 @@ enabled = true
 cast_to = Vector3( 0, -1.5, 0 )
 
 [node name="PickableDecider" type="Area" parent="."]
+collision_layer = 0
 script = ExtResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="PickableDecider"]
