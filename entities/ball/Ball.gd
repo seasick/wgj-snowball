@@ -78,4 +78,5 @@ func _on_EventBus_sticked(stickee):
 	$PickableDecider.get_child(1).scale *= increase # and its debbugging view
 	$CameraRig.scale *= increase * 1.02
 	$CollisionShape.scale *= increase
+	$snowball.scale *= increase
 
