@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/Gui/ObjectCount.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/Roboto-Bold.ttf" type="DynamicFontData" id=2]
@@ -12,6 +12,12 @@ outline_size = 1
 font_data = ExtResource( 2 )
 
 [sub_resource type="Theme" id=3]
+
+[sub_resource type="DynamicFont" id=4]
+size = 35
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
 
 [node name="GUI" type="MarginContainer"]
 anchor_right = 1.0
@@ -84,6 +90,8 @@ visible = false
 margin_top = 123.0
 margin_right = 1004.0
 margin_bottom = 137.0
+theme = ExtResource( 5 )
+custom_fonts/font = SubResource( 4 )
 text = "Game Over, nothing more to pick up"
 __meta__ = {
 "_edit_use_anchors_": false
