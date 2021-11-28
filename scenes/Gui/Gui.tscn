@@ -80,6 +80,7 @@ margin_bottom = 42.0
 size_flags_vertical = 3
 
 [node name="GameOver" type="Label" parent="VBoxContainer"]
+visible = false
 margin_top = 123.0
 margin_right = 1004.0
 margin_bottom = 137.0
