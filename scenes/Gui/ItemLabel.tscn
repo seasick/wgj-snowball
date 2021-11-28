@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/Gui/ItemLabel.gd" type="Script" id=1]
+[ext_resource path="res://theme.tres" type="Theme" id=2]
+
+[node name="ItemLabelHBox" type="HBoxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Counter" type="Label" parent="."]
+margin_top = 10.0
+margin_right = 18.0
+margin_bottom = 29.0
+rect_min_size = Vector2( 18, 0 )
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "36"
+
+[node name="ColorRect" type="ColorRect" parent="Counter"]
+margin_right = 20.0
+margin_bottom = 20.0
+color = Color( 1, 1, 1, 0.392157 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 22.0
+margin_top = 10.0
+margin_right = 190.0
+margin_bottom = 29.0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Label of thing to collect"
+
+[node name="ColorRect" type="ColorRect" parent="Label"]
+margin_right = 184.0
+margin_bottom = 20.0
+color = Color( 1, 1, 1, 0.392157 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

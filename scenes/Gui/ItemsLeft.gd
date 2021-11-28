@@ -1,4 +1,4 @@
-extends Label
+extends Node
 
 
 var labels = {
@@ -26,7 +26,7 @@ var labels = {
 
 # dictonary of sample weight of all groups
 var weights = {}
-
+var ItemLabel = load("res://scenes/Gui/ItemLabel.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -50,13 +50,22 @@ func _on_EventBus_sticked(value):
 	_render_text()
 
 func _render_text():
-	var _text = ""
+	# var _text = ""
+	var items_left = 0
+
+	# Remove all childs
+	for n in get_children():
+		remove_child(n)
+		n.queue_free()
 
 	for key in labels.keys():
 		if labels[key] > 0 and weights[key] < GameData.data.max_stickee_volume:
-			_text = str(_text, "\n", key, ": ", labels[key])
+			var label = ItemLabel.instance()
 
-	if _text == "":
-		get_node("../GameOver").visible = true
+			label.init(key, labels[key])
 
-	text = _text
+			add_child(label)
+			items_left += labels[key]
+
+	if items_left == 0:
+		get_node("./GameOver").visible = true
