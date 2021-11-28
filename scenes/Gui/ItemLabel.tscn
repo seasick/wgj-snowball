@@ -12,14 +12,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Counter" type="Label" parent="."]
-margin_top = 10.0
+[node name="Counter" type="Control" parent="."]
+margin_right = 20.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 20, 20 )
+
+[node name="Label" type="Label" parent="Counter"]
 margin_right = 18.0
-margin_bottom = 29.0
-rect_min_size = Vector2( 18, 0 )
+margin_bottom = 19.0
+rect_min_size = Vector2( 20, 20 )
 theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "36"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ColorRect" type="ColorRect" parent="Counter"]
 margin_right = 20.0
@@ -29,18 +36,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
-margin_left = 22.0
-margin_top = 10.0
-margin_right = 190.0
-margin_bottom = 29.0
+[node name="ItemLabel" type="Control" parent="."]
+margin_left = 24.0
+margin_right = 24.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Label" type="Label" parent="ItemLabel"]
+margin_right = 168.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
 theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Label of thing to collect"
 
-[node name="ColorRect" type="ColorRect" parent="Label"]
-margin_right = 184.0
+[node name="ColorRect" type="ColorRect" parent="ItemLabel"]
+margin_right = 140.0
 margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
 color = Color( 1, 1, 1, 0.392157 )
 __meta__ = {
 "_edit_use_anchors_": false

@@ -9,5 +9,5 @@ func init(_label, _count):
 	count = _count
 	
 func _ready():
-	$Counter.text = str(count)
-	$Label.text = label
+	$Counter/Label.text = str(count)
+	$ItemLabel/Label.text = label
