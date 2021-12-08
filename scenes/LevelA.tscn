@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://materials/Water_shadermaterial.tres" type="Material" id=1]
 [ext_resource path="res://addons/scatter/src/core/scatter.gd" type="Script" id=2]
@@ -61,6 +61,8 @@
 [ext_resource path="res://assets/imported/burgerCheeseDouble.tscn" type="PackedScene" id=59]
 [ext_resource path="res://assets/imported/cocktail.tscn" type="PackedScene" id=60]
 [ext_resource path="res://assets/music/when-the-mood-is-sad-amp-lofi-ukulele-10814.mp3" type="AudioStream" id=61]
+[ext_resource path="res://assets/imported/apple_tree.tscn" type="PackedScene" id=62]
+[ext_resource path="res://assets/imported/spruce.tscn" type="PackedScene" id=63]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 300, 300 )
@@ -488,8 +490,9 @@ modifier_stack = Object(Node,"_import_path":NodePath(""),"pause_mode":0,"process
 
 [node name="treeBig" type="Spatial" parent="Scatter2"]
 script = ExtResource( 7 )
-proportion = 50
-item_path = "res://assets/imported/treePineSnow.tscn"
+proportion = 15
+item_path = "res://assets/imported/apple_tree.tscn"
+scale_modifier = 0.5
 materials = [ null, null, null ]
 merge_target_meshes = false
 cast_shadow = 1
@@ -500,222 +503,119 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="treePineSnow" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.245896, -0.0142271, -1.17677, 0.00746575, 1.20214, -0.0160938, 1.17683, -0.010599, -0.245781, 17.4208, -0.000120237, -31.2534 )
+[node name="apple_tree" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.122948, -0.00711355, -0.588386, 0.00373287, 0.601071, -0.00804692, 0.588417, -0.0052995, -0.12289, 17.4208, -0.000120237, -31.2534 )
 
-[node name="treePineSnow2" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.47637, -0.0902767, 0.342875, -0.117501, 1.50991, -0.108394, -0.334524, -0.131931, -1.47516, 14.171, -0.0150444, -10.4153 )
+[node name="apple_tree2" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.738187, -0.0451384, 0.171437, -0.0587505, 0.754957, -0.054197, -0.167262, -0.0659657, -0.737578, 14.171, -0.0150444, -10.4153 )
 
-[node name="treePineSnow3" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.29525, 0.0222082, 0.911172, 0.0458095, 1.58291, 0.0265385, -0.91029, 0.0480583, -1.29517, 13.3246, -0.000426265, -9.67087 )
+[node name="apple_tree3" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.647624, 0.0111041, 0.455586, 0.0229048, 0.791453, 0.0132693, -0.455145, 0.0240291, -0.647584, 13.3246, -0.000426265, -9.67087 )
 
-[node name="treePineSnow4" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.23706, 0.0918489, -0.781261, -0.0687851, 1.46301, 0.0630839, 0.783629, -0.0165753, 1.23886, 6.54003, 0.0105646, -15.6366 )
+[node name="apple_tree4" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.618529, 0.0459245, -0.390631, -0.0343926, 0.731507, 0.0315419, 0.391814, -0.00828767, 0.619429, 6.54003, 0.0105646, -15.6366 )
 
-[node name="treePineSnow5" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.822621, 0.026896, -0.700107, -0.0941036, 1.07421, -0.0693032, 0.694275, 0.113732, 0.820137, 8.468, -0.0121498, -25.6305 )
+[node name="apple_tree5" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.41131, 0.013448, -0.350054, -0.0470518, 0.537103, -0.0346516, 0.347138, 0.0568661, 0.410069, 8.468, -0.0121498, -25.6305 )
 
-[node name="treePineSnow6" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.84339, 0.0027215, 0.873086, 0.015602, 1.21376, 0.0112879, -0.87295, 0.0190639, -0.843318, 27.5465, 0.000183165, -24.7349 )
+[node name="apple_tree6" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.421695, 0.00136075, 0.436543, 0.007801, 0.606881, 0.00564395, -0.436475, 0.00953195, -0.421659, 27.5465, 0.000183165, -24.7349 )
 
-[node name="treePineSnow7" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.161196, 0.0123047, -1.08341, 0.133695, 1.08719, -0.0075443, 1.0752, -0.133341, -0.161489, 1.68027, 0.00979302, -25.8669 )
+[node name="apple_tree7" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.0805978, 0.00615236, -0.541704, 0.0668476, 0.543594, -0.00377215, 0.537599, -0.0666707, -0.0807443, 1.68027, 0.00979302, -25.8669 )
 
-[node name="treePineSnow8" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.38152, 0.0555722, 1.20092, -0.134452, 1.82507, 0.0702171, -1.19466, -0.141136, 1.38085, 21.095, 0.00904951, -6.26606 )
+[node name="apple_tree8" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.690761, 0.0277861, 0.600458, -0.0672259, 0.912535, 0.0351085, -0.59733, -0.0705682, 0.690427, 21.095, 0.00904951, -6.26606 )
 
-[node name="treePineSnow9" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.914047, -0.0302114, 1.40672, 0.173807, 1.66706, -0.0771319, -1.39627, 0.187737, 0.911288, 0.11711, -0.00833292, -28.0322 )
+[node name="apple_tree9" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.457023, -0.0151057, 0.703361, 0.0869033, 0.833532, -0.0385659, -0.698135, 0.0938687, 0.455644, 0.11711, -0.00833292, -28.0322 )
 
-[node name="treePineSnow10" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.515022, -0.041067, 1.21222, -0.141292, 1.31004, -0.0156481, -1.20466, -0.136095, -0.516419, 10.3021, 0.00784922, -11.3441 )
+[node name="apple_tree10" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.257511, -0.0205335, 0.606111, -0.070646, 0.655021, -0.00782407, -0.60233, -0.0680475, -0.25821, 10.3021, 0.00784922, -11.3441 )
 
-[node name="treePineSnow11" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.31461, 0.102579, 0.758515, -0.120703, 1.51641, 0.0041215, -0.755842, -0.0637473, 1.3186, 2.71937, 0.0116528, -26.792 )
+[node name="apple_tree11" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.657307, 0.0512893, 0.379257, -0.0603513, 0.758203, 0.00206075, -0.377921, -0.0318736, 0.659301, 2.71937, 0.0116528, -26.792 )
 
-[node name="treePineSnow12" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.09996, 0.0754564, 0.567661, 0.0493409, 1.2372, -0.0688471, -0.570524, -0.0384809, -1.10039, 4.55712, -0.000347471, -17.6802 )
+[node name="apple_tree12" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.54998, 0.0377282, 0.28383, 0.0246705, 0.618601, -0.0344235, -0.285262, -0.0192404, -0.550197, 4.55712, -0.000347471, -17.6802 )
 
-[node name="treePineSnow13" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.102747, -0.0021847, -1.73775, -0.089123, 1.7385, 0.00308389, 1.73546, 0.0891496, -0.102724, 23.1811, -0.00396615, -11.0788 )
+[node name="apple_tree13" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.0513735, -0.00109235, -0.868875, -0.0445615, 0.86925, 0.00154194, 0.867732, 0.0445748, -0.051362, 23.1811, -0.00396615, -11.0788 )
 
-[node name="treePineSnow14" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.591654, 0.0249339, -0.990773, -0.0551793, 1.15293, -0.00393639, 0.98955, 0.0493817, 0.592166, 11.1605, 0.00117472, -7.14469 )
+[node name="apple_tree14" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.295827, 0.0124669, -0.495387, -0.0275897, 0.576465, -0.0019682, 0.494775, 0.0246909, 0.296083, 11.1605, 0.00117472, -7.14469 )
 
-[node name="treePineSnow15" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.43766, -0.0788638, -0.222732, -0.0788383, 1.4548, -0.00623308, 0.222741, 0.0059019, -1.43981, -7.50532, 0.00632834, -4.09163 )
+[node name="apple_tree15" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.718829, -0.0394319, -0.111366, -0.0394192, 0.727398, -0.00311654, 0.11137, 0.00295095, -0.719903, -7.50532, 0.00632834, -4.09163 )
 
-[node name="treePineSnow16" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.934473, 0.0598211, 1.3569, 0.120618, 1.64418, 0.0105806, -1.35285, 0.105271, -0.936326, 5.25885, -0.00850782, -17.8513 )
+[node name="apple_tree16" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.467236, 0.0299106, 0.678451, 0.0603088, 0.822092, 0.0052903, -0.676427, 0.0526355, -0.468163, 5.25885, -0.00850782, -17.8513 )
 
-[node name="treePineSnow17" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.161029, -0.00268869, 1.89044, -0.186931, 1.88801, -0.0132376, -1.88118, -0.18738, -0.160506, 25.5778, -0.0130729, -23.4451 )
+[node name="apple_tree17" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.0805144, -0.00134434, 0.945221, -0.0934655, 0.944007, -0.00661881, -0.94059, -0.0936899, -0.0802532, 25.5778, -0.0130729, -23.4451 )
 
-[node name="treePineSnow18" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.56117, 0.0511744, -0.0783551, -0.0464943, 1.56052, 0.0928247, 0.0812196, -0.090329, 1.55925, 27.4554, 0.00239831, -25.4325 )
+[node name="apple_tree18" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.780585, 0.0255872, -0.0391775, -0.0232472, 0.780261, 0.0464123, 0.0406098, -0.0451645, 0.779624, 27.4554, 0.00239831, -25.4325 )
 
-[node name="treePineSnow19" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.12055, -0.0136843, 0.229048, -0.00942492, 1.14354, 0.0222115, -0.229263, 0.0198726, -1.12041, 20.8837, 0.00100421, -0.0189911 )
+[node name="apple_tree19" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.560273, -0.00684213, 0.114524, -0.00471246, 0.571772, 0.0111058, -0.114631, 0.00993631, -0.560205, 20.8837, 0.00100421, -0.0189911 )
 
-[node name="treePineSnow20" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.999838, 0.0332288, -1.29686, -0.00672941, 1.63745, 0.0367673, 1.29727, -0.0171162, 0.999714, 14.7661, -1.68604e-05, -0.978547 )
+[node name="apple_tree20" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.499919, 0.0166144, -0.648432, -0.00336471, 0.818725, 0.0183836, 0.648636, -0.00855808, 0.499857, 14.7661, -1.68604e-05, -0.978547 )
 
-[node name="treePineSnow21" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.0358722, 0.00238395, 1.18942, 0.136227, 1.18214, 0.00173917, -1.18159, 0.136217, -0.0359092, 23.9544, 0.0119571, -13.9828 )
+[node name="apple_tree21" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.0179361, 0.00119198, 0.594709, 0.0681135, 0.591069, 0.000869583, -0.590797, 0.0681086, -0.0179546, 23.9544, 0.0119571, -13.9828 )
 
-[node name="treePineSnow22" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.164763, 0.0111519, -1.10231, 0.0548091, 1.11326, 0.00307028, 1.101, -0.0537504, -0.165111, 14.7003, -0.00122865, 3.89576 )
+[node name="apple_tree22" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.0823815, 0.00557594, -0.551154, 0.0274046, 0.556628, 0.00153514, 0.550501, -0.0268752, -0.0825557, 14.7003, -0.00122865, 3.89576 )
 
-[node name="treePineSnow23" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.86534, 0.069171, 0.0977998, -0.0739565, 1.8655, 0.0911662, -0.094233, -0.0948483, 1.8644, 22.9181, 0.00355967, -10.657 )
+[node name="apple_tree23" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.932672, 0.0345855, 0.0488999, -0.0369782, 0.932748, 0.0455831, -0.0471165, -0.0474242, 0.932199, 22.9181, 0.00355967, -10.657 )
 
-[node name="treePineSnow24" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.0469966, -0.00212646, -1.21258, 0.0541832, 1.21228, -2.59238e-05, 1.21137, -0.0541415, 0.0470447, 1.61785, -0.00431263, 2.8156 )
+[node name="apple_tree24" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.0234983, -0.00106323, -0.606289, 0.0270916, 0.60614, -1.29619e-05, 0.605684, -0.0270707, 0.0235224, 1.61785, -0.00431263, 2.8156 )
 
-[node name="treePineSnow25" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.45686, -0.0918221, -0.179314, 0.10712, 1.46175, 0.121787, 0.170617, -0.1337, 1.45466, 23.3309, -0.0029113, -11.891 )
+[node name="apple_tree25" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.72843, -0.045911, -0.089657, 0.0535602, 0.730876, 0.0608937, 0.0853083, -0.0668499, 0.72733, 23.3309, -0.0029113, -11.891 )
 
-[node name="treePineSnow26" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.403241, 0.0156847, 1.62925, 0.159734, 1.6707, 0.0234506, -1.62148, 0.160683, -0.402864, 13.7538, -0.0114127, 3.44806 )
+[node name="apple_tree26" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.201621, 0.00784233, 0.814627, 0.079867, 0.835352, 0.0117253, -0.810741, 0.0803413, -0.201432, 13.7538, -0.0114127, 3.44806 )
 
-[node name="treePineSnow27" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.54115, -0.0347226, 0.848046, -0.00374015, 1.00564, 0.043562, -0.848748, -0.0265702, 0.540511, 10.1198, 0.00252862, -11.3898 )
+[node name="apple_tree27" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.270575, -0.0173613, 0.424023, -0.00187008, 0.502822, 0.021781, -0.424374, -0.0132851, 0.270255, 10.1198, 0.00252862, -11.3898 )
 
-[node name="treePineSnow28" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.565486, -0.0418199, 1.21789, 0.140321, 1.33593, -0.0192798, -1.2105, 0.135324, 0.566702, 9.73596, 0.0116952, -23.8693 )
+[node name="apple_tree28" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.282743, -0.0209099, 0.608946, 0.0701603, 0.667967, -0.00963991, -0.605252, 0.0676622, 0.283351, 9.73596, 0.0116952, -23.8693 )
 
-[node name="treePineSnow29" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.396679, 0.0203201, 1.35778, -0.00360633, 1.41451, -0.0222226, -1.35793, -0.00969251, -0.396577, 23.7187, -0.00172875, -8.63664 )
+[node name="apple_tree29" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.198339, 0.01016, 0.67889, -0.00180316, 0.707253, -0.0111113, -0.678964, -0.00484625, -0.198288, 23.7187, -0.00172875, -8.63664 )
 
-[node name="treePineSnow30" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.745434, -0.028888, 1.03006, 0.117687, 1.26539, -0.0496801, -1.02372, 0.124434, 0.744338, 11.9317, 0.00842535, -10.7763 )
+[node name="apple_tree30" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.372717, -0.014444, 0.515028, 0.0588434, 0.632693, -0.0248401, -0.511859, 0.0622169, 0.372169, 11.9317, 0.00842535, -10.7763 )
 
-[node name="treePineSnow31" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.994124, -0.00294692, -1.31446, 0.0251255, 1.6478, 0.0153082, 1.31422, -0.0292736, 0.994011, -0.321982, 0.00218249, -23.1187 )
+[node name="apple_tree31" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.497062, -0.00147346, -0.65723, 0.0125627, 0.823898, 0.00765408, 0.657111, -0.0146368, 0.497005, -0.321982, 0.00218249, -23.1187 )
 
-[node name="treePineSnow32" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.499375, -0.00107903, -1.59225, -0.0249701, 1.66852, 0.00670062, 1.59205, 0.025831, -0.499331, 6.89198, -0.00212255, -17.6113 )
+[node name="apple_tree32" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.249687, -0.000539513, -0.796125, -0.012485, 0.834261, 0.00335031, 0.796027, 0.0129155, -0.249665, 6.89198, -0.00212255, -17.6113 )
 
-[node name="treePineSnow33" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.58903, 0.0472724, 0.00837447, -0.0475727, 1.58774, 0.0642524, -0.00645329, -0.0644737, 1.58843, 6.59315, -0.00267694, -8.74982 )
+[node name="apple_tree33" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.794513, 0.0236362, 0.00418724, -0.0237864, 0.793869, 0.0321262, -0.00322664, -0.0322368, 0.794215, 6.59315, -0.00267694, -8.74982 )
 
-[node name="treePineSnow34" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.934673, -0.0269023, -0.715721, 0.0359748, 1.17698, 0.00274003, 0.715322, -0.0240408, 0.935056, 6.81253, -0.0030922, -14.0969 )
+[node name="apple_tree34" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.467337, -0.0134512, -0.357861, 0.0179874, 0.588492, 0.00137002, 0.357661, -0.0120204, 0.467528, 6.81253, -0.0030922, -14.0969 )
 
-[node name="treePineSnow35" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.73617, -0.092407, 0.525433, 0.134, 1.80702, -0.124972, -0.516395, 0.158224, 1.73413, 24.6416, 0.006, -16.5555 )
+[node name="apple_tree35" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( 0.868085, -0.0462035, 0.262717, 0.0669998, 0.903512, -0.0624861, -0.258197, 0.0791121, 0.867065, 24.6416, 0.006, -16.5555 )
 
-[node name="treePineSnow36" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.38694, 0.0579767, 0.707597, 0.0805032, 1.55572, 0.030325, -0.705389, 0.0635538, -1.38782, -10.2406, -0.00487167, -6.42469 )
-
-[node name="treePineSnow37" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.79827, -0.143934, -0.0162482, -0.143991, 1.79833, 0.00572602, 0.0157394, 0.00700435, -1.80401, 23.8456, 0.00746237, -15.9303 )
-
-[node name="treePineSnow38" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.83555, -0.0182466, -0.885607, 0.0478759, 1.21473, -0.0701974, 0.8845, -0.082987, -0.832796, 14.9699, 4.2039e-05, 3.50427 )
-
-[node name="treePineSnow39" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.152702, -0.00635253, 1.88574, -0.0671604, 1.89073, 0.000930892, -1.88455, -0.0668658, -0.152831, 24.3928, 0.00657647, -12.2588 )
-
-[node name="treePineSnow40" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.0514281, -0.00372858, 1.84666, -0.0868542, 1.84534, 0.00130709, -1.84462, -0.086784, -0.0515465, 8.40656, 0.00555289, -31.0814 )
-
-[node name="treePineSnow41" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.790667, 0.00243786, 1.33812, 0.087001, 1.55088, -0.0542324, -1.33529, 0.102491, 0.788808, -2.03304, -0.000187042, 2.24945 )
-
-[node name="treePineSnow42" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.0860896, -0.000645426, 1.0569, -0.0552415, 1.05895, -0.00385302, -1.05545, -0.055372, -0.0860057, -9.09881, 0.00229991, -1.46071 )
-
-[node name="treePineSnow43" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.0837786, -0.000355438, -1.99776, -0.106645, 1.99667, 0.00411706, 1.99491, 0.106724, -0.0836782, 11.4091, 0.00996315, -20.0701 )
-
-[node name="treePineSnow44" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.934367, -0.0412482, -0.363045, 0.0744155, 0.997443, 0.078196, 0.357723, -0.0997541, 0.932002, -3.90653, -0.00280153, -4.07109 )
-
-[node name="treePineSnow45" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.23752, -0.0813135, 0.626047, 0.0820216, 1.3867, 0.0179771, -0.625955, 0.0209485, 1.24005, 11.2234, -0.000185305, -18.106 )
-
-[node name="treePineSnow46" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.1169, -0.0874699, -1.5541, -0.0632967, 1.91376, -0.0622226, 1.55527, 0.0150707, -1.11859, 5.04154, 0.00105722, -28.0728 )
-
-[node name="treePineSnow47" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.0556303, 0.000981077, -1.60396, 0.0298599, 1.60465, -5.41396e-05, 1.60368, -0.0298439, -0.0556389, -6.80582, -0.000352411, -2.12943 )
-
-[node name="treePineSnow48" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.648871, 0.00531002, 1.54867, 0.0807858, 1.67671, -0.0395972, -1.54657, 0.0898114, 0.647684, 14.1269, 0.000669343, -30.8354 )
-
-[node name="treePineSnow49" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.803483, -0.0116017, -1.44693, -0.00527932, 1.655, -0.0162016, 1.44697, 0.0124806, 0.803403, 6.83397, 0.000122992, 6.11906 )
-
-[node name="treePineSnow50" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.181864, 0.00831114, -1.94159, -0.00433694, 1.95008, 0.00875372, 1.9416, 0.00513436, -0.181843, 22.3075, -0.00053562, -4.16469 )
-
-[node name="treePineSnow51" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.751969, 0.0622996, 1.06544, -0.140043, 1.29783, 0.0229518, -1.05803, -0.127505, 0.754196, 4.95021, -0.011469, -31.3206 )
-
-[node name="treePineSnow52" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.763643, 0.030882, 1.29942, -0.0453507, 1.5068, -0.00915902, -1.29899, -0.034451, 0.764213, 21.6869, -0.00351292, -5.36233 )
-
-[node name="treePineSnow53" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.01198, -0.0140951, 1.14542, 0.0803589, 1.52549, -0.052225, -1.14269, 0.0947963, 1.01073, 5.22704, -0.00125823, -5.1607 )
-
-[node name="treePineSnow54" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.22688, -0.00369915, -1.71984, -0.124232, 1.73024, 0.012667, 1.71535, 0.124821, -0.226556, 24.4535, -0.00192854, -25.6543 )
-
-[node name="treePineSnow55" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.918298, 0.0278185, -0.841816, -0.0245239, 1.24575, 0.0144149, 0.841918, 0.00594464, 0.918606, 15.3997, -0.00211856, -0.920417 )
-
-[node name="treePineSnow56" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.17293, 0.0349072, 0.515013, 0.00735645, 1.27956, -0.0699732, -0.516142, -0.061089, -1.17136, -6.96349, 0.00412757, -3.36922 )
-
-[node name="treePineSnow57" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.47488, -0.0724321, 0.333041, 0.0543316, 1.51022, 0.0878445, -0.336468, -0.0736354, 1.47404, -1.89353, -0.00977594, -23.8461 )
-
-[node name="treePineSnow58" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.50916, 0.0137496, 0.749035, -0.00336186, 1.68445, -0.0376938, -0.749154, -0.0352573, -1.50875, 2.10641, 0.00378507, 1.13534 )
-
-[node name="treePineSnow59" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.831259, -0.0695077, -1.81397, -0.27483, 1.97693, 0.05019, 1.79438, 0.270591, -0.832649, 27.2205, 0.0217497, -24.568 )
-
-[node name="treePineSnow60" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.64001, 0.000960394, 0.273105, -0.00317081, 1.6624, -0.0248869, -0.273088, -0.0250696, -1.63982, 7.72256, -0.00248036, -8.95296 )
-
-[node name="treePineSnow61" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.941873, -0.0215656, 1.58912, -0.00261758, 1.84721, 0.0266195, -1.58927, -0.0158232, 0.941743, -6.65359, 0.000757235, -2.80818 )
-
-[node name="treePineSnow62" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 0.13135, -0.00222772, 1.18554, -0.0316544, 1.19236, 0.00574762, -1.18512, -0.0320947, 0.131243, 27.4544, 0.00268372, -25.9441 )
-
-[node name="treePineSnow63" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( 1.07214, -0.07348, -1.0064, 0.0382676, 1.47031, -0.0665843, 1.00835, 0.0223289, 1.07259, 7.3341, 0.0053812, -17.8454 )
-
-[node name="treePineSnow64" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.61333, -0.0532666, 0.399123, -0.0811461, 1.6574, -0.106812, -0.394401, -0.123111, -1.61067, 24.21, 0.00847924, -2.49861 )
-
-[node name="treePineSnow65" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.17917, -0.0705268, -1.24509, -0.205977, 1.70102, 0.0987192, 1.22995, 0.217251, -1.17714, 6.82303, -0.00986929, -28.393 )
-
-[node name="treePineSnow66" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.925081, 0.0335191, -0.558232, 0.00951413, 1.07983, 0.0490717, 0.559157, 0.0370813, -0.924386, 10.4286, 0.00390112, -19.4439 )
-
-[node name="treePineSnow67" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.23377, 0.078643, 0.726744, 0.0387237, 1.43077, -0.089087, -0.729961, -0.0570203, -1.23306, 20.994, 0.00240007, -5.12124 )
-
-[node name="treePineSnow68" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -0.78357, -0.0573014, 1.67756, -0.220098, 1.83887, -0.0399944, -1.66404, -0.216239, -0.784644, 0.723075, -0.0095973, 0.754052 )
-
-[node name="treePineSnow69" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.68774, -0.0702654, 0.453365, -0.0904687, 1.74539, -0.0662766, -0.449769, -0.0874068, -1.6879, 7.43758, 0.0133356, -24.1377 )
-
-[node name="treePineSnow70" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.24232, 0.0950139, -0.793424, 0.133165, 1.47076, -0.0323797, 0.787919, -0.0987604, -1.24553, 3.22008, 0.00994771, 3.64262 )
-
-[node name="treePineSnow71" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 21 )]
-transform = Transform( -1.07623, -0.0485789, 0.441321, -0.0556218, 1.16286, -0.00763938, -0.440489, -0.0281468, -1.07729, 29.2076, 0.00476419, -24.2868 )
+[node name="apple_tree36" type="Spatial" parent="Scatter2/treeBig/Duplicates" instance=ExtResource( 62 )]
+transform = Transform( -0.693471, 0.0289883, 0.353798, 0.0402516, 0.777859, 0.0151625, -0.352695, 0.0317769, -0.693911, -10.2406, -0.00487167, -6.42469 )
 
 [node name="treeSmall" type="Spatial" parent="Scatter2"]
 script = ExtResource( 7 )
-item_path = "res://assets/imported/tree_small.tscn"
+proportion = 20
+item_path = "res://assets/imported/spruce.tscn"
+scale_modifier = 0.5
 materials = [ null, null ]
 merge_target_meshes = false
 cast_shadow = 1
@@ -726,434 +626,149 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="tree_small" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.208499, 0.0129213, 1.53769, 0.0590247, 1.55069, -0.00502718, -1.53661, 0.057812, -0.208838, 2.39119, 0.0052794, 5.53149 )
+[node name="spruce" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.899134, -0.0719671, -0.00812409, -0.0719953, 0.899163, 0.00286301, 0.00786971, 0.00350218, -0.902005, 23.8456, 0.00746237, -15.9303 )
 
-[node name="tree_small2" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.0464626, 0.000612454, 1.94979, -0.0563379, 1.94953, 0.000730133, -1.94898, -0.0563393, 0.0464609, 16.8367, -0.00325678, -1.50005 )
+[node name="spruce2" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.417775, -0.0091233, -0.442804, 0.023938, 0.607363, -0.0350987, 0.44225, -0.0414935, -0.416398, 14.9699, 4.2039e-05, 3.50427 )
 
-[node name="tree_small3" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.6665, -0.0281236, -0.19995, 0.0442721, 1.67277, 0.133709, 0.197005, -0.138012, 1.66137, 3.84635, 0.0031857, -28.0471 )
+[node name="spruce3" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.0763508, -0.00317627, 0.94287, -0.0335802, 0.945365, 0.000465446, -0.942277, -0.0334329, -0.0764154, 24.3928, 0.00657647, -12.2588 )
 
-[node name="tree_small4" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.56574, -0.0536652, -0.813854, -0.00807265, 1.76051, -0.131618, 0.815581, 0.120451, 1.56112, 8.9642, 0.00703807, -29.0903 )
+[node name="spruce4" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.0257141, -0.00186429, 0.923332, -0.0434271, 0.92267, 0.000653544, -0.922312, -0.043392, -0.0257733, 8.40656, 0.00555289, -31.0814 )
 
-[node name="tree_small5" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.947685, -0.00366873, -0.806579, 0.0492761, 1.24186, -0.0635453, 0.80508, -0.0803285, -0.945559, -1.30703, -0.00655356, -24.5848 )
+[node name="spruce5" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.395333, 0.00121893, 0.669062, 0.0435005, 0.775439, -0.0271162, -0.667647, 0.0512454, 0.394404, -2.03304, -0.000187042, 2.24945 )
 
-[node name="tree_small6" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.30439, 0.0194271, 0.642641, 0.00872429, 1.4529, -0.0616294, -0.642876, 0.0591344, 1.30308, 5.1643, 0.000646948, -25.5606 )
+[node name="spruce6" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.0430448, -0.000322713, 0.528449, -0.0276208, 0.529476, -0.00192651, -0.527727, -0.027686, -0.0430029, -9.09881, 0.00229991, -1.46071 )
 
-[node name="tree_small7" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.072, 0.0859657, 0.403768, 0.105655, 1.14327, 0.0371015, -0.399068, 0.0717594, -1.0748, 29.8461, 8.66592e-05, -22.7129 )
+[node name="spruce7" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.0418893, -0.000177719, -0.998881, -0.0533226, 0.998334, 0.00205853, 0.997457, 0.053362, -0.0418391, 11.4091, 0.00996315, -20.0701 )
 
-[node name="tree_small8" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.58072, -0.0451562, 0.838916, -0.0644895, 1.78877, -0.0252298, -0.837652, -0.0525011, -1.58116, 17.2619, 0.00302506, 0.498105 )
+[node name="spruce8" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.467183, -0.0206241, -0.181523, 0.0372078, 0.498721, 0.039098, 0.178861, -0.049877, 0.466001, -3.90653, -0.00280153, -4.07109 )
 
-[node name="tree_small9" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.74631, -0.086879, -0.459543, 0.0715303, 1.8051, -0.0694413, 0.462181, 0.0488949, 1.74709, 23.6205, -0.00814728, -16.1339 )
+[node name="spruce9" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.618758, -0.0406567, 0.313024, 0.0410108, 0.693351, 0.00898853, -0.312978, 0.0104743, 0.620027, 11.2234, -0.000185305, -18.106 )
 
-[node name="tree_small10" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.79516, -0.0124325, 0.67518, -0.0166407, 1.91625, 0.0795292, -0.67509, -0.0802947, 1.79344, -8.00541, 0.000702736, -6.54826 )
+[node name="spruce10" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.558451, -0.043735, -0.77705, -0.0316483, 0.956879, -0.0311113, 0.777636, 0.00753536, -0.559297, 5.04154, 0.00105722, -28.0728 )
 
-[node name="tree_small11" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.96902, -0.044261, 0.0178918, -0.0447203, 1.9684, -0.0520764, -0.0167106, -0.0524673, -1.96883, -0.903128, -0.0019886, -6.52164 )
+[node name="spruce11" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.0278152, 0.000490539, -0.801979, 0.01493, 0.802323, -2.70698e-05, 0.80184, -0.0149219, -0.0278195, -6.80582, -0.000352411, -2.12943 )
 
-[node name="tree_small12" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.76537, 0.121895, 0.383939, -0.107943, 1.80588, -0.0770107, -0.388092, 0.0521932, 1.7679, 26.4282, 0.00129247, -11.9152 )
+[node name="spruce12" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.324436, 0.00265501, 0.774334, 0.0403929, 0.838353, -0.0197986, -0.773285, 0.0449057, 0.323842, 14.1269, 0.000669343, -30.8354 )
 
-[node name="tree_small13" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.0166605, 0.000869205, -1.48933, 0.0265765, 1.48918, 0.000571817, 1.48909, -0.0265685, -0.0166734, -11.4156, -0.00055038, -6.06844 )
+[node name="spruce13" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.401741, -0.00580083, -0.723465, -0.00263966, 0.827501, -0.00810081, 0.723483, 0.0062403, 0.401702, 6.83397, 0.000122992, 6.11906 )
 
-[node name="tree_small14" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.02447, -0.00229671, 0.330213, 0.011753, 1.07593, -0.0289799, -0.330012, 0.031188, 1.02407, 4.97353, 0.00232212, -4.94006 )
+[node name="spruce14" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.090932, 0.00415557, -0.970794, -0.00216847, 0.97504, 0.00437686, 0.970801, 0.00256718, -0.0909216, 22.3075, -0.00053562, -4.16469 )
 
-[node name="tree_small15" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.45627, 0.0137965, 1.59808, -0.121511, 1.65742, 0.020384, -1.59351, -0.122434, 0.456023, 22.6879, -0.00462986, -8.10718 )
+[node name="spruce15" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.375985, 0.0311498, 0.532721, -0.0700216, 0.648916, 0.0114759, -0.529017, -0.0637527, 0.377098, 4.95021, -0.011469, -31.3206 )
 
-[node name="tree_small16" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.755338, 0.0377582, -1.8001, -0.131608, 1.94802, -0.0143633, 1.79568, 0.126891, 0.756145, 17.679, 0.00254649, -7.12279 )
+[node name="spruce16" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.381822, 0.015441, 0.64971, -0.0226753, 0.753402, -0.00457951, -0.649497, -0.0172255, 0.382106, 21.6869, -0.00351292, -5.36233 )
 
-[node name="tree_small17" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.176358, -0.00304206, -1.25217, -0.112413, 1.25946, 0.0127728, 1.24711, 0.113096, -0.175921, 20.957, 0.00956202, -2.8134 )
+[node name="spruce17" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.50599, -0.00704755, 0.572712, 0.0401795, 0.762744, -0.0261125, -0.571344, 0.0473981, 0.505365, 5.22704, -0.00125823, -5.1607 )
 
-[node name="tree_small18" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.09909, 0.0224939, 0.147708, -0.0230024, 1.10896, 0.002281, -0.14763, -0.00532335, 1.09932, 26.3365, -0.00206874, -22.917 )
+[node name="spruce18" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.11344, -0.00184958, -0.859918, -0.0621159, 0.86512, 0.00633352, 0.857674, 0.0624106, -0.113278, 24.4535, -0.00192854, -25.6543 )
 
-[node name="tree_small19" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.25606, 0.0764674, -0.265053, 0.0967271, 1.27924, -0.089322, 0.25835, -0.107179, -1.25522, -1.61975, -0.00320422, -24.813 )
+[node name="spruce19" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.459149, 0.0139093, -0.420908, -0.0122619, 0.622874, 0.00720743, 0.420959, 0.00297232, 0.459303, 15.3997, -0.00211856, -0.920417 )
 
-[node name="tree_small20" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.664807, 0.0405877, -1.56618, 0.0999288, 1.69899, 0.00161195, 1.56352, -0.0913291, -0.666043, 5.13063, 0.00769566, -16.7386 )
+[node name="spruce20" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.586464, 0.0174536, 0.257507, 0.00367823, 0.639779, -0.0349866, -0.258071, -0.0305445, -0.58568, -6.96349, 0.00412757, -3.36922 )
 
-[node name="tree_small21" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.221288, 0.0100587, 1.48726, 0.0897109, 1.50099, 0.00319645, -1.48459, 0.0892025, -0.221493, 9.44561, 0.00323826, -25.255 )
+[node name="spruce21" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.737441, -0.0362161, 0.166521, 0.0271658, 0.755111, 0.0439222, -0.168234, -0.0368177, 0.737022, -1.89353, -0.00977594, -23.8461 )
 
-[node name="tree_small22" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.115023, 0.000984991, 1.2658, -0.0889406, 1.26789, 0.00709538, -1.26268, -0.0892177, 0.114808, -2.24752, 0.00241175, -1.11976 )
+[node name="spruce22" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.75458, 0.00687478, 0.374518, -0.00168093, 0.842225, -0.0188469, -0.374577, -0.0176287, -0.754376, 2.10641, 0.00378507, 1.13534 )
 
-[node name="tree_small23" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.544999, -0.0371665, 1.81722, -0.210466, 1.88569, -0.0245537, -1.80538, -0.208609, -0.545713, 2.81801, -0.00139051, -26.8229 )
+[node name="spruce23" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.41563, -0.0347539, -0.906985, -0.137415, 0.988466, 0.025095, 0.897188, 0.135295, -0.416325, 27.2205, 0.0217497, -24.568 )
 
-[node name="tree_small24" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.73416, -0.038911, -1.66943, -0.147423, 1.81804, 0.0224571, 1.66336, 0.143958, -0.734848, 18.454, 0.0013988, -6.71612 )
+[node name="spruce24" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.820003, 0.000480197, 0.136552, -0.00158541, 0.831201, -0.0124434, -0.136544, -0.0125348, -0.819909, 7.72256, -0.00248036, -8.95296 )
 
-[node name="tree_small25" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.41192, 0.0751947, 0.626153, -0.117704, 1.53978, 0.0805006, -0.619571, -0.121162, 1.41163, 22.7409, 0.0142668, -2.57876 )
+[node name="spruce25" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.470936, -0.0107828, 0.794562, -0.00130879, 0.923605, 0.0133098, -0.794634, -0.0079116, 0.470872, -6.65359, 0.000757235, -2.80818 )
 
-[node name="tree_small26" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.17889, 0.0915141, -1.48172, -0.213464, 1.88288, -0.0535466, 1.46912, 0.200148, 1.18123, 21.4473, -0.0232057, 0.180998 )
+[node name="spruce26" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.0656749, -0.00111386, 0.592771, -0.0158272, 0.596182, 0.00287381, -0.592561, -0.0160474, 0.0656215, 27.4544, 0.00268372, -25.9441 )
 
-[node name="tree_small27" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.16106, 0.0254702, -1.58212, -0.15817, 1.95439, -0.0846117, 1.5744, 0.177562, 1.15825, 3.77298, -0.00487794, -1.16284 )
+[node name="spruce27" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.53607, -0.03674, -0.503199, 0.0191338, 0.735157, -0.0332922, 0.504176, 0.0111644, 0.536295, 7.3341, 0.0053812, -17.8454 )
 
-[node name="tree_small28" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.428493, 0.0346847, -1.58108, 0.212967, 1.62443, -0.0220811, 1.56705, -0.21128, -0.429327, 10.842, -0.0125323, -18.6887 )
+[node name="spruce28" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.806666, -0.0266333, 0.199562, -0.0405731, 0.828701, -0.0534062, -0.1972, -0.0615553, -0.805336, 24.21, 0.00847924, -2.49861 )
 
-[node name="tree_small29" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.729395, -0.0214674, 0.893286, 0.0520572, 1.15218, -0.0148173, -0.892026, 0.0496856, 0.72956, 15.4974, -0.000892612, -30.4252 )
+[node name="spruce29" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.589585, -0.0352634, -0.622543, -0.102989, 0.850512, 0.0493596, 0.614977, 0.108626, -0.588572, 6.82303, -0.00986929, -28.393 )
 
-[node name="tree_small30" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.339723, -0.0190806, 1.42284, 0.10736, 1.459, -0.00606835, -1.41891, 0.105825, 0.340204, 4.21194, -0.0106297, -1.31868 )
+[node name="spruce30" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.46254, 0.0167595, -0.279116, 0.00475707, 0.539913, 0.0245359, 0.279578, 0.0185406, -0.462193, 10.4286, 0.00390112, -19.4439 )
 
-[node name="tree_small31" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.245417, 0.00696196, -1.33549, -0.0106643, 1.3578, 0.00903798, 1.33547, 0.012122, -0.245349, 13.5142, -0.000207671, -18.9679 )
+[node name="spruce31" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.616884, 0.0393215, 0.363372, 0.0193619, 0.715383, -0.0445435, -0.36498, -0.0285102, -0.616529, 20.994, 0.00240007, -5.12124 )
 
-[node name="tree_small32" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.74296, 0.123575, -0.377945, 0.152291, 1.77712, -0.121263, 0.367315, -0.150421, -1.74313, 7.37805, -0.00527198, -16.1783 )
+[node name="spruce32" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.391785, -0.0286507, 0.838779, -0.110049, 0.919433, -0.0199972, -0.832022, -0.10812, -0.392322, 0.723075, -0.0095973, 0.754052 )
 
-[node name="tree_small33" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.452469, -0.00923459, 0.910164, -0.05355, 1.01493, -0.0163237, -0.908634, -0.0552158, -0.452269, 0.194727, -0.00159124, 1.14265 )
+[node name="spruce33" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.84387, -0.0351327, 0.226682, -0.0452343, 0.872693, -0.0331383, -0.224884, -0.0437034, -0.843951, 7.43758, 0.0133356, -24.1377 )
 
-[node name="tree_small34" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.734787, -0.0338384, 0.955336, -0.092421, 1.20182, -0.0285157, -0.951457, -0.0906077, -0.735013, 14.0254, 0.00412694, -9.92668 )
+[node name="spruce34" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.621161, 0.047507, -0.396712, 0.0665823, 0.735379, -0.0161898, 0.39396, -0.0493802, -0.622765, 3.22008, 0.00994771, 3.64262 )
 
-[node name="tree_small35" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.53054, 0.0173235, -0.252563, -0.00947425, 1.55053, 0.0489378, 0.252979, -0.0467394, 1.52985, 7.91229, 0.00275719, -12.4317 )
+[node name="spruce35" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.538113, -0.0242894, 0.220661, -0.0278109, 0.581428, -0.00381969, -0.220244, -0.0140734, -0.538647, 29.2076, 0.00476419, -24.2868 )
 
-[node name="tree_small36" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.07344, 0.0336669, 0.377631, -0.00603857, 1.1353, -0.0840503, -0.37908, 0.0772493, 1.07067, 14.0157, -0.00292658, 4.14541 )
+[node name="spruce36" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.104249, 0.00646063, 0.768846, 0.0295123, 0.775343, -0.00251359, -0.768307, 0.028906, -0.104419, 2.39119, 0.0052794, 5.53149 )
 
-[node name="tree_small37" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.78921, 0.0975672, -0.210766, -0.0938281, 1.80139, 0.0373803, 0.212457, -0.0261084, 1.79148, -3.35538, -0.00296915, 3.88884 )
+[node name="spruce37" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.0232313, 0.000306227, 0.974895, -0.028169, 0.974764, 0.000365066, -0.974488, -0.0281697, 0.0232304, 16.8367, -0.00325678, -1.50005 )
 
-[node name="tree_small38" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.78603, 0.1091, -0.37414, 0.128838, 1.82158, -0.0838565, 0.36781, -0.108298, -1.78739, 1.03872, -0.00405752, -18.9864 )
+[node name="spruce38" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.833251, -0.0140618, -0.0999752, 0.0221361, 0.836386, 0.0668546, 0.0985026, -0.0690059, 0.830684, 3.84635, 0.0031857, -28.0471 )
 
-[node name="tree_small39" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.928979, -0.0588482, 0.380527, 0.0854274, 1.00054, -0.0538217, -0.375454, 0.0820458, 0.929284, 1.65295, 0.00222513, -26.255 )
+[node name="spruce39" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.782871, -0.0268326, -0.406927, -0.00403633, 0.880255, -0.065809, 0.40779, 0.0602256, 0.780562, 8.9642, 0.00703807, -29.0903 )
 
-[node name="tree_small40" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.537306, -0.0284414, -1.49992, 0.110822, 1.58962, 0.00955686, 1.49609, -0.107536, 0.537974, 12.5864, 0.0013031, -30.6611 )
+[node name="spruce40" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.473842, -0.00183437, -0.403289, 0.024638, 0.620931, -0.0317726, 0.40254, -0.0401643, -0.472779, -1.30703, -0.00655356, -24.5848 )
 
-[node name="tree_small41" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.202648, -0.00582823, -1.54515, -0.0380534, 1.55789, -0.010867, 1.54469, 0.0391432, 0.20244, 15.5056, -0.00130738, -33.1184 )
+[node name="spruce41" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.652195, 0.00971357, 0.321321, 0.00436215, 0.726451, -0.0308147, -0.321438, 0.0295672, 0.651539, 5.1643, 0.000646948, -25.5606 )
 
-[node name="tree_small42" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.699558, -0.00231404, -1.60254, 0.100638, 1.74519, 0.0414115, 1.59938, -0.1088, 0.698335, 2.95387, 0.00853891, -6.47184 )
+[node name="spruce42" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.536001, 0.0429828, 0.201884, 0.0528275, 0.571635, 0.0185508, -0.199534, 0.0358797, -0.537401, 29.8461, 8.66592e-05, -22.7129 )
 
-[node name="tree_small43" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.710817, -0.0104058, 1.57333, -0.0690225, 1.72499, -0.0197749, -1.57185, -0.0710414, -0.710618, 10.6066, -0.00117517, -23.0486 )
+[node name="spruce43" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.790358, -0.0225781, 0.419458, -0.0322448, 0.894383, -0.0126149, -0.418826, -0.0262505, -0.790579, 17.2619, 0.00302506, 0.498105 )
 
-[node name="tree_small44" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.15283, -0.0857609, -0.928315, 0.0619671, 1.48011, -0.0597837, 0.930207, 0.00768591, 1.15446, 14.6961, 0.00700329, -10.425 )
+[node name="spruce44" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.873156, -0.0434395, -0.229771, 0.0357652, 0.902552, -0.0347206, 0.23109, 0.0244475, 0.873546, 23.6205, -0.00814728, -16.1339 )
 
-[node name="tree_small45" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.00393468, 0.000342242, 1.09126, 0.0926085, 1.08733, -7.09618e-06, -1.08732, 0.0926079, -0.00394953, 15.3736, -0.00442108, 3.23013 )
+[node name="spruce45" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.897581, -0.00621623, 0.33759, -0.00832036, 0.958127, 0.0397646, -0.337545, -0.0401473, 0.896721, -8.00541, 0.000702736, -6.54826 )
 
-[node name="tree_small46" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.199868, 0.014197, 1.20173, 0.0725762, 1.21616, -0.00229682, -1.19963, 0.0712111, -0.200358, 17.4778, -0.00279066, -2.16535 )
+[node name="spruce46" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.984511, -0.0221305, 0.00894588, -0.0223602, 0.984202, -0.0260382, -0.00835531, -0.0262337, -0.984416, -0.903128, -0.0019886, -6.52164 )
 
-[node name="tree_small47" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.641096, -0.0516539, 1.49743, 0.229672, 1.61289, -0.042693, -1.48062, 0.227824, 0.641755, 6.45272, 0.00359325, -7.64813 )
+[node name="spruce47" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( 0.882685, 0.0609473, 0.191969, -0.0539717, 0.902941, -0.0385053, -0.194046, 0.0260966, 0.883948, 26.4282, 0.00129247, -11.9152 )
 
-[node name="tree_small48" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.154166, -0.00561954, 1.85611, -0.0574799, 1.86162, 0.000862019, -1.85522, -0.0572111, -0.154266, 27.9588, -0.00491761, -19.9011 )
-
-[node name="tree_small49" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.17523, -0.0541832, -0.370699, -0.0768085, 1.22945, 0.0638042, 0.36668, 0.0838732, -1.17475, 23.9107, 0.00944373, -0.6014 )
-
-[node name="tree_small50" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.0398497, -0.00252678, -1.18707, -0.0308168, 1.18734, -0.00149284, 1.18667, 0.0307493, -0.0399018, 7.34877, 0.00147778, 4.73381 )
-
-[node name="tree_small51" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.05949, -0.0415104, 0.701687, 0.034904, 1.27078, 0.0224746, -0.702047, 0.00053489, 1.06007, 20.8748, 0.00415193, -11.6242 )
-
-[node name="tree_small52" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.06436, 0.0557012, 0.920865, -0.097635, 1.40486, 0.0278715, -0.917367, -0.0848928, 1.06545, 18.2452, 0.0117463, -10.8161 )
-
-[node name="tree_small53" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.702964, 0.0523703, -0.877128, -0.0184584, 1.12391, 0.0523116, 0.878496, -0.0182912, 0.702968, 6.55238, 0.00288983, 4.49321 )
-
-[node name="tree_small54" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.790684, 0.0666066, -1.38871, 0.0450387, 1.59797, 0.0509998, 1.38958, -0.0138932, -0.791844, 7.27353, -0.00280361, -16.6369 )
-
-[node name="tree_small55" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.83129, -0.10872, 0.532007, -0.157434, 1.89734, -0.154187, -0.519679, -0.191674, -1.82802, -8.65829, 0.00945051, -7.00853 )
-
-[node name="tree_small56" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.4994, -0.0758228, 0.718091, 0.14511, 1.65289, -0.128468, -0.707352, 0.178359, 1.49581, 7.28643, -0.00460349, 4.57078 )
-
-[node name="tree_small57" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.51494, 0.102918, 1.26229, -0.0957058, 1.97174, -0.0458991, -1.26286, -0.0259672, 1.51773, 3.14973, 0.0051429, -24.5552 )
-
-[node name="tree_small58" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.55747, -0.0833952, -0.270163, -0.0993052, 1.57749, 0.0855399, 0.264728, 0.101113, -1.55735, 14.4283, -0.0140225, 4.0369 )
-
-[node name="tree_small59" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.0451358, -8.50166e-05, 1.12307, -0.0730615, 1.12159, -0.00285143, -1.12069, -0.073117, -0.0450458, 13.9558, 0.00142916, -6.06024 )
-
-[node name="tree_small60" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.3614, 0.0288834, 0.831068, 0.0929, 1.58962, 0.096936, -0.826364, 0.131121, -1.35825, 13.6597, 0.0142809, 1.92163 )
-
-[node name="tree_small61" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.768832, 0.0190624, -1.45851, -0.153657, 1.6406, -0.0595559, 1.45052, 0.163689, 0.766759, -13.6041, -0.0146352, -7.43844 )
-
-[node name="tree_small62" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.14041, -0.00403867, -0.413237, -0.0381597, 1.20876, 0.0934954, 0.411491, 0.100902, -1.13657, 8.64659, 0.00249659, -23.4188 )
-
-[node name="tree_small63" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.24391, 0.0916429, 1.55586, -0.0404157, 1.99187, -0.0850124, -1.55803, 0.021497, 1.24438, 7.41228, 0.00554387, -31.769 )
-
-[node name="tree_small64" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.53217, 0.00488948, 1.02265, 0.0609042, 1.15093, 0.0261908, -1.02084, 0.0661164, -0.531548, 12.1587, 0.00313175, -19.1339 )
-
-[node name="tree_small65" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.05266, -0.0662365, -1.01504, 0.159041, 1.45347, 0.0700891, 1.00469, -0.160683, 1.05241, 11.3728, -0.00929365, -9.71457 )
-
-[node name="tree_small66" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.07024, -0.00393396, -0.352049, 0.0323942, 1.12291, 0.0859317, 0.350577, -0.0917506, 1.06679, -6.20143, 0.0104003, 0.907101 )
-
-[node name="tree_small67" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.25762, 0.0352032, -0.69156, 0.0856313, 1.4307, -0.0828945, 0.68714, -0.113864, -1.25538, 18.8849, 0.00951399, -31.1815 )
-
-[node name="tree_small68" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.10012, -0.0117546, -0.991974, 0.0195368, 1.48122, 0.0041147, 0.991852, -0.0161383, 1.10018, 17.2817, -0.000143292, -6.3407 )
-
-[node name="tree_small69" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.283952, -0.0169558, -1.69991, 0.192051, 1.71275, 0.0149962, 1.68911, -0.191888, 0.284062, 11.426, -0.0105408, -33.0426 )
-
-[node name="tree_small70" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.0795304, -0.00258126, -1.92342, 0.0193479, 1.92497, -0.00178333, 1.92333, -0.0192576, 0.0795522, 4.07012, 0.000353074, -4.68443 )
-
-[node name="tree_small71" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.307745, 0.0196691, 0.961838, 0.00858103, 1.00987, -0.0179058, -0.962001, 0.00271581, -0.307853, 9.64696, -0.000541707, -17.6462 )
-
-[node name="tree_small72" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.3511, -0.0153653, 0.139816, 0.00999047, 1.35735, 0.0526261, -0.140303, -0.0513149, 1.35016, 26.4051, -0.00192943, -12.5366 )
-
-[node name="tree_small73" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.00379434, -7.24391e-05, -1.36165, -0.0808546, 1.35926, -0.000297621, 1.35925, 0.0808551, 0.00378334, 24.4958, 0.000285936, -11.3927 )
-
-[node name="tree_small74" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.0238946, 0.000290361, -1.58888, -0.00821624, 1.58904, 0.000413954, 1.58886, 0.00822154, -0.0238928, 2.74848, -0.000770894, 1.76237 )
-
-[node name="tree_small75" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.721554, -0.0167193, 1.15106, 0.0389763, 1.35734, 0.0441484, -1.15052, 0.0564686, -0.720396, 6.34624, -0.00381786, -26.331 )
-
-[node name="tree_small76" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.92167, 0.0286992, -0.563063, 0.0133499, 1.07984, 0.0331871, 0.563636, 0.0213532, -0.921519, 21.1759, 0.000287652, -2.6893 )
-
-[node name="tree_small77" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.28266, -0.0159074, 0.675704, -0.0331295, 1.44622, 0.0969352, -0.675078, -0.101198, 1.27909, 2.63156, -0.0112163, -2.31829 )
-
-[node name="tree_small78" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.14337, -0.089779, -0.431902, -0.0826955, 1.22222, -0.0351425, 0.433314, -0.0036431, -1.14635, 8.83147, 0.00920261, -10.7351 )
-
-[node name="tree_small79" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.26293, -0.0106511, -0.362317, 0.00625318, 1.31252, -0.060381, 0.362419, -0.0597623, -1.26153, -2.75838, 0.00220647, 4.29788 )
-
-[node name="tree_small80" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.29488, -0.100764, 0.549105, -0.144362, 1.40021, -0.0834823, -0.539286, -0.132876, -1.29611, 12.9992, -0.00735822, 1.02427 )
-
-[node name="tree_small81" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.69699, 0.00726803, 1.03648, 0.0336323, 1.98702, -0.0689983, -1.03596, 0.0764138, 1.6956, 6.04261, -0.00745062, -25.1767 )
-
-[node name="tree_small82" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.41319, -0.013487, 1.34561, 0.029599, 1.40718, 0.023193, -1.34535, 0.0351015, -0.412759, 8.45476, 0.00259424, -21.2287 )
-
-[node name="tree_small83" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.29692, 0.0471367, -0.382313, -0.0596796, 1.35112, -0.0358657, 0.380557, 0.0512457, 1.29728, 23.4967, 0.00177494, -12.2952 )
-
-[node name="tree_small84" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.389148, 0.00141017, -1.47057, -0.00949191, 1.52116, -0.00105311, 1.47054, 0.00944547, 0.389149, 11.7555, -0.000546869, -6.58363 )
-
-[node name="tree_small85" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.853674, 0.0087151, 0.910912, 0.0705099, 1.24527, 0.0541653, -0.908221, 0.0884848, -0.851999, 10.5139, 0.00786299, -18.9773 )
-
-[node name="tree_small86" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.54789, 0.0742637, 1.01396, 0.0229244, 1.84905, -0.10043, -1.01642, -0.0713911, -1.54641, 5.69279, 0.00772002, -17.6695 )
-
-[node name="tree_small87" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.62287, -0.00136591, 0.225154, -0.0155079, 1.63382, 0.12169, -0.224623, -0.122667, 1.61831, -7.2427, 0.00500427, -3.37103 )
-
-[node name="tree_small88" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.02793, 0.046392, 0.9931, -0.0268555, 1.42927, -0.0389699, -0.993821, 0.00936213, 1.02824, -1.14364, -0.00364755, -23.813 )
-
-[node name="tree_small89" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.58331, -0.000125781, 0.291649, 0.0137189, 1.60814, 0.0751715, -0.291326, 0.076413, -1.58153, 15.7754, -0.000598743, -32.0731 )
-
-[node name="tree_small90" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.400205, 0.0102826, -1.37245, -0.0520553, 1.42846, 0.0258816, 1.3715, 0.0572178, -0.3995, 12.2224, 0.00237574, 1.45394 )
-
-[node name="tree_small91" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.10136, 0.000940204, -1.84056, -0.10383, 1.84042, -0.00477783, 1.83763, 0.103936, 0.101252, 24.1045, 0.00115706, -15.8031 )
-
-[node name="tree_small92" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.47539, 0.0753611, -1.3299, 0.10545, 1.98493, -0.00450705, 1.32785, -0.0738974, -1.4773, -7.40909, -0.000249063, -0.132065 )
-
-[node name="tree_small93" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.05145, -0.047934, -1.59413, -0.0175943, 1.90893, -0.0690046, 1.59475, 0.0526643, 1.05028, 6.76814, -0.00687481, -11.8877 )
-
-[node name="tree_small94" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.82942, -0.117227, -0.438489, 0.0931844, 1.87915, -0.113602, 0.44422, 0.0885811, 1.82965, -11.746, -0.00868655, -3.67476 )
-
-[node name="tree_small95" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.49382, 0.117913, -0.166035, -0.10528, 1.49936, 0.117586, 0.174319, -0.104914, 1.49385, 12.8778, 0.00664588, -5.71576 )
-
-[node name="tree_small96" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.0445, -0.00170616, -0.541129, -0.00506313, 1.17627, -0.0134817, 0.541108, 0.0142997, 1.04442, 1.69485, 0.000727946, -2.57646 )
-
-[node name="tree_small97" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.364298, 0.0276833, 0.95209, 0.0357919, 1.01903, -0.0159347, -0.95182, 0.0277237, -0.365001, 7.71247, -0.00124326, -23.5758 )
-
-[node name="tree_small98" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.34228, -0.00286403, -1.57144, 0.111773, 1.60417, -0.0272693, 1.56747, -0.115016, -0.341204, 28.4193, -0.00158353, -25.5447 )
-
-[node name="tree_small99" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.98671, 0.127322, 0.184419, -0.13343, 1.99392, 0.0608163, -0.180049, -0.0727408, 1.98985, 22.0822, 0.0150914, -7.13153 )
-
-[node name="tree_small100" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.0982998, -0.00139256, 1.53846, -0.0684117, 1.54008, -0.00297714, -1.53694, -0.0684623, -0.0982646, -11.5862, 0.000621782, -3.42046 )
-
-[node name="tree_small101" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.388786, 0.0264938, -1.37384, 0.140494, 1.42105, -0.0123545, 1.36689, -0.138526, -0.389491, 6.29691, -5.95808e-05, -26.3311 )
-
-[node name="tree_small102" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.13826, -0.00112093, 0.0757209, 0.00653053, 1.13785, -0.0813247, -0.0754471, 0.0815787, 1.13535, 25.388, 0.00536162, -23.8109 )
-
-[node name="tree_small103" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.01554, -0.087399, 1.15158, 0.0901541, 1.5348, 0.0369795, -1.15137, 0.0430888, 1.01862, -0.183673, 0.00270279, -22.2534 )
-
-[node name="tree_small104" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.0271178, 0.00222408, 1.83027, 0.0584219, 1.82954, -0.00135759, -1.82934, 0.0583953, -0.027175, 2.93217, -0.00244949, -2.74152 )
-
-[node name="tree_small105" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.250741, 0.0018126, -1.53757, 0.043718, 1.55725, -0.00529358, 1.53694, -0.044, -0.250692, 11.4466, 0.00129462, -7.3939 )
-
-[node name="tree_small106" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.91911, 0.0317045, 0.484548, -0.0373001, 1.97915, 0.0182331, -0.484149, -0.0268061, 1.91928, -1.3127, 0.000485632, -2.74943 )
-
-[node name="tree_small107" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.16583, -0.0390648, -0.183116, -0.0501435, 1.17774, 0.0679922, 0.180397, 0.0749083, -1.1645, -13.3674, -0.00428087, -6.73309 )
-
-[node name="tree_small108" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.92321, 0.0778667, 0.176359, 0.0857875, 1.92913, 0.0837656, -0.172644, 0.0911754, -1.92296, -11.4963, -0.00647721, -3.82876 )
-
-[node name="tree_small109" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.1985, -0.0536416, 0.389666, 0.0667317, 1.25922, -0.0319017, -0.387639, 0.0509255, 1.19927, 2.29857, -0.00107591, -27.9168 )
-
-[node name="tree_small110" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.19729, -0.0255774, 1.16918, 0.0802362, 1.67111, -0.0456076, -1.1667, 0.0886775, 1.19669, 6.70576, -0.00473002, -27.2727 )
-
-[node name="tree_small111" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.01913, -0.0412541, -0.329281, 0.0221541, 1.06957, -0.065434, 0.331115, 0.0554122, 1.01786, -13.173, -0.00258177, -5.72185 )
-
-[node name="tree_small112" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.41835, 0.0816395, 0.304673, 0.0647186, 1.44895, -0.0869713, -0.30871, -0.0713267, -1.41803, 0.923408, -0.00111234, 5.5451 )
-
-[node name="tree_small113" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.04616, 0.0292219, 0.112259, 0.037355, 1.04923, 0.0749939, -0.10982, 0.078521, -1.04388, 15.7278, -5.65394e-05, 2.55433 )
-
-[node name="tree_small114" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.21142, -0.0899863, 1.02211, -0.198909, 1.57203, -0.0973485, -1.00659, -0.202346, -1.21085, 9.64331, 0.00148578, -30.1176 )
-
-[node name="tree_small115" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.591583, -0.0201271, -1.89597, 0.032124, 1.98593, -0.0110587, 1.8958, -0.0273706, 0.591822, -3.68833, -0.00151407, 4.88109 )
-
-[node name="tree_small116" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.45969, -0.0613108, -0.283918, -0.039709, 1.48323, -0.116145, 0.287735, -0.106337, -1.45635, -6.32237, -0.00838978, -7.78996 )
-
-[node name="tree_small117" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.104229, -0.00886568, -1.03056, -0.0373707, 1.03517, -0.00512572, 1.02992, 0.0366639, -0.104479, 11.6059, 0.0019192, -20.7233 )
-
-[node name="tree_small118" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.22035, 0.0335585, -0.248726, 0.0205025, 1.2439, 0.0672358, 0.250141, 0.0617643, -1.21895, 25.7017, 0.00153462, -23.717 )
-
-[node name="tree_small119" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.94299, 0.160615, -0.293645, -0.145031, 1.96296, 0.114037, 0.301646, -0.0907814, 1.94628, 24.4039, 0.0094692, -10.877 )
-
-[node name="tree_small120" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.06731, 0.0736047, -0.684225, -0.130968, 1.2613, -0.0686116, 0.675595, 0.128228, 1.06764, -5.70369, 0.00556253, -8.82339 )
-
-[node name="tree_small121" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.94589, 0.151333, 0.0781071, 0.157661, 1.93952, 0.169995, -0.0643847, 0.175652, -1.94435, 0.913543, -0.0245729, -1.00463 )
-
-[node name="tree_small122" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.622537, -0.0262391, -0.820148, -0.00408044, 1.02955, -0.0298413, 0.820558, -0.0147873, -0.622374, 24.373, -0.00212889, -0.354697 )
-
-[node name="tree_small123" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.01215, -0.0834812, 1.50277, -0.211145, 1.80094, -0.0421658, -1.49021, -0.198472, -1.01471, -8.30704, 0.0154721, -4.29434 )
-
-[node name="tree_small124" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.00797642, 0.000368152, -1.29719, 0.0867543, 1.29431, -0.000166122, 1.29428, -0.0867537, -0.00798319, -13.1518, -0.00363537, -6.79518 )
-
-[node name="tree_small125" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.547613, -0.0205772, 1.47449, -0.0966794, 1.56999, -0.0139959, -1.47146, -0.0954954, -0.54782, 3.16473, 0.00485866, 2.29674 )
-
-[node name="tree_small126" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.480814, 0.00525882, -1.93617, -0.0350651, 1.99463, 0.0141254, 1.93586, 0.0374357, -0.480636, 7.93971, -0.000338503, -19.9906 )
-
-[node name="tree_small127" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.50815, 0.0891445, -0.857247, -0.0826998, 1.73473, 0.0348998, 0.857893, 0.0105122, 1.51038, 1.66284, -0.00663968, 3.56563 )
-
-[node name="tree_small128" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.739146, 0.00426182, 1.77152, 0.112177, 1.91557, -0.0514127, -1.76797, 0.123323, 0.737368, -4.32143, 0.0110304, -4.61059 )
-
-[node name="tree_small129" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.362229, 0.00593811, -1.81939, -0.0305501, 1.85482, 0.0121361, 1.81914, 0.0323316, -0.362074, 13.0799, 0.00120167, -6.84728 )
-
-[node name="tree_small130" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.867322, 0.0715248, -0.759182, -0.126192, 1.14739, -0.0360687, 0.75203, 0.110044, 0.869518, 15.0323, -0.00836664, -32.0238 )
-
-[node name="tree_small131" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.5152, -0.0361326, 1.89658, -0.188408, 1.95654, -0.0139055, -1.88754, -0.185433, -0.516278, -1.43699, -0.00850051, -4.4958 )
-
-[node name="tree_small132" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.01646, 0.0286226, 1.57077, 0.179865, 1.86069, 0.0824877, -1.5607, 0.195797, -1.01352, 21.0432, 0.0126645, -5.50038 )
-
-[node name="tree_small133" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.35699, -0.0290643, -1.04857, -0.151992, 1.09737, 0.0213295, 1.0379, 0.150705, -0.357535, 7.50005, 0.0135263, -20.3991 )
-
-[node name="tree_small134" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.176683, -0.0108396, -1.44971, -0.0326202, 1.46003, -0.0148924, 1.44938, 0.0341814, 0.176388, -6.2929, -0.000243444, 0.48082 )
-
-[node name="tree_small135" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.51363, -0.108505, 0.289829, -0.118236, 1.53986, -0.0409993, -0.285997, -0.0623493, -1.51696, -0.663504, -0.0141829, -6.90014 )
-
-[node name="tree_small136" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.932946, -0.0216039, -1.50205, 0.0169367, 1.76789, -0.0359471, 1.50211, -0.0333514, -0.932503, 8.88604, 0.000226839, -15.7083 )
-
-[node name="tree_small137" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.925559, 0.0530736, 1.43095, -0.10697, 1.70165, 0.00607627, -1.42793, -0.0930741, 0.92706, 4.97267, -0.010294, -27.0261 )
-
-[node name="tree_small138" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -1.9173, 0.152351, 0.475398, 0.127813, 1.97364, -0.117017, -0.482575, -0.0825721, -1.91978, 5.17894, -0.0125608, -18.5559 )
-
-[node name="tree_small139" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.685101, -0.0532806, -1.80775, -0.072525, 1.93237, -0.0294679, 1.80708, 0.0573534, -0.686538, -1.96646, 0.0029588, 1.67702 )
-
-[node name="tree_small140" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 0.862443, -0.0118163, 1.65154, -0.0792142, 1.86071, 0.054679, -1.64968, -0.0955252, 0.860789, 26.0784, 0.00692546, -10.6183 )
-
-[node name="tree_small141" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.187034, 0.00121209, -1.49746, 0.0713081, 1.50739, -0.00768631, 1.49576, -0.0717109, -0.18688, 1.69749, 0.000759186, 1.82752 )
-
-[node name="tree_small142" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( -0.727122, 0.0385222, -1.44734, 0.127633, 1.615, -0.0211361, 1.44221, -0.123503, -0.727835, 2.43852, -0.0137151, -21.7451 )
-
-[node name="tree_small143" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 18 )]
-transform = Transform( 1.5716, -0.0261908, 0.295293, 0.0296494, 1.59896, -0.0159804, -0.294966, 0.0211778, 1.57173, -7.52712, -0.00321683, -6.54397 )
+[node name="spruce48" type="Spatial" parent="Scatter2/treeSmall/Duplicates" instance=ExtResource( 63 )]
+transform = Transform( -0.00833026, 0.000434603, -0.744663, 0.0132883, 0.744591, 0.000285909, 0.744544, -0.0132842, -0.00833669, -11.4156, -0.00055038, -6.06844 )
 
 [node name="presentRed" type="Spatial" parent="Scatter2"]
 script = ExtResource( 7 )
@@ -1171,46 +786,76 @@ __meta__ = {
 }
 
 [node name="present" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( 0.516876, 0.0198067, 0.430315, -0.00131416, 0.672206, -0.0293621, -0.430768, 0.0217153, 0.516422, 1.08014, 2.80648e-05, -19.972 )
+transform = Transform( 0.602391, -0.00135047, 0.194165, 0.00691076, 0.632644, -0.0170402, -0.194047, 0.0183386, 0.602151, 4.97353, 0.00232212, -4.94006 )
 
 [node name="present2" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( 0.441781, -0.0180859, -0.913352, 0.0155711, 1.01455, -0.0125581, 0.913398, -0.00854787, 0.441972, -4.15455, -0.00120667, 4.79116 )
+transform = Transform( 0.268287, 0.00811232, 0.939669, -0.0714484, 0.974563, 0.0119858, -0.936984, -0.0719911, 0.268142, 22.6879, -0.00462986, -8.10718 )
 
 [node name="present3" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( -0.320566, -0.013122, 0.504628, -0.0623648, 0.594231, -0.0241654, -0.500931, -0.0655832, -0.319923, 25.8563, 0.00552739, -17.6306 )
+transform = Transform( 0.444139, 0.0222018, -1.05846, -0.0773858, 1.14544, -0.00844559, 1.05586, 0.0746121, 0.444613, 17.679, 0.00254649, -7.12279 )
 
 [node name="present4" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( -0.949827, 0.0515094, 0.487336, 0.0440634, 1.06755, -0.0269547, -0.488065, -0.00386286, -0.950841, 20.6581, -0.00647063, -6.69246 )
+transform = Transform( -0.103699, -0.00178873, -0.736274, -0.066099, 0.740561, 0.00751038, 0.733303, 0.0665002, -0.103442, 20.957, 0.00956202, -2.8134 )
 
 [node name="present5" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( -0.440624, -0.019101, -0.534572, 0.00649648, 0.692339, -0.030093, 0.534873, -0.0241443, -0.44001, -9.28492, -0.00442254, -4.00598 )
+transform = Transform( 0.646267, 0.0132264, 0.0868524, -0.0135254, 0.652069, 0.00134123, -0.0868064, -0.00313013, 0.646401, 26.3365, -0.00206874, -22.917 )
 
 [node name="present6" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( 0.0974272, 5.7486e-05, -0.811048, 0.0667351, 0.814108, 0.00807425, 0.808298, -0.0672217, 0.097092, -1.99715, -0.00882099, 1.09492 )
+transform = Transform( -0.738566, 0.0449628, -0.155851, 0.0568756, 0.752196, -0.0525213, 0.15191, -0.0630211, -0.738067, -1.61975, -0.00320422, -24.813 )
 
 [node name="present7" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( -0.759236, -0.0151542, 0.289821, 0.00491322, 0.810916, 0.0552725, -0.290175, 0.0533811, -0.757373, 5.8758, -0.00655472, -21.5822 )
+transform = Transform( -0.390906, 0.0238656, -0.920915, 0.0587582, 0.999004, 0.000947825, 0.919348, -0.0537015, -0.391633, 5.13063, 0.00769566, -16.7386 )
 
 [node name="present8" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( 0.0887912, 0.000264728, 1.1044, 0.0374384, 1.10733, -0.00327538, -1.10377, 0.0375805, 0.0887312, 4.3729, 0.00483909, -22.7759 )
+transform = Transform( -0.130117, 0.00591451, 0.874511, 0.05275, 0.882581, 0.00187951, -0.872939, 0.0524511, -0.130238, 9.44561, 0.00323826, -25.255 )
 
 [node name="present9" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( 0.637871, -0.0502781, 0.320682, 0.0746268, 0.71085, -0.0369903, -0.315904, 0.0664045, 0.63878, 21.9225, 0.00906617, -1.09733 )
+transform = Transform( 0.0676336, 0.000579175, 0.744293, -0.0522971, 0.745516, 0.00417208, -0.742454, -0.05246, 0.0675072, -2.24752, 0.00241175, -1.11976 )
 
 [node name="present10" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( -0.615117, -0.0429864, 0.876407, -0.0488344, 1.07032, 0.0182226, -0.876101, -0.0294793, -0.616348, 10.669, 0.00709079, -19.1996 )
+transform = Transform( -0.320459, -0.0218539, 1.06853, -0.123754, 1.10878, -0.0144376, -1.06156, -0.122662, -0.320879, 2.81801, -0.00139051, -26.8229 )
 
 [node name="present11" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( 0.619152, -0.018349, -0.0709697, 0.0129514, 0.621514, -0.0477007, 0.0721502, 0.0458956, 0.617585, 13.3708, -0.00459486, -30.7208 )
+transform = Transform( -0.431686, -0.0228796, -0.981625, -0.0866848, 1.06901, 0.0132048, 0.978058, 0.0846472, -0.43209, 18.454, 0.0013988, -6.71612 )
 
 [node name="present12" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( -0.870068, -0.00243198, 0.593466, 0.0265456, 1.05198, 0.0432289, -0.592877, 0.0506704, -0.868997, -1.35961, 0.00117023, 2.61604 )
+transform = Transform( 0.830209, 0.0442145, 0.368178, -0.0692099, 0.905388, 0.0473344, -0.364308, -0.0712435, 0.830037, 22.7409, 0.0142668, -2.57876 )
 
 [node name="present13" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( -0.477984, -0.0405008, 0.938692, -0.166241, 1.04021, -0.0397694, -0.924741, -0.166064, -0.478045, 25.1719, 0.0194866, -10.3138 )
+transform = Transform( 0.69319, 0.0538103, -0.871254, -0.125517, 1.10713, -0.0314854, 0.863843, 0.117687, 0.694562, 21.4473, -0.0232057, 0.180998 )
 
 [node name="present14" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
-transform = Transform( -0.0462759, -0.00325135, 0.894493, -0.106113, 0.889385, -0.00225692, -0.888183, -0.106088, -0.046335, 2.62771, 0.0116426, -21.3217 )
+transform = Transform( 0.682704, 0.0149765, -0.930288, -0.0930038, 1.14918, -0.0497517, 0.925749, 0.104406, 0.681054, 3.77298, -0.00487794, -1.16284 )
+
+[node name="present15" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( -0.251954, 0.0203946, -0.929672, 0.125224, 0.955163, -0.0129837, 0.921426, -0.124233, -0.252444, 10.842, -0.0125323, -18.6887 )
+
+[node name="present16" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( 0.428884, -0.0126228, 0.525252, 0.0306097, 0.677479, -0.00871258, -0.524512, 0.0292151, 0.428982, 15.4974, -0.000892612, -30.4252 )
+
+[node name="present17" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( 0.199757, -0.0112194, 0.836628, 0.063128, 0.857891, -0.00356819, -0.834319, 0.0622254, 0.20004, 4.21194, -0.0106297, -1.31868 )
+
+[node name="present18" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( -0.144305, 0.00409363, -0.785269, -0.0062706, 0.798387, 0.00531433, 0.785255, 0.00712774, -0.144265, 13.5142, -0.000207671, -18.9679 )
+
+[node name="present19" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( -1.02486, 0.072662, -0.222232, 0.0895469, 1.04494, -0.0713024, 0.215981, -0.0884473, -1.02496, 7.37805, -0.00527198, -16.1783 )
+
+[node name="present20" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( -0.266052, -0.00542994, 0.535176, -0.0314874, 0.596777, -0.00959836, -0.534277, -0.0324669, -0.265934, 0.194727, -0.00159124, 1.14265 )
+
+[node name="present21" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( -0.432055, -0.019897, 0.561737, -0.0543436, 0.706669, -0.0167673, -0.559457, -0.0532773, -0.432187, 14.0254, 0.00412694, -9.92668 )
+
+[node name="present22" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( 0.899956, 0.0101862, -0.148507, -0.00557086, 0.911712, 0.0287754, 0.148751, -0.0274828, 0.899553, 7.91229, 0.00275719, -12.4317 )
+
+[node name="present23" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( 0.631181, 0.0197961, 0.222047, -0.00355068, 0.667556, -0.0494215, -0.222899, 0.0454226, 0.629554, 14.0157, -0.00292658, 4.14541 )
+
+[node name="present24" type="Spatial" parent="Scatter2/presentRed/Duplicates" instance=ExtResource( 52 )]
+transform = Transform( 1.05205, 0.0573695, -0.123931, -0.0551709, 1.05922, 0.0219796, 0.124925, -0.0153518, 1.05339, -3.35538, -0.00296915, 3.88884 )
 
 [node name="trainToy" type="Spatial" parent="Scatter2"]
 script = ExtResource( 7 )
@@ -1228,46 +873,76 @@ __meta__ = {
 }
 
 [node name="trainWagon" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( -0.32829, -0.0218908, 0.51797, -0.0321736, 0.612765, 0.00550545, -0.517433, -0.0242125, -0.328973, 15.7215, 0.000264078, -30.7168 )
+transform = Transform( -0.841218, 0.0513861, -0.17622, 0.0606827, 0.857962, -0.0394964, 0.173239, -0.0510081, -0.84186, 1.03872, -0.00405752, -18.9864 )
 
 [node name="trainWagon2" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( -0.833491, 0.0304001, 0.0445492, 0.0300995, 0.834667, -0.00642642, -0.0447528, -0.00480757, -0.83402, 10.7218, 0.00756015, -8.09455 )
+transform = Transform( 0.437549, -0.0277175, 0.179228, 0.0402363, 0.471252, -0.02535, -0.176839, 0.0386436, 0.437693, 1.65295, 0.00222513, -26.255 )
 
 [node name="trainWagon3" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.719373, 0.0392575, 0.100595, -0.0409099, 0.726223, 0.00914304, -0.0999339, -0.0146991, 0.720385, 2.47946, 0.00609842, -4.53787 )
+transform = Transform( 0.253071, -0.0133959, -0.706461, 0.0521972, 0.74871, 0.00450128, 0.704657, -0.0506494, 0.253386, 12.5864, 0.0013031, -30.6611 )
 
 [node name="trainWagon4" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.0905522, 0.00363372, -0.666358, 0.0193211, 0.672186, 0.00629106, 0.666088, -0.019992, 0.0904065, 9.76257, 0.000425672, 4.4215 )
+transform = Transform( 0.095447, -0.00274509, -0.727765, -0.0179232, 0.733766, -0.00511836, 0.727549, 0.0184364, 0.0953492, 15.5056, -0.00130738, -33.1184 )
 
 [node name="trainWagon5" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.475039, -0.0414554, 0.232324, 0.0311686, 0.528628, 0.0305961, -0.233926, -0.0137495, 0.475862, 26.8371, 0.0114137, -20.7715 )
+transform = Transform( 0.329492, -0.00108991, -0.754796, 0.0474004, 0.821983, 0.0195048, 0.753307, -0.051245, 0.328916, 2.95387, 0.00853891, -6.47184 )
 
 [node name="trainWagon6" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( -0.162424, 0.00209915, 0.757257, 0.0627703, 0.771852, 0.011324, -0.754653, 0.063749, -0.162042, 0.0965805, -0.00205876, -19.9731 )
+transform = Transform( -0.334795, -0.00490114, 0.741038, -0.0325096, 0.812468, -0.009314, -0.740341, -0.0334605, -0.334701, 10.6066, -0.00117517, -23.0486 )
 
 [node name="trainWagon7" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.752743, 0.0170492, 0.193178, -0.0215725, 0.776869, 0.0154962, -0.192726, -0.0203673, 0.752777, 11.071, -0.00539896, -22.3932 )
+transform = Transform( 0.542981, -0.0403934, -0.437236, 0.0291865, 0.69713, -0.0281581, 0.438127, 0.00362007, 0.543753, 14.6961, 0.00700329, -10.425 )
 
 [node name="trainWagon8" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.607022, 0.0125652, 0.48696, -0.00152474, 0.778094, -0.0181767, -0.48712, 0.0132225, 0.60688, 6.317, 0.00356257, -16.1468 )
+transform = Transform( -0.00185323, 0.000161196, 0.513982, 0.0436186, 0.512131, -3.3423e-06, -0.512128, 0.0436183, -0.00186023, 15.3736, -0.00442108, 3.23013 )
 
 [node name="trainWagon9" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.131324, -0.0108326, 0.484282, 0.00412546, 0.50177, 0.0101051, -0.484386, 0.00133666, 0.131382, 5.54827, 0.001209, -16.7868 )
+transform = Transform( -0.0941378, 0.00668679, 0.566017, 0.0341834, 0.572811, -0.0010818, -0.565023, 0.0335404, -0.0943688, 17.4778, -0.00279066, -2.16535 )
 
 [node name="trainWagon10" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( -0.174408, -0.00845721, -0.606153, -0.0018107, 0.630745, -0.00827933, 0.606209, -0.000549183, -0.174417, -1.24277, -0.00133729, -6.65205 )
+transform = Transform( 0.301956, -0.024329, 0.705291, 0.108175, 0.75967, -0.0201084, -0.69737, 0.107305, 0.302267, 6.45272, 0.00359325, -7.64813 )
 
 [node name="trainWagon11" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.202398, 0.0170204, -0.812668, -0.0431843, 0.836524, 0.00676482, 0.811698, 0.0402611, 0.203, -3.82146, 0.00101757, -5.64499 )
+transform = Transform( -0.0726122, -0.0026468, 0.874226, -0.027073, 0.876823, 0.000406011, -0.873811, -0.0269464, -0.0726592, 27.9588, -0.00491761, -19.9011 )
 
 [node name="trainWagon12" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.296384, -0.0253604, -0.405786, 0.0308283, 0.502116, -0.00886388, 0.405407, -0.0196419, 0.297335, 9.48526, 0.00299823, -29.6379 )
+transform = Transform( -0.553534, -0.0255203, -0.174599, -0.0361768, 0.579071, 0.0300518, 0.172706, 0.0395043, -0.553306, 23.9107, 0.00944373, -0.6014 )
 
 [node name="trainWagon13" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( -0.627126, -0.0431063, -0.36857, -0.0465655, 0.727177, -0.00581556, 0.368149, 0.0185478, -0.628578, 18.4964, 0.00963256, -3.45406 )
+transform = Transform( -0.0187692, -0.00119011, -0.559108, -0.0145147, 0.559235, -0.000703129, 0.558921, 0.0144829, -0.0187937, 7.34877, 0.00147778, 4.73381 )
 
 [node name="trainWagon14" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
-transform = Transform( 0.546839, 0.00741973, -0.401604, -0.0344562, 0.676758, -0.0344136, 0.400191, 0.0481297, 0.545805, 3.94938, 0.00296947, -31.572 )
+transform = Transform( 0.499021, -0.0195514, 0.330495, 0.0164398, 0.598539, 0.0105855, -0.330664, 0.000251933, 0.499292, 20.8748, 0.00415193, -11.6242 )
+
+[node name="trainWagon15" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( 0.501312, 0.0262353, 0.433727, -0.0459861, 0.66169, 0.0131275, -0.43208, -0.0399845, 0.501826, 18.2452, 0.0117463, -10.8161 )
+
+[node name="trainWagon16" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( 0.331096, 0.0246664, -0.413127, -0.00869392, 0.529362, 0.0246388, 0.413772, -0.00861518, 0.331098, 6.55238, 0.00288983, 4.49321 )
+
+[node name="trainWagon17" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( -0.372412, 0.0313717, -0.654082, 0.0212133, 0.752643, 0.0240209, 0.65449, -0.0065437, -0.372958, 7.27353, -0.00280361, -16.6369 )
+
+[node name="trainWagon18" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( -0.862535, -0.0512071, 0.250575, -0.0741515, 0.893647, -0.0726218, -0.244769, -0.0902785, -0.860997, -8.65829, 0.00945051, -7.00853 )
+
+[node name="trainWagon19" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( 0.706219, -0.0357125, 0.338221, 0.0683469, 0.778513, -0.0605085, -0.333163, 0.0840071, 0.704528, 7.28643, -0.00460349, 4.57078 )
+
+[node name="trainWagon20" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( 0.713535, 0.0484742, 0.59454, -0.0450774, 0.928688, -0.0216185, -0.594808, -0.0122305, 0.714853, 3.14973, 0.0051429, -24.5552 )
+
+[node name="trainWagon21" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( -0.733567, -0.0392791, -0.127247, -0.0467728, 0.742997, 0.0402893, 0.124687, 0.0476242, -0.733512, 14.4283, -0.0140225, 4.0369 )
+
+[node name="trainWagon22" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( -0.021259, -4.00428e-05, 0.528964, -0.0344119, 0.52827, -0.00134302, -0.527844, -0.0344381, -0.0212165, 13.9558, 0.00142916, -6.06024 )
+
+[node name="trainWagon23" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( -0.641219, 0.0136041, 0.391433, 0.0437559, 0.748711, 0.0456569, -0.389218, 0.0617581, -0.639736, 13.6597, 0.0142809, 1.92163 )
+
+[node name="trainWagon24" type="Spatial" parent="Scatter2/trainToy/Duplicates" instance=ExtResource( 50 )]
+transform = Transform( 0.36212, 0.0089784, -0.686958, -0.0723725, 0.772721, -0.0280508, 0.683194, 0.0770974, 0.361143, -13.6041, -0.0146352, -7.43844 )
 
 [node name="snowMan" type="Spatial" parent="Scatter2"]
 script = ExtResource( 7 )
@@ -1285,46 +960,76 @@ __meta__ = {
 }
 
 [node name="snowman" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( 0.00737959, 0.000473784, 0.707551, -0.0756316, 0.703536, 0.000317729, -0.703498, -0.0756308, 0.00738796, 24.8145, 0.0149971, -14.5313 )
+transform = Transform( -0.537131, -0.00190221, -0.194634, -0.0179732, 0.569327, 0.0440364, 0.193812, 0.0475249, -0.535326, 8.64659, 0.00249659, -23.4188 )
 
 [node name="snowman2" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( -0.719037, -0.0279722, -0.0353896, -0.0261264, 0.719, -0.0374744, 0.0367733, -0.0361175, -0.718604, 18.8781, -0.00556461, -30.0651 )
+transform = Transform( 0.585882, 0.0431638, 0.732808, -0.0190358, 0.93817, -0.0400409, -0.733831, 0.0101251, 0.586104, 7.41228, 0.00554387, -31.769 )
 
 [node name="snowman3" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( 0.460117, 0.0365628, -0.79844, -0.02207, 0.921518, 0.0294806, 0.798972, 0.00439905, 0.460625, 11.7396, -0.00266818, -19.7719 )
+transform = Transform( -0.250652, 0.00230294, 0.481666, 0.0286859, 0.542087, 0.0123359, -0.480816, 0.0311408, -0.250359, 12.1587, 0.00313175, -19.1339 )
 
 [node name="snowman4" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( -0.627081, 0.0151024, 0.197755, 0.0119847, 0.657475, -0.0122072, -0.197969, -0.00803535, -0.627144, 20.2906, -1.28824e-05, -6.21766 )
+transform = Transform( 0.495803, -0.0311974, -0.478083, 0.0749082, 0.684584, 0.033012, 0.473207, -0.0756819, 0.495685, 11.3728, -0.00929365, -9.71457 )
 
 [node name="snowman5" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( -0.048281, -0.00348366, -0.729448, -0.0619646, 0.728421, 0.000622585, 0.72682, 0.0618697, -0.0484025, 6.01145, 0.00569668, -11.0997 )
+transform = Transform( 0.504084, -0.0018529, -0.165815, 0.0152577, 0.528893, 0.0404738, 0.165122, -0.0432145, 0.50246, -6.20143, 0.0104003, 0.907101 )
 
 [node name="snowman6" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( -0.372695, 0.0121451, -0.325736, 0.0213807, 0.494631, -0.0060207, 0.325261, -0.0185979, -0.372845, -13.4418, -0.000752874, -6.6575 )
+transform = Transform( -0.59234, 0.0165807, -0.325725, 0.0403323, 0.67386, -0.0390433, 0.323643, -0.0536298, -0.591284, 18.8849, 0.00951399, -31.1815 )
 
 [node name="snowman7" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( 0.542737, -0.00671599, -0.0641, 0.00867204, 0.546241, 0.0161947, 0.0638648, -0.0170988, 0.542537, 17.9847, -0.00234986, -6.81725 )
+transform = Transform( 0.518157, -0.0055364, -0.46722, 0.00920182, 0.697655, 0.00193803, 0.467162, -0.00760116, 0.518183, 17.2817, -0.000143292, -6.3407 )
 
 [node name="snowman8" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( 0.508447, -0.0400003, -0.662167, 0.0923715, 0.830434, 0.0207626, 0.656912, -0.0858112, 0.509595, 18.2186, 0.0179472, -1.14711 )
+transform = Transform( 0.133741, -0.00798618, -0.800659, 0.0904562, 0.806705, 0.00706322, 0.795573, -0.0903794, 0.133793, 11.426, -0.0105408, -33.0426 )
 
 [node name="snowman9" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( -0.631161, -0.0180823, -0.323427, -0.0481744, 0.70569, 0.0545574, 0.320329, 0.0705004, -0.629059, -11.0587, -0.00245028, -5.00802 )
+transform = Transform( 0.0374588, -0.00121577, -0.905932, 0.00911284, 0.90666, -0.000839948, 0.905887, -0.00907035, 0.0374691, 4.07012, 0.000353074, -4.68443 )
 
 [node name="snowman10" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( 0.505766, -0.039929, 0.544949, 0.079429, 0.74005, -0.0194936, -0.540606, 0.0713767, 0.506965, 8.58487, 0.0123087, -15.9599 )
+transform = Transform( -0.144948, 0.00926417, 0.453026, 0.00404167, 0.475647, -0.00843362, -0.453102, 0.00127915, -0.144999, 9.64696, -0.000541707, -17.6462 )
 
 [node name="snowman11" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( -0.814216, -0.018203, 0.201167, -0.0200306, 0.838642, -0.00518702, -0.200994, -0.00983777, -0.814403, -2.46178, 0.000955217, 2.42758 )
+transform = Transform( 0.636369, -0.00723708, 0.0658534, 0.00470551, 0.639311, 0.0247869, -0.0660825, -0.0241693, 0.635928, 26.4051, -0.00192943, -12.5366 )
 
 [node name="snowman12" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( -0.440632, -0.0110441, 0.543088, -0.0558854, 0.696511, -0.0311783, -0.540318, -0.0630341, -0.439667, 27.1439, 0.0131514, -24.807 )
+transform = Transform( 0.00178713, -3.41188e-05, -0.641339, -0.0380825, 0.640209, -0.000140179, 0.640207, 0.0380828, 0.00178195, 24.4958, 0.000285936, -11.3927 )
 
 [node name="snowman13" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( 0.768725, -0.00100193, -0.0386617, 0.0028385, 0.768826, 0.0365145, 0.0385703, -0.036611, 0.767858, 1.92706, 0.00335768, 1.80008 )
+transform = Transform( -0.0112544, 0.00013676, -0.748361, -0.00386985, 0.748436, 0.000194972, 0.748351, 0.00387234, -0.0112535, 2.74848, -0.000770894, 1.76237 )
 
 [node name="snowman14" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
-transform = Transform( 0.514486, 0.0316789, -0.50804, -0.0429851, 0.722464, 0.00151881, 0.507208, 0.0290942, 0.515459, -3.59499, 0.00339068, -9.20185 )
+transform = Transform( -0.339852, -0.00787479, 0.542148, 0.0183578, 0.639309, 0.0207939, -0.541894, 0.0265967, -0.339307, 6.34624, -0.00381786, -26.331 )
+
+[node name="snowman15" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( -0.434107, 0.0135173, -0.265203, 0.0062878, 0.508606, 0.0156311, 0.265473, 0.0100573, -0.434036, 21.1759, 0.000287652, -2.6893 )
+
+[node name="snowman16" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( 0.604133, -0.00749237, 0.318256, -0.015604, 0.68117, 0.0456565, -0.317962, -0.0476641, 0.602452, 2.63156, -0.0112163, -2.31829 )
+
+[node name="snowman17" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( -0.538529, -0.0422859, -0.203426, -0.0389496, 0.575667, -0.0165521, 0.204091, -0.0017159, -0.539933, 8.83147, 0.00920261, -10.7351 )
+
+[node name="snowman18" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( -0.594841, -0.00501666, -0.170651, 0.00294525, 0.618195, -0.0284395, 0.170699, -0.028148, -0.594182, -2.75838, 0.00220647, 4.29788 )
+
+[node name="snowman19" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( -0.609891, -0.0474599, 0.258628, -0.0679943, 0.659499, -0.0393202, -0.254004, -0.0625848, -0.610469, 12.9992, -0.00735822, 1.02427 )
+
+[node name="snowman20" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( 0.799283, 0.00342324, 0.488182, 0.0158408, 0.935885, -0.0324982, -0.487937, 0.0359909, 0.79863, 6.04261, -0.00745062, -25.1767 )
+
+[node name="snowman21" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( -0.194612, -0.00635238, 0.633781, 0.0139411, 0.662781, 0.0109239, -0.633659, 0.0165328, -0.194409, 8.45476, 0.00259424, -21.2287 )
+
+[node name="snowman22" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( 0.610848, 0.0222014, -0.18007, -0.0281091, 0.636379, -0.0168927, 0.179242, 0.0241367, 0.611018, 23.4967, 0.00177494, -12.2952 )
+
+[node name="snowman23" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( 0.183289, 0.000664189, -0.692639, -0.00447069, 0.716466, -0.000496015, 0.692624, 0.00444882, 0.183289, 11.7555, -0.000546869, -6.58363 )
+
+[node name="snowman24" type="Spatial" parent="Scatter2/snowMan/Duplicates" instance=ExtResource( 49 )]
+transform = Transform( -0.402081, 0.00410481, 0.42904, 0.0332101, 0.586521, 0.0255119, -0.427772, 0.0416764, -0.401292, 10.5139, 0.00786299, -18.9773 )
 
 [node name="snowmanFancy" type="Spatial" parent="Scatter2"]
 script = ExtResource( 7 )
@@ -1342,46 +1047,76 @@ __meta__ = {
 }
 
 [node name="snowmanFancy" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.0150243, -0.000551009, -0.516611, 0.0193604, 0.516467, 1.2191e-05, 0.516248, -0.0193525, 0.0150344, 20.8856, -0.00255719, -7.15235 )
+transform = Transform( -0.729054, 0.0349782, 0.477577, 0.0107974, 0.870901, -0.0473027, -0.478734, -0.0336252, -0.728358, 5.69279, 0.00772002, -17.6695 )
 
 [node name="snowmanFancy2" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.325265, 0.00955428, -0.46937, -0.0507811, 0.568384, -0.0236207, 0.466713, 0.0551849, 0.324547, 8.90955, 0.00550093, -28.2885 )
+transform = Transform( 0.764374, -0.000643345, 0.106048, -0.00730421, 0.769529, 0.057316, -0.105798, -0.057776, 0.762222, -7.2427, 0.00500427, -3.37103 )
 
 [node name="snowmanFancy3" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( -0.608034, -0.00294224, -0.414658, 0.00148769, 0.735934, -0.00740336, 0.414666, -0.00695458, -0.607996, 6.30233, 0.000463387, -17.2996 )
+transform = Transform( 0.484157, 0.0218506, 0.46775, -0.0126489, 0.673186, -0.0183548, -0.46809, 0.00440956, 0.484302, -1.14364, -0.00364755, -23.813 )
 
 [node name="snowmanFancy4" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.0411488, -0.000486893, 0.584112, 0.00179814, 0.585557, 0.000361424, -0.58411, 0.00176829, 0.0411501, 0.282569, -0.000165586, 1.57125 )
+transform = Transform( -0.74574, -5.92429e-05, 0.137366, 0.00646162, 0.757432, 0.0354058, -0.137214, 0.0359905, -0.7449, 15.7754, -0.000598743, -32.0731 )
 
 [node name="snowmanFancy5" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.277034, 0.00343975, 0.636545, -0.0154113, 0.694048, 0.00295674, -0.636367, -0.0153107, 0.27704, 11.1302, -0.00179674, -17.6565 )
+transform = Transform( -0.188497, 0.00484312, -0.646422, -0.024518, 0.672805, 0.0121902, 0.645975, 0.0269496, -0.188164, 12.2224, 0.00237574, 1.45394 )
 
 [node name="snowmanFancy6" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.429954, -0.033838, -0.692542, 0.0230603, 0.81513, -0.0255111, 0.692984, -0.00613053, 0.430529, 6.85588, 0.00731547, -5.65479 )
+transform = Transform( 0.0477405, 0.000442836, -0.866903, -0.0489041, 0.866836, -0.00225036, 0.865523, 0.0489538, 0.0476895, 24.1045, 0.00115706, -15.8031 )
 
 [node name="snowmanFancy7" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( -0.744569, 0.00181884, -0.404953, 0.0368192, 0.844354, -0.0639054, 0.40328, -0.0737309, -0.741824, 25.0192, 0.00979182, -1.42129 )
+transform = Transform( -0.694907, 0.0354951, -0.626382, 0.0496672, 0.9349, -0.00212282, 0.625417, -0.0348057, -0.695809, -7.40909, -0.000249063, -0.132065 )
 
 [node name="snowmanFancy8" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( -0.860771, 0.0297039, 0.324438, 0.0162964, 0.919308, -0.040931, -0.325387, -0.0325361, -0.86031, 8.08519, 0.00684069, -31.5024 )
+transform = Transform( 0.495234, -0.0225769, -0.750836, -0.0082869, 0.899108, -0.0325012, 0.751129, 0.0248049, 0.494681, 6.76814, -0.00687481, -11.8877 )
 
 [node name="snowmanFancy9" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( -0.813719, 0.0106484, 0.00786933, 0.0109493, 0.813127, 0.0319122, -0.00744502, 0.0320139, -0.813163, 11.0761, -0.00638557, -29.0807 )
+transform = Transform( 0.861656, -0.0552138, -0.206528, 0.0438899, 0.885079, -0.0535065, 0.209228, 0.0417217, 0.861764, -11.746, -0.00868655, -3.67476 )
 
 [node name="snowmanFancy10" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.277695, -0.0146027, -0.543256, 0.0727689, 0.605576, 0.0209193, 0.538558, -0.0742946, 0.277291, 0.269058, 0.00679047, 6.28166 )
+transform = Transform( 0.703591, 0.0555368, -0.0782026, -0.0495868, 0.706197, 0.055383, 0.0821044, -0.0494145, 0.703603, 12.8778, 0.00664588, -5.71576 )
 
 [node name="snowmanFancy11" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.301865, 0.0125644, 0.62726, -0.0184155, 0.695968, -0.00507834, -0.627116, -0.0143894, 0.302084, 11.9987, 0.00167466, -6.99129 )
+transform = Transform( 0.49196, -0.000803601, -0.254872, -0.00238474, 0.554021, -0.00634989, 0.254862, 0.00673515, 0.49192, 1.69485, 0.000727946, -2.57646 )
 
 [node name="snowmanFancy12" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.55552, -0.0363366, -0.0726566, 0.0389497, 0.559792, 0.017843, 0.0712899, -0.0226958, 0.556421, 9.48334, 0.00258682, -6.46973 )
+transform = Transform( -0.171584, 0.0130389, 0.448434, 0.016858, 0.479963, -0.00750523, -0.448307, 0.0130579, -0.171915, 7.71247, -0.00124326, -23.5758 )
 
 [node name="snowmanFancy13" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( -0.0816264, -0.000801928, 0.705489, -0.0607597, 0.707565, -0.00622572, -0.702868, -0.0610725, -0.0813926, 23.2885, 0.0127782, 0.467978 )
+transform = Transform( -0.161214, -0.00134896, -0.74015, 0.0526452, 0.755564, -0.0128438, 0.738276, -0.0541725, -0.160707, 28.4193, -0.00158353, -25.5447 )
 
 [node name="snowmanFancy14" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
-transform = Transform( 0.501661, 0.0122014, 0.149909, -0.0107064, 0.523569, -0.00678615, -0.150023, 0.00343572, 0.501764, 16.6642, 0.00239606, -32.1068 )
+transform = Transform( 0.935738, 0.0599688, 0.0868612, -0.0628456, 0.939137, 0.0286445, -0.0848031, -0.0342609, 0.93722, 22.0822, 0.0150914, -7.13153 )
+
+[node name="snowmanFancy15" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( -0.0462992, -0.000655896, 0.724614, -0.0322219, 0.725375, -0.00140223, -0.723898, -0.0322457, -0.0462826, -11.5862, 0.000621782, -3.42046 )
+
+[node name="snowmanFancy16" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( -0.183118, 0.0124786, -0.647077, 0.0661729, 0.669316, -0.00581899, 0.643806, -0.0652456, -0.18345, 6.29691, -5.95808e-05, -26.3311 )
+
+[node name="snowmanFancy17" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( 0.536119, -0.000527958, 0.0356645, 0.00307588, 0.535928, -0.0383039, -0.0355356, 0.0384236, 0.534749, 25.388, 0.00536162, -23.8109 )
+
+[node name="snowmanFancy18" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( 0.47832, -0.0411649, 0.542396, 0.0424626, 0.722891, 0.0174173, -0.542296, 0.0202948, 0.479772, -0.183673, 0.00270279, -22.2534 )
+
+[node name="snowmanFancy19" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( -0.0127725, 0.00104754, 0.862059, 0.0275167, 0.861715, -0.000639426, -0.861621, 0.0275042, -0.0127994, 2.93217, -0.00244949, -2.74152 )
+
+[node name="snowmanFancy20" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( -0.118099, 0.000853736, -0.724193, 0.0205912, 0.733467, -0.00249328, 0.723901, -0.020724, -0.118076, 11.4466, 0.00129462, -7.3939 )
+
+[node name="snowmanFancy21" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( 0.9039, 0.0149328, 0.228222, -0.0175683, 0.932181, 0.0085878, -0.228034, -0.0126257, 0.903983, -1.3127, 0.000485632, -2.74943 )
+
+[node name="snowmanFancy22" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( -0.549104, -0.0183995, -0.0862474, -0.0236176, 0.554715, 0.0320243, 0.0849669, 0.0352818, -0.548478, -13.3674, -0.00428087, -6.73309 )
+
+[node name="snowmanFancy23" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( -0.905832, 0.0366752, 0.083065, 0.0404059, 0.908619, 0.0394536, -0.0813156, 0.0429436, -0.905716, -11.4963, -0.00647721, -3.82876 )
+
+[node name="snowmanFancy24" type="Spatial" parent="Scatter2/snowmanFancy/Duplicates" instance=ExtResource( 51 )]
+transform = Transform( 0.564493, -0.0252652, 0.183533, 0.0314306, 0.593095, -0.0150257, -0.182578, 0.0239859, 0.564858, 2.29857, -0.00107591, -27.9168 )
 
 [node name="Food" type="Spatial" parent="Scatter2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.047, 0 )
@@ -1399,134 +1134,224 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="bacon" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.57192, -0.0394037, 0.607253, -0.0526326, 0.833434, 0.00450998, -0.60625, -0.0351835, -0.573259, -8.24322, -0.00644026, -4.39082 )
+[node name="bacon" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.563924, -0.0120469, 0.550682, 0.0377912, 0.787094, -0.0214812, -0.549516, 0.0417671, 0.563643, 6.70576, -0.00473002, -27.2727 )
 
-[node name="bacon2" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.570971, -0.0307468, 0.495435, -0.0349057, 0.755742, 0.00667394, -0.495159, -0.0178209, -0.57176, 4.16404, 0.0060826, -7.68824 )
+[node name="bacon2" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.480008, -0.0194307, -0.155091, 0.0104346, 0.503766, -0.0308194, 0.155955, 0.0260991, 0.479412, -13.173, -0.00258177, -5.72185 )
 
-[node name="bacon3" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.501371, -0.0168479, 0.485777, -0.0105273, 0.698102, 0.0133466, -0.485955, 0.00225932, -0.501476, 11.7026, 0.00317102, -17.31 )
+[node name="bacon3" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.668042, 0.0384522, 0.143501, 0.0304825, 0.682455, -0.0409635, -0.145403, -0.0335949, -0.667893, 0.923408, -0.00111234, 5.5451 )
 
-[node name="bacon4" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.437042, 0.0172637, 0.681372, -0.015014, 0.808974, -0.030127, -0.681425, -0.0288967, -0.436344, 6.38748, 0.00244407, -21.4911 )
+[node name="bacon4" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.492741, 0.0137635, 0.0528738, 0.0175942, 0.494188, 0.0353221, -0.0517254, 0.0369834, -0.491666, 15.7278, -5.65394e-05, 2.55433 )
 
-[node name="bacon5" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.906866, 0.0164765, 0.0442919, -0.0148471, 0.907355, -0.033544, -0.0448643, 0.0327744, 0.906395, 3.59328, -0.00406327, -20.6779 )
+[node name="bacon5" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.570578, -0.0423835, 0.481412, -0.0936861, 0.740428, -0.0458511, -0.474106, -0.095305, -0.57031, 9.64331, 0.00148578, -30.1176 )
 
-[node name="bacon6" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.433288, 0.0296368, -0.547851, 0.0707105, 0.695285, -0.0183114, 0.544076, -0.0667603, -0.433914, 22.8808, -0.00217379, -3.2743 )
+[node name="bacon6" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.278636, -0.00947986, -0.893, 0.0151304, 0.935372, -0.00520865, 0.892923, -0.0128915, 0.278748, -3.68833, -0.00151407, 4.88109 )
 
-[node name="bacon7" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.884198, 0.0578765, 0.196605, 0.0750439, 0.901656, 0.0720683, -0.190714, 0.0864624, -0.883155, 9.40711, 0.0164287, -31.1974 )
+[node name="bacon7" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.687512, -0.0288774, -0.133725, -0.0187029, 0.698604, -0.0547043, 0.135523, -0.0500845, -0.685941, -6.32237, -0.00838978, -7.78996 )
 
-[node name="bacon8" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.161975, -0.0119236, -0.830303, -0.111814, 0.83856, 0.00977047, 0.822826, 0.111605, -0.162119, -8.88753, -0.0168242, -5.57737 )
+[node name="bacon8" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.0490917, -0.00417574, -0.485393, -0.0176016, 0.487564, -0.00241422, 0.485092, 0.0172687, -0.0492098, 11.6059, 0.0019192, -20.7233 )
 
-[node name="bacon9" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.517428, -0.00684829, 0.287177, -0.00876091, 0.590999, 0.0298787, -0.287125, -0.0303742, 0.51661, 3.70456, -0.00254924, -30.7374 )
+[node name="bacon9" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.574783, 0.015806, -0.11715, 0.00965668, 0.585878, 0.031668, 0.117817, 0.029091, -0.574128, 25.7017, 0.00153462, -23.717 )
 
-[node name="bacon10" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.899572, -0.0730048, -0.0697829, -0.0784369, 0.899053, 0.0705668, 0.0636161, 0.0761729, -0.899767, 24.7804, -0.0194022, -14.7772 )
+[node name="bacon10" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.91515, 0.0756496, -0.138307, -0.0683096, 0.924554, 0.0537114, 0.142075, -0.042758, 0.9167, 24.4039, 0.0094692, -10.877 )
 
-[node name="bacon11" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.613991, 0.018415, -0.313911, 0.0144204, 0.689569, 0.0122468, 0.31412, 0.00433835, -0.614145, 18.4673, 0.000937694, -2.44857 )
+[node name="bacon11" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.502703, 0.0346678, -0.32227, -0.0616858, 0.594071, -0.032316, 0.318205, 0.0603954, 0.50286, -5.70369, 0.00556253, -8.82339 )
 
-[node name="bacon12" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.243541, 0.0191, -0.836289, -0.0593948, 0.869208, 0.00255502, 0.834396, 0.056298, 0.244276, 20.3942, -0.000754529, -8.50346 )
+[node name="bacon12" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.916513, 0.0712777, 0.0367885, 0.0742582, 0.913512, 0.0800676, -0.0303252, 0.082732, -0.915787, 0.913543, -0.0245729, -1.00463 )
 
-[node name="bacon13" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.882133, 0.0702252, 0.135807, 0.0734499, 0.892127, 0.015778, -0.134091, 0.026688, -0.884783, 12.4543, 0.00245405, -15.5185 )
+[node name="bacon13" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.293215, -0.0123586, -0.38629, -0.00192189, 0.484919, -0.0140553, 0.386483, -0.0069648, -0.293138, 24.373, -0.00212889, -0.354697 )
 
-[node name="bacon14" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.521388, -0.0388284, -0.630134, -0.0513913, 0.817142, -0.00782924, 0.629234, 0.0345647, -0.522774, 1.93703, -0.00742602, 1.32648 )
+[node name="bacon14" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.476722, -0.0393196, 0.707806, -0.0994493, 0.848242, -0.0198601, -0.701887, -0.0934803, -0.477928, -8.30704, 0.0154721, -4.29434 )
 
-[node name="bacon15" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.294548, -0.00461593, 0.874337, -0.0042705, 0.922613, 0.00343215, -0.874339, -0.00295127, -0.294564, 0.43698, 0.000361619, -6.28877 )
+[node name="bacon15" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.0037569, 0.000173399, -0.610976, 0.0408613, 0.609619, -7.82434e-05, 0.609608, -0.040861, -0.00376008, -13.1518, -0.00363537, -6.79518 )
 
-[node name="bacon16" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.718661, 0.0475303, 0.225743, 0.0565304, 0.75235, 0.0215587, -0.223659, 0.0374344, -0.719908, -1.5693, 0.0048754, -5.58678 )
+[node name="bacon16" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.257926, -0.00969187, 0.694483, -0.045536, 0.739466, -0.00659209, -0.693057, -0.0449783, -0.258023, 3.16473, 0.00485866, 2.29674 )
 
-[node name="bacon17" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.342135, 0.000609519, 0.350097, -0.0269791, 0.488104, 0.0255158, -0.349057, -0.0371289, 0.341183, -7.71169, 0.00379507, 0.564995 )
+[node name="bacon17" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.226464, 0.00247691, -0.911935, -0.0165156, 0.939468, 0.00665306, 0.911789, 0.0176322, -0.226379, 7.93971, -0.000338503, -19.9906 )
 
-[node name="bacon18" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.518216, -0.0375479, -0.5463, -0.0332275, 0.75292, -0.0202298, 0.54658, 0.0101718, -0.51918, 2.12651, -0.00155638, -0.0743219 )
+[node name="bacon18" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.710338, 0.0419871, -0.403764, -0.0389516, 0.817056, 0.0164378, 0.404068, 0.00495124, 0.711388, 1.66284, -0.00663968, 3.56563 )
 
-[node name="bacon19" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.864314, -0.0132839, 0.171422, 0.024736, 0.879082, -0.0565978, -0.170147, 0.0603218, 0.862561, 1.81941, 0.0069419, -4.316 )
+[node name="bacon19" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.348138, 0.00200732, 0.834387, 0.0528351, 0.902234, -0.0242154, -0.832714, 0.0580853, 0.3473, -4.32143, 0.0110304, -4.61059 )
 
-[node name="bacon20" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.290675, -0.00324928, -0.89258, -0.051666, 0.937082, -0.0202367, 0.891089, 0.0553926, 0.289988, 11.107, -0.00960119, -15.7881 )
+[node name="bacon20" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.17061, 0.00279685, -0.856933, -0.0143891, 0.873619, 0.00571609, 0.856817, 0.0152282, -0.170537, 13.0799, 0.00120167, -6.84728 )
 
-[node name="bacon21" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.392975, 0.012207, -0.697652, 0.0215823, 0.800516, 0.00184999, 0.697424, -0.0178943, -0.39316, -2.00306, 0.00339819, -24.3277 )
+[node name="bacon21" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.408509, 0.0336882, -0.357575, -0.0594366, 0.540419, -0.0169883, 0.354206, 0.0518306, 0.409543, 15.0323, -0.00836664, -32.0238 )
 
-[node name="bacon22" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.62509, -0.020964, -0.0103827, 0.0214502, 0.624408, 0.0306506, 0.00933684, -0.0309852, 0.62469, -9.75255, 0.00774176, -2.45156 )
+[node name="bacon22" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.242659, -0.0170184, 0.893288, -0.0887401, 0.921531, -0.00654948, -0.889032, -0.0873388, -0.243167, -1.43699, -0.00850051, -4.4958 )
 
-[node name="bacon23" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.0467724, 0.00346723, 0.55977, 0.0745206, 0.556759, 0.0027781, -0.554798, 0.0744917, -0.0468184, 9.06806, 0.00723045, 5.45566 )
+[node name="bacon23" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.478755, 0.0134813, 0.739832, 0.0847166, 0.876386, 0.0388517, -0.735089, 0.0922205, -0.477366, 21.0432, 0.0126645, -5.50038 )
 
-[node name="bacon24" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.441771, -0.009274, 0.438596, 0.0157266, 0.621712, 0.0289864, -0.438412, 0.031647, -0.440916, 2.55322, 0.0062939, -3.16235 )
+[node name="bacon24" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.168142, -0.0136893, -0.493874, -0.0715883, 0.516861, 0.0100462, 0.48885, 0.0709818, -0.168399, 7.50005, 0.0135263, -20.3991 )
 
-[node name="bacon25" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.387361, 0.0100195, 0.451129, -0.0475649, 0.592146, 0.02769, -0.448726, -0.0541181, 0.3865, 12.1488, 0.00334302, -21.7429 )
+[node name="bacon25" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.0832179, -0.00510545, -0.682812, -0.0153641, 0.687676, -0.00701433, 0.682658, 0.0160994, 0.0830788, -6.2929, -0.000243444, 0.48082 )
 
-[node name="bacon26" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.288133, 0.0167946, -0.70764, -0.0982698, 0.757571, -0.0220334, 0.700984, 0.0992993, 0.28778, 1.43665, -0.0107075, -28.661 )
+[node name="bacon26" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.712917, -0.0511057, 0.13651, -0.0556892, 0.725275, -0.0193107, -0.134705, -0.0293665, -0.714486, -0.663504, -0.0141829, -6.90014 )
 
-[node name="bacon27" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.00203998, -6.20257e-05, -0.641063, 0.0128045, 0.640938, -0.000102757, 0.640935, -0.0128048, -0.00203834, 9.5088, 0.00042899, -25.0723 )
+[node name="bacon27" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.439417, -0.0101754, -0.707464, 0.00797716, 0.832674, -0.0169311, 0.707492, -0.0157085, -0.439209, 8.88604, 0.000226839, -15.7083 )
 
-[node name="bacon28" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.45532, 0.0372248, -0.516369, 0.0329242, 0.688354, 0.0205915, 0.516661, -0.01106, -0.456375, 18.2636, 4.49894e-05, -0.311088 )
+[node name="bacon28" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.435938, 0.0249977, 0.673977, -0.0503831, 0.801477, 0.00286192, -0.672556, -0.0438379, 0.436645, 4.97267, -0.010294, -27.0261 )
 
-[node name="bacon29" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.241215, -0.016183, -0.876266, 0.13469, 0.898737, 0.0204788, 0.866004, -0.135273, 0.240888, 22.3235, -0.00536091, -15.0685 )
+[node name="bacon29" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.90305, 0.0717573, 0.223913, 0.0601998, 0.929582, -0.0551148, -0.227293, -0.0388915, -0.904218, 5.17894, -0.0125608, -18.5559 )
 
-[node name="bacon30" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.179623, -0.0130591, -0.806689, -0.0642659, 0.824045, 0.000969819, 0.804231, 0.0629326, -0.180094, 5.76001, 0.0112749, -27.6341 )
+[node name="bacon30" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.322683, -0.0250952, -0.85145, -0.0341593, 0.910144, -0.0138794, 0.851135, 0.0270135, -0.323359, -1.96646, 0.0029588, 1.67702 )
 
-[node name="bacon31" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.406491, -0.00721449, 0.33435, -0.0241592, 0.525517, -0.0180325, -0.333554, -0.0292709, -0.406155, 3.45918, 0.00188515, -2.12255 )
+[node name="bacon31" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.406211, -0.00556548, 0.777874, -0.0373099, 0.876396, 0.0257538, -0.776999, -0.0449924, 0.405432, 26.0784, 0.00692546, -10.6183 )
 
-[node name="bacon32" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.00449844, 6.32803e-05, -0.616846, -0.0205127, 0.616522, -8.63436e-05, 0.616505, 0.0205128, 0.00449806, 13.462, 0.000223736, -5.62381 )
+[node name="bacon32" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.0880929, 0.000570895, -0.705303, 0.0335861, 0.70998, -0.00362025, 0.704503, -0.0337758, -0.0880203, 1.69749, 0.000759186, 1.82752 )
 
-[node name="bacon33" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.27036, -0.0220796, 0.526426, -0.0307292, 0.591338, 0.00902033, -0.525991, -0.0231979, -0.27111, 2.86432, 0.00352959, -19.0945 )
+[node name="bacon33" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.342474, 0.018144, -0.681696, 0.0601151, 0.760667, -0.00995509, 0.679282, -0.0581698, -0.34281, 2.43852, -0.0137151, -21.7451 )
 
-[node name="bacon34" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.721293, -0.0291817, 0.0692647, 0.0256907, 0.723778, 0.0374009, -0.070634, -0.0347457, 0.720914, 3.03754, 0.00193467, -4.51106 )
+[node name="bacon34" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.740222, -0.0123359, 0.139083, 0.0139649, 0.753109, -0.00752676, -0.138929, 0.00997476, 0.740287, -7.52712, -0.00321683, -6.54397 )
 
-[node name="bacon35" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.5838, -0.0403708, -0.160668, -0.041366, 0.605436, -0.00182006, 0.160414, 0.00920099, -0.585192, 18.7061, -0.0023081, -3.37534 )
+[node name="bacon35" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.414029, 0.0158656, 0.344691, -0.00105267, 0.53845, -0.0235196, -0.345054, 0.0173944, 0.413664, 1.08014, 2.80648e-05, -19.972 )
 
-[node name="bacon36" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.511207, 0.0403048, 0.457517, -0.0779616, 0.682255, 0.0270074, -0.452624, -0.0719926, 0.512082, -13.115, 0.00247603, -5.11668 )
+[node name="bacon36" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.353875, -0.0144872, -0.731614, 0.0124727, 0.812674, -0.0100593, 0.731651, -0.00684702, 0.354029, -4.15455, -0.00120667, 4.79116 )
 
-[node name="bacon37" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.694915, -0.0582756, 0.0108317, 0.0584006, 0.694945, -0.00785609, -0.0101366, 0.00873467, 0.69731, 16.0746, 0.00744359, 0.087448 )
+[node name="bacon37" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.25678, -0.0105109, 0.404217, -0.0499555, 0.475991, -0.019357, -0.401256, -0.0525334, -0.256265, 25.8563, 0.00552739, -17.6306 )
 
-[node name="bacon38" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.485297, 0.035526, -0.641685, 0.018442, 0.804524, 0.0305939, 0.642403, 0.00374154, -0.485633, 0.433691, 0.00373526, -22.7035 )
+[node name="bacon38" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.760831, 0.0412601, 0.390366, 0.0352957, 0.855126, -0.0215912, -0.39095, -0.00309423, -0.761643, 20.6581, -0.00647063, -6.69246 )
 
-[node name="bacon39" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.717259, -0.0422085, -0.351495, -0.0698589, 0.795423, 0.047037, 0.347059, 0.0728779, -0.716958, 21.3523, -0.00901843, -5.85247 )
+[node name="bacon39" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.352949, -0.0153003, -0.428203, 0.00520381, 0.554578, -0.0241051, 0.428445, -0.0193401, -0.352457, -9.28492, -0.00442254, -4.00598 )
 
-[node name="bacon40" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.0196921, 0.000487616, -0.606092, 0.0303561, 0.60565, 0.00147354, 0.605331, -0.0303879, 0.019643, -8.47807, -0.00213153, -2.70411 )
+[node name="bacon40" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.0780412, 4.60475e-05, -0.649666, 0.0534561, 0.652117, 0.00646764, 0.647463, -0.0538459, 0.0777727, -1.99715, -0.00882099, 1.09492 )
 
-[node name="bacon41" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.495531, -0.041419, -0.217895, 0.0320984, 0.541131, -0.0298646, 0.219462, 0.0143759, 0.496361, 7.81023, -0.0115814, -28.2987 )
+[node name="bacon41" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.608163, -0.0121389, 0.232152, 0.00393559, 0.649561, 0.0442744, -0.232436, 0.0427593, -0.606671, 5.8758, -0.00655472, -21.5822 )
 
-[node name="bacon42" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( -0.704064, 0.0283992, 0.49942, 0.0223739, 0.863206, -0.0175437, -0.499726, -0.00136386, -0.704418, 6.56463, -0.00443139, -12.158 )
+[node name="bacon42" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.0711236, 0.000212052, 0.884647, 0.0299889, 0.886991, -0.00262365, -0.884138, 0.0301027, 0.0710755, 4.3729, 0.00483909, -22.7759 )
 
-[node name="bacon43" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
-transform = Transform( 0.0623941, -0.000302479, -0.538019, -0.00895091, 0.541549, -0.0013425, 0.537945, 0.00904597, 0.0623804, 20.8563, -0.000944531, -5.39324 )
+[node name="bacon43" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.510948, -0.0402738, 0.256873, 0.0597776, 0.569405, -0.02963, -0.253046, 0.0531913, 0.511675, 21.9225, 0.00906617, -1.09733 )
+
+[node name="bacon44" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.492721, -0.034433, 0.70202, -0.0391173, 0.85735, 0.0145967, -0.701775, -0.0236135, -0.493707, 10.669, 0.00709079, -19.1996 )
+
+[node name="bacon45" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.495953, -0.0146979, -0.0568482, 0.0103743, 0.497845, -0.0382092, 0.0577938, 0.0367633, 0.494698, 13.3708, -0.00459486, -30.7208 )
+
+[node name="bacon46" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.696942, -0.00194807, 0.475379, 0.0212636, 0.842654, 0.0346272, -0.474907, 0.040588, -0.696084, -1.35961, 0.00117023, 2.61604 )
+
+[node name="bacon47" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.382875, -0.032442, 0.751911, -0.133162, 0.833228, -0.0318561, -0.740736, -0.133021, -0.382924, 25.1719, 0.0194866, -10.3138 )
+
+[node name="bacon48" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.0370679, -0.0026044, 0.716507, -0.084999, 0.712415, -0.00180784, -0.711453, -0.0849783, -0.0371153, 2.62771, 0.0116426, -21.3217 )
+
+[node name="bacon49" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.32829, -0.0218908, 0.51797, -0.0321736, 0.612765, 0.00550545, -0.517433, -0.0242125, -0.328973, 15.7215, 0.000264078, -30.7168 )
+
+[node name="bacon50" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.833491, 0.0304001, 0.0445492, 0.0300995, 0.834667, -0.00642642, -0.0447528, -0.00480757, -0.83402, 10.7218, 0.00756015, -8.09455 )
+
+[node name="bacon51" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.719373, 0.0392575, 0.100595, -0.0409099, 0.726223, 0.00914304, -0.0999339, -0.0146991, 0.720385, 2.47946, 0.00609842, -4.53787 )
+
+[node name="bacon52" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.0905522, 0.00363372, -0.666358, 0.0193211, 0.672186, 0.00629106, 0.666088, -0.019992, 0.0904065, 9.76257, 0.000425672, 4.4215 )
+
+[node name="bacon53" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.475039, -0.0414554, 0.232324, 0.0311686, 0.528628, 0.0305961, -0.233926, -0.0137495, 0.475862, 26.8371, 0.0114137, -20.7715 )
+
+[node name="bacon54" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.162424, 0.00209915, 0.757257, 0.0627703, 0.771852, 0.011324, -0.754653, 0.063749, -0.162042, 0.0965805, -0.00205876, -19.9731 )
+
+[node name="bacon55" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.752743, 0.0170492, 0.193178, -0.0215725, 0.776869, 0.0154962, -0.192726, -0.0203673, 0.752777, 11.071, -0.00539896, -22.3932 )
+
+[node name="bacon56" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.607022, 0.0125652, 0.48696, -0.00152474, 0.778094, -0.0181767, -0.48712, 0.0132225, 0.60688, 6.317, 0.00356257, -16.1468 )
+
+[node name="bacon57" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.131324, -0.0108326, 0.484282, 0.00412546, 0.50177, 0.0101051, -0.484386, 0.00133666, 0.131382, 5.54827, 0.001209, -16.7868 )
+
+[node name="bacon58" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.174408, -0.00845721, -0.606153, -0.0018107, 0.630745, -0.00827933, 0.606209, -0.000549183, -0.174417, -1.24277, -0.00133729, -6.65205 )
+
+[node name="bacon59" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.202398, 0.0170204, -0.812668, -0.0431843, 0.836524, 0.00676482, 0.811698, 0.0402611, 0.203, -3.82146, 0.00101757, -5.64499 )
+
+[node name="bacon60" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.296384, -0.0253604, -0.405786, 0.0308283, 0.502116, -0.00886388, 0.405407, -0.0196419, 0.297335, 9.48526, 0.00299823, -29.6379 )
+
+[node name="bacon61" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.627126, -0.0431063, -0.36857, -0.0465655, 0.727177, -0.00581556, 0.368149, 0.0185478, -0.628578, 18.4964, 0.00963256, -3.45406 )
+
+[node name="bacon62" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.546839, 0.00741973, -0.401604, -0.0344562, 0.676758, -0.0344136, 0.400191, 0.0481297, 0.545805, 3.94938, 0.00296947, -31.572 )
+
+[node name="bacon63" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.00737959, 0.000473784, 0.707551, -0.0756316, 0.703536, 0.000317729, -0.703498, -0.0756308, 0.00738796, 24.8145, 0.0149971, -14.5313 )
+
+[node name="bacon64" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.719037, -0.0279722, -0.0353896, -0.0261264, 0.719, -0.0374744, 0.0367733, -0.0361175, -0.718604, 18.8781, -0.00556461, -30.0651 )
+
+[node name="bacon65" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.460117, 0.0365628, -0.79844, -0.02207, 0.921518, 0.0294806, 0.798972, 0.00439905, 0.460625, 11.7396, -0.00266818, -19.7719 )
+
+[node name="bacon66" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.627081, 0.0151024, 0.197755, 0.0119847, 0.657475, -0.0122072, -0.197969, -0.00803535, -0.627144, 20.2906, -1.28824e-05, -6.21766 )
+
+[node name="bacon67" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.048281, -0.00348366, -0.729448, -0.0619646, 0.728421, 0.000622585, 0.72682, 0.0618697, -0.0484025, 6.01145, 0.00569668, -11.0997 )
+
+[node name="bacon68" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.372695, 0.0121451, -0.325736, 0.0213807, 0.494631, -0.0060207, 0.325261, -0.0185979, -0.372845, -13.4418, -0.000752874, -6.6575 )
+
+[node name="bacon69" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.542737, -0.00671599, -0.0641, 0.00867204, 0.546241, 0.0161947, 0.0638648, -0.0170988, 0.542537, 17.9847, -0.00234986, -6.81725 )
+
+[node name="bacon70" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.508447, -0.0400003, -0.662167, 0.0923715, 0.830434, 0.0207626, 0.656912, -0.0858112, 0.509595, 18.2186, 0.0179472, -1.14711 )
+
+[node name="bacon71" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.631161, -0.0180823, -0.323427, -0.0481744, 0.70569, 0.0545574, 0.320329, 0.0705004, -0.629059, -11.0587, -0.00245028, -5.00802 )
+
+[node name="bacon72" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( 0.505766, -0.039929, 0.544949, 0.079429, 0.74005, -0.0194936, -0.540606, 0.0713767, 0.506965, 8.58487, 0.0123087, -15.9599 )
+
+[node name="bacon73" type="Spatial" parent="Scatter2/Food/Duplicates" instance=ExtResource( 58 )]
+transform = Transform( -0.814216, -0.018203, 0.201167, -0.0200306, 0.838642, -0.00518702, -0.200994, -0.00983777, -0.814403, -2.46178, 0.000955217, 2.42758 )
 
 [node name="Food2" type="Spatial" parent="Scatter2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.047, 0 )
@@ -1544,134 +1369,224 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="burgerCheeseDouble" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.440632, -0.0110441, 0.543088, -0.0558854, 0.696511, -0.0311783, -0.540318, -0.0630341, -0.439667, 27.1439, 0.0131514, -24.807 )
+
+[node name="burgerCheeseDouble2" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.768725, -0.00100193, -0.0386617, 0.0028385, 0.768826, 0.0365145, 0.0385703, -0.036611, 0.767858, 1.92706, 0.00335768, 1.80008 )
+
+[node name="burgerCheeseDouble3" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.514486, 0.0316789, -0.50804, -0.0429851, 0.722464, 0.00151881, 0.507208, 0.0290942, 0.515459, -3.59499, 0.00339068, -9.20185 )
+
+[node name="burgerCheeseDouble4" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.0150243, -0.000551009, -0.516611, 0.0193604, 0.516467, 1.2191e-05, 0.516248, -0.0193525, 0.0150344, 20.8856, -0.00255719, -7.15235 )
+
+[node name="burgerCheeseDouble5" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.325265, 0.00955428, -0.46937, -0.0507811, 0.568384, -0.0236207, 0.466713, 0.0551849, 0.324547, 8.90955, 0.00550093, -28.2885 )
+
+[node name="burgerCheeseDouble6" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.608034, -0.00294224, -0.414658, 0.00148769, 0.735934, -0.00740336, 0.414666, -0.00695458, -0.607996, 6.30233, 0.000463387, -17.2996 )
+
+[node name="burgerCheeseDouble7" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.0411488, -0.000486893, 0.584112, 0.00179814, 0.585557, 0.000361424, -0.58411, 0.00176829, 0.0411501, 0.282569, -0.000165586, 1.57125 )
+
+[node name="burgerCheeseDouble8" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.277034, 0.00343975, 0.636545, -0.0154113, 0.694048, 0.00295674, -0.636367, -0.0153107, 0.27704, 11.1302, -0.00179674, -17.6565 )
+
+[node name="burgerCheeseDouble9" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.429954, -0.033838, -0.692542, 0.0230603, 0.81513, -0.0255111, 0.692984, -0.00613053, 0.430529, 6.85588, 0.00731547, -5.65479 )
+
+[node name="burgerCheeseDouble10" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.744569, 0.00181884, -0.404953, 0.0368192, 0.844354, -0.0639054, 0.40328, -0.0737309, -0.741824, 25.0192, 0.00979182, -1.42129 )
+
+[node name="burgerCheeseDouble11" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.860771, 0.0297039, 0.324438, 0.0162964, 0.919308, -0.040931, -0.325387, -0.0325361, -0.86031, 8.08519, 0.00684069, -31.5024 )
+
+[node name="burgerCheeseDouble12" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.813719, 0.0106484, 0.00786933, 0.0109493, 0.813127, 0.0319122, -0.00744502, 0.0320139, -0.813163, 11.0761, -0.00638557, -29.0807 )
+
+[node name="burgerCheeseDouble13" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.277695, -0.0146027, -0.543256, 0.0727689, 0.605576, 0.0209193, 0.538558, -0.0742946, 0.277291, 0.269058, 0.00679047, 6.28166 )
+
+[node name="burgerCheeseDouble14" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.301865, 0.0125644, 0.62726, -0.0184155, 0.695968, -0.00507834, -0.627116, -0.0143894, 0.302084, 11.9987, 0.00167466, -6.99129 )
+
+[node name="burgerCheeseDouble15" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.55552, -0.0363366, -0.0726566, 0.0389497, 0.559792, 0.017843, 0.0712899, -0.0226958, 0.556421, 9.48334, 0.00258682, -6.46973 )
+
+[node name="burgerCheeseDouble16" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.0816264, -0.000801928, 0.705489, -0.0607597, 0.707565, -0.00622572, -0.702868, -0.0610725, -0.0813926, 23.2885, 0.0127782, 0.467978 )
+
+[node name="burgerCheeseDouble17" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.501661, 0.0122014, 0.149909, -0.0107064, 0.523569, -0.00678615, -0.150023, 0.00343572, 0.501764, 16.6642, 0.00239606, -32.1068 )
+
+[node name="burgerCheeseDouble18" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.57192, -0.0394037, 0.607253, -0.0526326, 0.833434, 0.00450998, -0.60625, -0.0351835, -0.573259, -8.24322, -0.00644026, -4.39082 )
+
+[node name="burgerCheeseDouble19" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.570971, -0.0307468, 0.495435, -0.0349057, 0.755742, 0.00667394, -0.495159, -0.0178209, -0.57176, 4.16404, 0.0060826, -7.68824 )
+
+[node name="burgerCheeseDouble20" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.501371, -0.0168479, 0.485777, -0.0105273, 0.698102, 0.0133466, -0.485955, 0.00225932, -0.501476, 11.7026, 0.00317102, -17.31 )
+
+[node name="burgerCheeseDouble21" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.437042, 0.0172637, 0.681372, -0.015014, 0.808974, -0.030127, -0.681425, -0.0288967, -0.436344, 6.38748, 0.00244407, -21.4911 )
+
+[node name="burgerCheeseDouble22" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.906866, 0.0164765, 0.0442919, -0.0148471, 0.907355, -0.033544, -0.0448643, 0.0327744, 0.906395, 3.59328, -0.00406327, -20.6779 )
+
+[node name="burgerCheeseDouble23" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.433288, 0.0296368, -0.547851, 0.0707105, 0.695285, -0.0183114, 0.544076, -0.0667603, -0.433914, 22.8808, -0.00217379, -3.2743 )
+
+[node name="burgerCheeseDouble24" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.884198, 0.0578765, 0.196605, 0.0750439, 0.901656, 0.0720683, -0.190714, 0.0864624, -0.883155, 9.40711, 0.0164287, -31.1974 )
+
+[node name="burgerCheeseDouble25" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.161975, -0.0119236, -0.830303, -0.111814, 0.83856, 0.00977047, 0.822826, 0.111605, -0.162119, -8.88753, -0.0168242, -5.57737 )
+
+[node name="burgerCheeseDouble26" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.517428, -0.00684829, 0.287177, -0.00876091, 0.590999, 0.0298787, -0.287125, -0.0303742, 0.51661, 3.70456, -0.00254924, -30.7374 )
+
+[node name="burgerCheeseDouble27" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.899572, -0.0730048, -0.0697829, -0.0784369, 0.899053, 0.0705668, 0.0636161, 0.0761729, -0.899767, 24.7804, -0.0194022, -14.7772 )
+
+[node name="burgerCheeseDouble28" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.613991, 0.018415, -0.313911, 0.0144204, 0.689569, 0.0122468, 0.31412, 0.00433835, -0.614145, 18.4673, 0.000937694, -2.44857 )
+
+[node name="burgerCheeseDouble29" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.243541, 0.0191, -0.836289, -0.0593948, 0.869208, 0.00255502, 0.834396, 0.056298, 0.244276, 20.3942, -0.000754529, -8.50346 )
+
+[node name="burgerCheeseDouble30" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.882133, 0.0702252, 0.135807, 0.0734499, 0.892127, 0.015778, -0.134091, 0.026688, -0.884783, 12.4543, 0.00245405, -15.5185 )
+
+[node name="burgerCheeseDouble31" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.521388, -0.0388284, -0.630134, -0.0513913, 0.817142, -0.00782924, 0.629234, 0.0345647, -0.522774, 1.93703, -0.00742602, 1.32648 )
+
+[node name="burgerCheeseDouble32" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.294548, -0.00461593, 0.874337, -0.0042705, 0.922613, 0.00343215, -0.874339, -0.00295127, -0.294564, 0.43698, 0.000361619, -6.28877 )
+
+[node name="burgerCheeseDouble33" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.718661, 0.0475303, 0.225743, 0.0565304, 0.75235, 0.0215587, -0.223659, 0.0374344, -0.719908, -1.5693, 0.0048754, -5.58678 )
+
+[node name="burgerCheeseDouble34" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.342135, 0.000609519, 0.350097, -0.0269791, 0.488104, 0.0255158, -0.349057, -0.0371289, 0.341183, -7.71169, 0.00379507, 0.564995 )
+
+[node name="burgerCheeseDouble35" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.518216, -0.0375479, -0.5463, -0.0332275, 0.75292, -0.0202298, 0.54658, 0.0101718, -0.51918, 2.12651, -0.00155638, -0.0743219 )
+
+[node name="burgerCheeseDouble36" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.864314, -0.0132839, 0.171422, 0.024736, 0.879082, -0.0565978, -0.170147, 0.0603218, 0.862561, 1.81941, 0.0069419, -4.316 )
+
+[node name="burgerCheeseDouble37" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.290675, -0.00324928, -0.89258, -0.051666, 0.937082, -0.0202367, 0.891089, 0.0553926, 0.289988, 11.107, -0.00960119, -15.7881 )
+
+[node name="burgerCheeseDouble38" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.392975, 0.012207, -0.697652, 0.0215823, 0.800516, 0.00184999, 0.697424, -0.0178943, -0.39316, -2.00306, 0.00339819, -24.3277 )
+
+[node name="burgerCheeseDouble39" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.62509, -0.020964, -0.0103827, 0.0214502, 0.624408, 0.0306506, 0.00933684, -0.0309852, 0.62469, -9.75255, 0.00774176, -2.45156 )
+
+[node name="burgerCheeseDouble40" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.0467724, 0.00346723, 0.55977, 0.0745206, 0.556759, 0.0027781, -0.554798, 0.0744917, -0.0468184, 9.06806, 0.00723045, 5.45566 )
+
+[node name="burgerCheeseDouble41" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.441771, -0.009274, 0.438596, 0.0157266, 0.621712, 0.0289864, -0.438412, 0.031647, -0.440916, 2.55322, 0.0062939, -3.16235 )
+
+[node name="burgerCheeseDouble42" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.387361, 0.0100195, 0.451129, -0.0475649, 0.592146, 0.02769, -0.448726, -0.0541181, 0.3865, 12.1488, 0.00334302, -21.7429 )
+
+[node name="burgerCheeseDouble43" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.288133, 0.0167946, -0.70764, -0.0982698, 0.757571, -0.0220334, 0.700984, 0.0992993, 0.28778, 1.43665, -0.0107075, -28.661 )
+
+[node name="burgerCheeseDouble44" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.00203998, -6.20257e-05, -0.641063, 0.0128045, 0.640938, -0.000102757, 0.640935, -0.0128048, -0.00203834, 9.5088, 0.00042899, -25.0723 )
+
+[node name="burgerCheeseDouble45" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.45532, 0.0372248, -0.516369, 0.0329242, 0.688354, 0.0205915, 0.516661, -0.01106, -0.456375, 18.2636, 4.49894e-05, -0.311088 )
+
+[node name="burgerCheeseDouble46" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.241215, -0.016183, -0.876266, 0.13469, 0.898737, 0.0204788, 0.866004, -0.135273, 0.240888, 22.3235, -0.00536091, -15.0685 )
+
+[node name="burgerCheeseDouble47" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.179623, -0.0130591, -0.806689, -0.0642659, 0.824045, 0.000969819, 0.804231, 0.0629326, -0.180094, 5.76001, 0.0112749, -27.6341 )
+
+[node name="burgerCheeseDouble48" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.406491, -0.00721449, 0.33435, -0.0241592, 0.525517, -0.0180325, -0.333554, -0.0292709, -0.406155, 3.45918, 0.00188515, -2.12255 )
+
+[node name="burgerCheeseDouble49" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.00449844, 6.32803e-05, -0.616846, -0.0205127, 0.616522, -8.63436e-05, 0.616505, 0.0205128, 0.00449806, 13.462, 0.000223736, -5.62381 )
+
+[node name="burgerCheeseDouble50" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.27036, -0.0220796, 0.526426, -0.0307292, 0.591338, 0.00902033, -0.525991, -0.0231979, -0.27111, 2.86432, 0.00352959, -19.0945 )
+
+[node name="burgerCheeseDouble51" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.721293, -0.0291817, 0.0692647, 0.0256907, 0.723778, 0.0374009, -0.070634, -0.0347457, 0.720914, 3.03754, 0.00193467, -4.51106 )
+
+[node name="burgerCheeseDouble52" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.5838, -0.0403708, -0.160668, -0.041366, 0.605436, -0.00182006, 0.160414, 0.00920099, -0.585192, 18.7061, -0.0023081, -3.37534 )
+
+[node name="burgerCheeseDouble53" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.511207, 0.0403048, 0.457517, -0.0779616, 0.682255, 0.0270074, -0.452624, -0.0719926, 0.512082, -13.115, 0.00247603, -5.11668 )
+
+[node name="burgerCheeseDouble54" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.694915, -0.0582756, 0.0108317, 0.0584006, 0.694945, -0.00785609, -0.0101366, 0.00873467, 0.69731, 16.0746, 0.00744359, 0.087448 )
+
+[node name="burgerCheeseDouble55" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.485297, 0.035526, -0.641685, 0.018442, 0.804524, 0.0305939, 0.642403, 0.00374154, -0.485633, 0.433691, 0.00373526, -22.7035 )
+
+[node name="burgerCheeseDouble56" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.717259, -0.0422085, -0.351495, -0.0698589, 0.795423, 0.047037, 0.347059, 0.0728779, -0.716958, 21.3523, -0.00901843, -5.85247 )
+
+[node name="burgerCheeseDouble57" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.0196921, 0.000487616, -0.606092, 0.0303561, 0.60565, 0.00147354, 0.605331, -0.0303879, 0.019643, -8.47807, -0.00213153, -2.70411 )
+
+[node name="burgerCheeseDouble58" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.495531, -0.041419, -0.217895, 0.0320984, 0.541131, -0.0298646, 0.219462, 0.0143759, 0.496361, 7.81023, -0.0115814, -28.2987 )
+
+[node name="burgerCheeseDouble59" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( -0.704064, 0.0283992, 0.49942, 0.0223739, 0.863206, -0.0175437, -0.499726, -0.00136386, -0.704418, 6.56463, -0.00443139, -12.158 )
+
+[node name="burgerCheeseDouble60" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+transform = Transform( 0.0623941, -0.000302479, -0.538019, -0.00895091, 0.541549, -0.0013425, 0.537945, 0.00904597, 0.0623804, 20.8563, -0.000944531, -5.39324 )
+
+[node name="burgerCheeseDouble61" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( -0.56395, -0.0147388, -0.114134, -0.00798368, 0.574468, -0.0347364, 0.114804, -0.0324518, -0.563073, -1.36263, 0.00409862, -1.60275 )
 
-[node name="burgerCheeseDouble2" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble62" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( 0.522108, 0.0179049, 0.474825, -0.006746, 0.705665, -0.0191917, -0.475115, 0.00965632, 0.522062, 7.80444, 0.000238627, -11.9905 )
 
-[node name="burgerCheeseDouble3" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble63" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( -0.59793, -0.0424188, 0.0244213, -0.0407503, 0.597231, 0.0396357, -0.0271139, 0.0378447, -0.598121, 25.8634, -0.00643255, -19.4311 )
 
-[node name="burgerCheeseDouble4" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble64" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( -0.257239, -0.0118065, 0.727363, 0.0235426, 0.77096, 0.0208402, -0.727078, 0.0291405, -0.256665, -3.39728, -0.00369743, -8.15682 )
 
-[node name="burgerCheeseDouble5" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble65" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( 0.0444406, 0.00147748, -0.827201, -0.0407314, 0.827393, -0.000710434, 0.826199, 0.0407108, 0.0444595, 5.57269, 0.00270902, -18.8674 )
 
-[node name="burgerCheeseDouble6" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble66" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( -0.693873, -0.05587, 0.183945, -0.0546209, 0.717837, 0.0119902, -0.18432, -0.00239935, -0.696015, 13.5349, -0.000472463, -20.2758 )
 
-[node name="burgerCheeseDouble7" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble67" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( -0.574191, -0.0424132, 0.174194, -0.0432197, 0.599963, 0.0036169, -0.173996, -0.00906325, -0.575743, 10.1893, -0.00613877, -7.45315 )
 
-[node name="burgerCheeseDouble8" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble68" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( 0.527889, 0.0254943, -0.634916, -0.0529032, 0.824329, -0.0108854, 0.633222, 0.047616, 0.528392, -8.56908, 0.00979241, -2.71169 )
 
-[node name="burgerCheeseDouble9" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble69" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( 0.797174, -0.0614888, -0.311677, 0.0881851, 0.851659, 0.0575317, 0.3052, -0.085473, 0.79747, 19.6348, -0.000643034, -31.8429 )
 
-[node name="burgerCheeseDouble10" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble70" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( -0.839717, -0.0140298, 0.185278, -0.0249516, 0.858321, -0.0480909, -0.184125, -0.0523305, -0.838457, 2.08796, 0.00513175, 6.50214 )
 
-[node name="burgerCheeseDouble11" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble71" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( 0.393898, -0.0192337, 0.360057, 0.0194742, 0.533606, 0.00719992, -0.360044, 0.00781969, 0.394302, 21.399, 0.0016131, -4.71594 )
 
-[node name="burgerCheeseDouble12" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble72" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( 0.750215, 0.015415, -0.12489, -0.0223066, 0.759301, -0.0402763, 0.123845, 0.0433837, 0.749292, 8.03215, 0.00620503, -24.7409 )
 
-[node name="burgerCheeseDouble13" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
+[node name="burgerCheeseDouble73" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
 transform = Transform( 0.259053, 0.0096772, -0.68653, -0.0119472, 0.733723, 0.00583428, 0.686494, 0.00911742, 0.259169, 24.1178, -0.000973132, -10.0392 )
-
-[node name="burgerCheeseDouble14" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.641677, 0.0281488, 0.496645, 0.0560689, 0.809536, 0.0265595, -0.494272, 0.0552881, -0.641745, 14.0244, -0.00905139, -9.50641 )
-
-[node name="burgerCheeseDouble15" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.164258, 0.00502098, 0.910169, 0.0458896, 0.923741, 0.00318582, -0.909025, 0.0457252, -0.164304, 13.731, -0.00947836, -20.1304 )
-
-[node name="burgerCheeseDouble16" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.57213, -0.0351703, -0.370721, -0.0280711, 0.681733, -0.0213542, 0.371326, -0.00265268, -0.572812, 11.7335, 0.00186198, -15.7135 )
-
-[node name="burgerCheeseDouble17" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.682942, -0.0330985, 0.146269, -0.0397783, 0.697524, -0.0278891, -0.144595, -0.0355613, -0.683175, -1.79697, -0.00219364, -3.15671 )
-
-[node name="burgerCheeseDouble18" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.513603, 0.0409972, -0.118488, 0.0353377, 0.526702, 0.0290641, 0.120297, 0.0203151, -0.514416, -4.75118, 0.00468366, -7.85555 )
-
-[node name="burgerCheeseDouble19" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.60454, 0.0405882, -0.335105, -0.0259627, 0.690927, 0.0368481, 0.336554, -0.0196071, 0.604779, 5.75626, -0.00595126, -9.2754 )
-
-[node name="burgerCheeseDouble20" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.246524, -0.00138579, -0.560861, 0.0311238, 0.611738, 0.0121689, 0.559998, -0.0333894, 0.246227, 4.13211, 0.00484349, -20.7769 )
-
-[node name="burgerCheeseDouble21" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.446337, 0.0201143, 0.736911, 0.0239944, 0.861395, -0.00897913, -0.736795, 0.0158672, -0.446699, 3.69652, -0.00405665, 6.99478 )
-
-[node name="burgerCheeseDouble22" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.615024, 0.0152452, -0.320042, -0.0335075, 0.691956, -0.03143, 0.318648, 0.0433379, 0.61441, 15.7875, -0.000212883, -0.185868 )
-
-[node name="burgerCheeseDouble23" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.292424, -0.014108, -0.666012, -0.00828521, 0.727376, -0.0117701, 0.66611, 0.0028538, -0.292528, 2.8803, -0.000718355, 1.11792 )
-
-[node name="burgerCheeseDouble24" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.141997, -0.00651024, 0.757737, 0.00380149, 0.77091, 0.0073358, -0.757755, 0.00508744, -0.141957, 2.58202, 0.00100345, -4.13106 )
-
-[node name="burgerCheeseDouble25" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.586206, 0.0168164, -0.15616, -0.0081626, 0.60584, 0.0345996, 0.15685, -0.0313205, 0.585426, 10.6714, -0.00754743, -23.2984 )
-
-[node name="burgerCheeseDouble26" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.406098, -0.00848246, 0.378303, -0.0156918, 0.554829, -0.00440408, -0.378073, -0.0139167, -0.406163, 1.8112, -0.000807459, -23.8889 )
-
-[node name="burgerCheeseDouble27" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.283061, -0.00592916, -0.556095, 0.0042301, 0.623989, -0.00449986, 0.55611, -0.00172848, 0.283087, 6.56349, -0.000571527, 4.76788 )
-
-[node name="burgerCheeseDouble28" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.263385, 0.00201248, 0.545894, 0.00993554, 0.605993, -0.00702778, -0.545807, 0.0120023, 0.263299, 10.3171, -0.00198752, -23.5339 )
-
-[node name="burgerCheeseDouble29" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.14974, 0.0113175, -0.819783, -0.0993641, 0.827451, -0.00672627, 0.813818, 0.0989464, 0.150016, 23.2261, 0.00456089, -2.06113 )
-
-[node name="burgerCheeseDouble30" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.779443, -0.0191587, 0.327655, -0.0156225, 0.845495, 0.0122742, -0.327842, 0.00525967, -0.779581, 10.5788, 0.00291241, -8.30677 )
-
-[node name="burgerCheeseDouble31" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.823787, 0.0568872, -0.442774, 0.0845693, 0.932389, -0.03755, 0.43833, -0.0729782, -0.824895, -6.21904, -0.0209075, -5.04489 )
-
-[node name="burgerCheeseDouble32" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.672022, -0.0305234, 0.325932, 0.0551046, 0.744184, -0.0439246, -0.322687, 0.0635154, 0.671279, 21.3383, 0.00293345, -1.32979 )
-
-[node name="burgerCheeseDouble33" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.0432599, -0.00181771, 0.646033, 0.0829736, 0.642133, -0.00374937, -0.640685, 0.0830384, 0.0431355, 1.47465, -0.0113365, -19.0861 )
-
-[node name="burgerCheeseDouble34" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.430572, -0.00614675, 0.240088, 0.000685405, 0.492892, 0.0113899, -0.240166, -0.00961332, 0.430465, 18.2532, 0.000201273, -1.46046 )
-
-[node name="burgerCheeseDouble35" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.248631, -0.00445363, -0.50174, -0.00108123, 0.559955, -0.00550615, 0.501759, 0.00341349, 0.24861, -11.8412, -6.85365e-05, -6.75186 )
-
-[node name="burgerCheeseDouble36" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.291252, 0.0136147, -0.707644, 0.0953301, 0.758998, -0.0246333, 0.701325, -0.0975155, -0.290528, 5.50262, 0.000752191, -19.2421 )
-
-[node name="burgerCheeseDouble37" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.202695, 0.00792508, 0.558591, -0.0162979, 0.594054, -0.00251421, -0.558409, -0.0144616, 0.202835, 9.88465, -0.00325801, -18.63 )
-
-[node name="burgerCheeseDouble38" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.558776, -0.03314, -0.392325, -0.0644595, 0.679639, 0.0343977, 0.38841, 0.065115, -0.5587, 5.95306, 0.0146388, -30.5072 )
-
-[node name="burgerCheeseDouble39" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.595324, 0.0092422, -0.0696259, 0.0126408, 0.598636, -0.0286192, 0.0690898, -0.0298903, -0.594708, 7.78519, -0.00391275, -28.7507 )
-
-[node name="burgerCheeseDouble40" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( -0.448766, -0.0170835, 0.247554, 0.00078059, 0.511485, 0.0367123, -0.248141, 0.0325047, -0.447588, 3.3862, -0.00615042, -23.397 )
-
-[node name="burgerCheeseDouble41" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.685131, 0.00816404, -0.215329, -0.0028081, 0.71798, 0.018287, 0.215465, -0.0166026, 0.684936, 13.7006, 0.000946716, -30.8499 )
-
-[node name="burgerCheeseDouble42" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.258963, 0.00412971, 0.435749, -0.0104012, 0.5068, 0.0013783, -0.435645, -0.00964523, 0.258992, 4.14008, -0.00128729, -24.5937 )
-
-[node name="burgerCheeseDouble43" type="Spatial" parent="Scatter2/Food2/Duplicates" instance=ExtResource( 59 )]
-transform = Transform( 0.207416, 0.0104284, -0.701137, -0.0892195, 0.725617, -0.0156011, 0.695516, 0.0899708, 0.207091, 5.72086, -0.0175315, -7.85293 )
 
 [node name="Food3" type="Spatial" parent="Scatter2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.047, 0 )
@@ -1689,133 +1604,223 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="cocktail" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.641677, 0.0281488, 0.496645, 0.0560689, 0.809536, 0.0265595, -0.494272, 0.0552881, -0.641745, 14.0244, -0.00905139, -9.50641 )
+
+[node name="cocktail2" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.164258, 0.00502098, 0.910169, 0.0458896, 0.923741, 0.00318582, -0.909025, 0.0457252, -0.164304, 13.731, -0.00947836, -20.1304 )
+
+[node name="cocktail3" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.57213, -0.0351703, -0.370721, -0.0280711, 0.681733, -0.0213542, 0.371326, -0.00265268, -0.572812, 11.7335, 0.00186198, -15.7135 )
+
+[node name="cocktail4" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.682942, -0.0330985, 0.146269, -0.0397783, 0.697524, -0.0278891, -0.144595, -0.0355613, -0.683175, -1.79697, -0.00219364, -3.15671 )
+
+[node name="cocktail5" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.513603, 0.0409972, -0.118488, 0.0353377, 0.526702, 0.0290641, 0.120297, 0.0203151, -0.514416, -4.75118, 0.00468366, -7.85555 )
+
+[node name="cocktail6" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.60454, 0.0405882, -0.335105, -0.0259627, 0.690927, 0.0368481, 0.336554, -0.0196071, 0.604779, 5.75626, -0.00595126, -9.2754 )
+
+[node name="cocktail7" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.246524, -0.00138579, -0.560861, 0.0311238, 0.611738, 0.0121689, 0.559998, -0.0333894, 0.246227, 4.13211, 0.00484349, -20.7769 )
+
+[node name="cocktail8" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.446337, 0.0201143, 0.736911, 0.0239944, 0.861395, -0.00897913, -0.736795, 0.0158672, -0.446699, 3.69652, -0.00405665, 6.99478 )
+
+[node name="cocktail9" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.615024, 0.0152452, -0.320042, -0.0335075, 0.691956, -0.03143, 0.318648, 0.0433379, 0.61441, 15.7875, -0.000212883, -0.185868 )
+
+[node name="cocktail10" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.292424, -0.014108, -0.666012, -0.00828521, 0.727376, -0.0117701, 0.66611, 0.0028538, -0.292528, 2.8803, -0.000718355, 1.11792 )
+
+[node name="cocktail11" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.141997, -0.00651024, 0.757737, 0.00380149, 0.77091, 0.0073358, -0.757755, 0.00508744, -0.141957, 2.58202, 0.00100345, -4.13106 )
+
+[node name="cocktail12" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.586206, 0.0168164, -0.15616, -0.0081626, 0.60584, 0.0345996, 0.15685, -0.0313205, 0.585426, 10.6714, -0.00754743, -23.2984 )
+
+[node name="cocktail13" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.406098, -0.00848246, 0.378303, -0.0156918, 0.554829, -0.00440408, -0.378073, -0.0139167, -0.406163, 1.8112, -0.000807459, -23.8889 )
+
+[node name="cocktail14" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.283061, -0.00592916, -0.556095, 0.0042301, 0.623989, -0.00449986, 0.55611, -0.00172848, 0.283087, 6.56349, -0.000571527, 4.76788 )
+
+[node name="cocktail15" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.263385, 0.00201248, 0.545894, 0.00993554, 0.605993, -0.00702778, -0.545807, 0.0120023, 0.263299, 10.3171, -0.00198752, -23.5339 )
+
+[node name="cocktail16" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.14974, 0.0113175, -0.819783, -0.0993641, 0.827451, -0.00672627, 0.813818, 0.0989464, 0.150016, 23.2261, 0.00456089, -2.06113 )
+
+[node name="cocktail17" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.779443, -0.0191587, 0.327655, -0.0156225, 0.845495, 0.0122742, -0.327842, 0.00525967, -0.779581, 10.5788, 0.00291241, -8.30677 )
+
+[node name="cocktail18" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.823787, 0.0568872, -0.442774, 0.0845693, 0.932389, -0.03755, 0.43833, -0.0729782, -0.824895, -6.21904, -0.0209075, -5.04489 )
+
+[node name="cocktail19" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.672022, -0.0305234, 0.325932, 0.0551046, 0.744184, -0.0439246, -0.322687, 0.0635154, 0.671279, 21.3383, 0.00293345, -1.32979 )
+
+[node name="cocktail20" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.0432599, -0.00181771, 0.646033, 0.0829736, 0.642133, -0.00374937, -0.640685, 0.0830384, 0.0431355, 1.47465, -0.0113365, -19.0861 )
+
+[node name="cocktail21" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.430572, -0.00614675, 0.240088, 0.000685405, 0.492892, 0.0113899, -0.240166, -0.00961332, 0.430465, 18.2532, 0.000201273, -1.46046 )
+
+[node name="cocktail22" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.248631, -0.00445363, -0.50174, -0.00108123, 0.559955, -0.00550615, 0.501759, 0.00341349, 0.24861, -11.8412, -6.85365e-05, -6.75186 )
+
+[node name="cocktail23" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.291252, 0.0136147, -0.707644, 0.0953301, 0.758998, -0.0246333, 0.701325, -0.0975155, -0.290528, 5.50262, 0.000752191, -19.2421 )
+
+[node name="cocktail24" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.202695, 0.00792508, 0.558591, -0.0162979, 0.594054, -0.00251421, -0.558409, -0.0144616, 0.202835, 9.88465, -0.00325801, -18.63 )
+
+[node name="cocktail25" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.558776, -0.03314, -0.392325, -0.0644595, 0.679639, 0.0343977, 0.38841, 0.065115, -0.5587, 5.95306, 0.0146388, -30.5072 )
+
+[node name="cocktail26" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.595324, 0.0092422, -0.0696259, 0.0126408, 0.598636, -0.0286192, 0.0690898, -0.0298903, -0.594708, 7.78519, -0.00391275, -28.7507 )
+
+[node name="cocktail27" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( -0.448766, -0.0170835, 0.247554, 0.00078059, 0.511485, 0.0367123, -0.248141, 0.0325047, -0.447588, 3.3862, -0.00615042, -23.397 )
+
+[node name="cocktail28" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.685131, 0.00816404, -0.215329, -0.0028081, 0.71798, 0.018287, 0.215465, -0.0166026, 0.684936, 13.7006, 0.000946716, -30.8499 )
+
+[node name="cocktail29" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.258963, 0.00412971, 0.435749, -0.0104012, 0.5068, 0.0013783, -0.435645, -0.00964523, 0.258992, 4.14008, -0.00128729, -24.5937 )
+
+[node name="cocktail30" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+transform = Transform( 0.207416, 0.0104284, -0.701137, -0.0892195, 0.725617, -0.0156011, 0.695516, 0.0899708, 0.207091, 5.72086, -0.0175315, -7.85293 )
+
+[node name="cocktail31" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.373495, -0.0245609, -0.580922, 0.0452751, 0.689581, -4.602e-05, 0.579676, -0.0380342, 0.374301, 26.0274, 0.003273, -16.2076 )
 
-[node name="cocktail2" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail32" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.19384, 0.0125724, -0.667241, -0.0106853, 0.694669, 0.0161934, 0.667274, 0.0147762, -0.193571, 21.702, -0.000926969, -8.23123 )
 
-[node name="cocktail3" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail33" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.477779, 0.00750425, -0.56466, -0.0462687, 0.737677, -0.029346, 0.562811, 0.054274, 0.476936, 3.03797, -0.0101335, -21.2095 )
 
-[node name="cocktail4" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail34" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.167359, 0.006773, 0.857811, 0.0158881, 0.873858, -0.00379993, -0.85769, 0.014866, -0.167453, -9.74672, 0.000730313, -7.29818 )
 
-[node name="cocktail5" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail35" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.681003, -0.0128674, -0.0366571, -0.014582, 0.681213, 0.0317796, 0.0360094, 0.0325117, -0.680383, -5.85168, -0.00273965, -0.252713 )
 
-[node name="cocktail6" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail36" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.39228, -0.016165, 0.530703, -0.0229058, 0.65974, 0.00316409, -0.530455, -0.0165342, -0.3926, 7.78362, -0.00264952, -19.8603 )
 
-[node name="cocktail7" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail37" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.341499, -0.00642485, -0.753872, -0.0594995, 0.825257, 0.0199197, 0.751547, 0.0624156, -0.340978, 19.5296, 0.00127576, -6.35535 )
 
-[node name="cocktail8" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail38" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.828666, 0.0336329, 0.418161, -0.00381673, 0.92638, -0.0669457, -0.419494, 0.0580097, 0.826642, -0.914962, -0.0078764, -22.618 )
 
-[node name="cocktail9" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail39" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.846584, -0.0351343, -0.137737, 0.0441893, 0.855636, 0.0533468, 0.135104, -0.0597006, 0.845632, 23.3549, -0.0106152, -9.14581 )
 
-[node name="cocktail10" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail40" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.525986, 0.041196, -0.271331, 0.0480262, 0.591322, -0.00332082, 0.270205, -0.0249085, -0.527587, -3.48567, -0.000621843, 0.396457 )
 
-[node name="cocktail11" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail41" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.072236, 0.00332729, -0.471018, 0.0028566, 0.476519, 0.00292806, 0.471021, -0.00237967, -0.0722533, 13.7409, -1.10048e-05, 2.46683 )
 
-[node name="cocktail12" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail42" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.921818, -0.0795351, -0.0938708, 0.0732285, 0.924858, -0.0645069, 0.0988693, 0.0565484, 0.922991, 7.68888, 0.00623607, -9.8664 )
 
-[node name="cocktail13" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail43" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.560004, -0.00561011, 0.202652, -0.00356963, 0.594977, 0.0263353, -0.202698, -0.0259772, 0.559413, -2.93562, -0.0048076, 3.95211 )
 
-[node name="cocktail14" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail44" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.170283, -0.00915882, -0.63664, -0.0881195, 0.653012, 0.0141751, 0.630578, 0.0887812, -0.169939, 21.2349, 0.00385187, -6.5626 )
 
-[node name="cocktail15" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail45" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.00960892, -0.000513945, -0.931989, -0.0216256, 0.931788, -0.000736783, 0.931738, 0.021632, 0.00959441, 9.6136, 0.00132362, -12.0686 )
 
-[node name="cocktail16" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail46" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.189631, -0.00433661, 0.818022, 0.0263383, 0.83931, -0.00165617, -0.817609, 0.0260316, 0.189673, 22.0995, 0.000568023, -12.3538 )
 
-[node name="cocktail17" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail47" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.501908, 0.0258126, 0.230226, 0.017356, 0.551999, -0.024052, -0.231017, -0.0146096, -0.501996, -12.2855, 0.00519173, -3.92157 )
 
-[node name="cocktail18" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail48" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.297691, 0.0221918, -0.795236, 0.0727289, 0.846292, -0.00360895, 0.792214, -0.0693544, -0.298495, 2.72657, -0.00331606, -1.12559 )
 
-[node name="cocktail19" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail49" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.765883, -0.0229134, 0.359963, -0.00297932, 0.844426, 0.0600909, -0.360679, -0.0556306, 0.763866, 14.0027, -0.00323581, -7.43888 )
 
-[node name="cocktail20" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail50" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.764794, -0.0528048, -0.0702717, 0.0540268, 0.767852, 0.0110019, 0.0693366, -0.0158617, 0.766536, 23.5272, -0.00638076, -0.434167 )
 
-[node name="cocktail21" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail51" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.548471, 0.0456186, -0.410462, -0.0488485, 0.684746, 0.0108297, 0.41009, 0.0205524, 0.550259, -5.62685, 0.00949357, -5.54018 )
 
-[node name="cocktail22" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail52" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.521656, -0.0332628, -0.129149, -0.043431, 0.535365, 0.0375406, 0.126093, 0.0467882, -0.521366, 3.17263, 0.00398176, -20.3343 )
 
-[node name="cocktail23" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail53" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.636836, -0.0395729, -0.152808, -0.0474259, 0.653776, 0.0283407, 0.150556, 0.0385539, -0.637434, 17.9695, 0.0075676, -7.6841 )
 
-[node name="cocktail24" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail54" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.169378, 0.0109473, 0.699103, 0.0985175, 0.712521, 0.0127113, -0.692213, 0.098729, -0.169255, -4.963, -0.00278175, -6.62979 )
 
-[node name="cocktail25" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail55" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.410262, 0.0293672, -0.231354, -0.0386848, 0.47024, -0.00890953, 0.229979, 0.0267107, 0.411215, 3.88021, -0.00821075, -4.40126 )
 
-[node name="cocktail26" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail56" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.134924, 0.00147597, -0.826832, 0.0209851, 0.837504, -0.00192937, 0.826567, -0.0210218, -0.134919, 28.6492, -0.00165935, -24.7519 )
 
-[node name="cocktail27" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail57" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.0790518, 0.00544297, -0.47067, 0.0538787, 0.474229, -0.00356513, 0.467607, -0.0537215, -0.0791587, 3.17701, 0.00561351, -25.8674 )
 
-[node name="cocktail28" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail58" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.552165, -0.0135186, 0.0346766, 0.0131922, 0.553233, 0.0056133, -0.0348021, -0.00477398, 0.552302, 18.0353, -0.00129334, -5.93423 )
 
-[node name="cocktail29" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail59" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.918593, -0.0786186, 0.131546, 0.084124, 0.926876, -0.0334942, -0.128095, 0.0449202, 0.921343, 1.92526, -0.0104954, -1.06334 )
 
-[node name="cocktail30" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail60" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.804041, 0.053593, 0.0310107, 0.0510316, 0.802303, -0.0634092, -0.0350664, -0.0612596, -0.803326, 19.1485, 0.00624821, -2.10197 )
 
-[node name="cocktail31" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail61" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.457005, 0.0273768, -0.210793, 0.0131985, 0.502513, 0.0366494, 0.212153, 0.0277108, -0.456355, -3.42093, 0.00450352, -2.62687 )
 
-[node name="cocktail32" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail62" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.141579, 0.00855053, -0.530236, -0.0671385, 0.54468, -0.00914323, 0.526038, 0.0672166, 0.141541, 9.2069, 0.0121252, -31.8248 )
 
-[node name="cocktail33" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail63" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.707238, 0.0597484, -0.513361, 0.079045, 0.872349, -0.00736749, 0.510746, -0.0522735, -0.709719, 24.641, 0.00363619, -8.55061 )
 
-[node name="cocktail34" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail64" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.12703, 0.00277709, 0.68746, -0.0701148, 0.695504, 0.0101463, -0.683881, -0.0707907, 0.126654, 6.53741, 0.00270547, -10.7765 )
 
-[node name="cocktail35" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail65" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.0246622, 0.000803555, 0.507974, 0.0160258, 0.50832, -2.60508e-05, -0.507722, 0.0160056, -0.0246752, 21.4157, -0.00326282, -9.1584 )
 
-[node name="cocktail36" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail66" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.508892, -0.0177152, 0.697598, 0.0491084, 0.862162, -0.01393, -0.696093, 0.0478733, 0.50901, 2.01222, -0.00502559, 5.1664 )
 
-[node name="cocktail37" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail67" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.0348738, -0.000886345, 0.857983, -0.0227934, 0.858389, -3.97038e-05, -0.85768, -0.0227762, -0.034885, 8.2464, -0.0024119, -6.07131 )
 
-[node name="cocktail38" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail68" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( 0.736751, -0.00746779, -0.00174773, 0.00757564, 0.734778, 0.0538916, 0.00119674, -0.0539067, 0.734815, 8.38971, -0.00322411, -28.0915 )
 
-[node name="cocktail39" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail69" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.539106, 0.0222828, 0.451426, 0.0252098, 0.703037, -0.00459626, -0.451272, 0.0126545, -0.539547, 2.01949, -0.00539911, 1.38482 )
 
-[node name="cocktail40" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail70" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.0745161, -0.00344128, -0.47422, 0.0182154, 0.479664, -0.00634303, 0.473883, -0.0189787, -0.0743254, 25.2809, -0.000985124, -0.56805 )
 
-[node name="cocktail41" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail71" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.877506, -0.0403659, 0.328039, -0.022982, 0.935866, 0.0536833, -0.329713, 0.0421979, -0.876792, -3.58977, 0.00666197, 5.24522 )
 
-[node name="cocktail42" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail72" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.755968, -0.00826229, 0.118837, -0.00594683, 0.765118, 0.0153658, -0.118975, 0.014255, -0.755857, 18.1796, -0.000769968, -1.81868 )
 
-[node name="cocktail43" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
+[node name="cocktail73" type="Spatial" parent="Scatter2/Food3/Duplicates" instance=ExtResource( 60 )]
 transform = Transform( -0.821541, 0.0523397, -0.337837, 0.0617533, 0.887597, -0.0126578, 0.336244, -0.0351318, -0.823109, 9.99421, -0.000835485, -17.8446 )
 
 [node name="GUI" parent="." instance=ExtResource( 8 )]
